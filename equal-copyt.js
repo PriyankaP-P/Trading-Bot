@@ -5,8 +5,8 @@ let local_symbols = [];
 let watch_symbols =[];
 
 async function loop (data) {
-
     const interval = '15m';
+    
     for (let i = 0; i < data.length; i++) {
         
         let ema55 =await ema.calculateEma( data[i], interval, 55);
@@ -32,13 +32,20 @@ async function loop (data) {
     return watch_symbols;
 };
 
-(async function arr_list() { 
+async function arr_list() { 
+    // const interval = '15m';
     loop(local_symbols = await markets.symbolsUsed()).then(function(watch_symbols){
-        console.log(watch_symbols);
-    }).catch(function(e){
+        // console.log(watch_symbols);
+        return watch_symbols;
+    }).catch(function(err){
         console.log(err);
     });
     // console.log(watch_symbols);
     
-})();
+}
+
+module.exports ={
+    loop,
+    arr_list
+};
 
