@@ -1,7 +1,7 @@
 const ema = require('./ema');
 const isEqual = require('./isEqual');
 
-async function loop1 (data, interval) {
+async function emaStatus (data, interval) {
     
     const trade_symbols =[];
     
@@ -32,15 +32,20 @@ async function loop1 (data, interval) {
 };
 
 
-(async function status() {
+async function tradeStatus() {
     try{
         const interval = '15m';
         let equal_symbols = await isEqual.arr_list(interval);
-        let loop_result = await loop1(equal_symbols, interval);
-        console.log(loop_result);
+        let ema_result = await emaStatus(equal_symbols, interval);
+        console.log(ema_result);
          
     }catch(err){
     console.log(err);
     }
 
-})();
+}
+
+module.exports ={
+    emaStatus,
+    tradeStatus
+};
