@@ -1,12 +1,10 @@
 const markets = require('./markets');
 const ema = require('./ema');
+// const database = require('./knexfile'); 
 
-let local_symbols = [];
-let watch_symbols =[];
 
-async function loop (data) {
-    const interval = '15m';
-    
+async function loop (data, interval) {
+    let watch_symbols =[];
     for (let i = 0; i < data.length; i++) {
         
         let ema55 =await ema.calculateEma( data[i], interval, 55);
@@ -23,26 +21,26 @@ async function loop (data) {
          ||(perCent55_8 <= 0.5 && perCent55_8 >= -0.5)) {
     
             watch_symbols.push(data[i]);
-
-        }else{
-           console.log('no data for i=' + i + 'symbol='+ data[i]);
+       }else{
+        //    console.log('no data for i=' + i + 'symbol='+ data[i]);
         }     
-    }
-    // console.log(watch_symbols);
+    }    
     return watch_symbols;
 };
 
-async function arr_list() { 
-    // const interval = '15m';
-    loop(local_symbols = await markets.symbolsUsed()).then(function(watch_symbols){
-        // console.log(watch_symbols);
-        return watch_symbols;
-    }).catch(function(err){
-        console.log(err);
-    });
-    // console.log(watch_symbols);
+async function arr_list(interval) { 
     
+       try{
+            let local_symbols = await markets.symbolsUsed();
+            let result = await loop(local_symbols, interval);
+            // console.log(result);
+            return result;
+       }catch (err){
+             console.log(err);
+          }
 }
+
+
 
 module.exports ={
     loop,

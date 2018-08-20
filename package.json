@@ -9,7 +9,6 @@
   "author": "priyanka",
   "license": "ISC",
   "dependencies": {
-    "async": "^2.6.1",
     "ccxt": "^1.17.142",
     "knex": "^0.15.2",
     "pg": "^7.4.3"

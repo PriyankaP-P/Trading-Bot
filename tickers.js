@@ -17,14 +17,13 @@ async function tics(symbol, action){
     let result;
    
     if(action === "bid"){
-        result = bid - (bid*0.001);//enter bid price at 0.1% lower than current bid
+        result = bid;//bid - (bid*0.001)  enter bid price at 0.1% lower than current bid if code was faster
         
     } else if(action === "ask"){
-        result = ask-(ask*0.001);
+        result = ask;
         
-    } else if(action === "wait"){
+    } else {
         result =  undefined;
-        
     }
     
     return result;

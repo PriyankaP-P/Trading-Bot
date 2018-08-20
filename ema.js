@@ -1,17 +1,11 @@
 "use strict";
 
-const ccxt = require('ccxt');
-const exchange = new ccxt['binance']();
 
-exchange.enableRateLimit = true;
-        
-exchange.options['warnOnFetchOHLCVLimitArgument'] = true;
 
-const index =4;//ema calculated on closing price of candles
 
-async function calculateEma(symbol, interval, period){
-    
-    const ohlcv = await exchange.fetchOHLCV(symbol, interval);
+async function calculateEma(ohlcv, period){
+    const index =4;//ema calculated on closing price of candles
+    // const ohlcv = await exchange.fetchOHLCV(symbol, interval);
     
     let ema = [];
     let arr = [];
