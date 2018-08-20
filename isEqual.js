@@ -34,7 +34,7 @@ async function loop (data, interval) {
         //    console.log('no data for i=' + i + 'symbol='+ data[i]);
         }     
     }    
-    console.log(watch_symbols);
+    // console.log(watch_symbols);
 
     const trade_symbols =[];    
        
@@ -63,14 +63,14 @@ async function loop (data, interval) {
 
 };
 
-async function arr_list() { 
-    const interval = '15m';
+async function arr_list(interval) { 
+    
        try{
             let local_symbols = await markets.symbolsUsed();
-            console.log(local_symbols);
-            console.log("\n");
+            // console.log(local_symbols);
+            // console.log("\n");
             let result_tradeSymbol = await loop(local_symbols, interval);
-            console.log(result_tradeSymbol);
+            // console.log(result_tradeSymbol);
             return result_tradeSymbol;
        }catch (err){
              console.log(err);
