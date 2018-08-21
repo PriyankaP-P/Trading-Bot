@@ -26,7 +26,7 @@ async function record(data1){
        possible_positions.push([data1[i][0], data1[i][1], price, transaction]);
        database('transactions').insert({trade_date: date, symbol_pair: data1[i][0], 
         price_btc: price, quantity: amount, position_type: position,
-         transaction_type: transaction}).then(function(row){
+         transaction_type: transaction, past_action: data1[i][1] }).then(function(row){
         console.log(row);
     }).catch(function(err){
         console.log(err);

@@ -1,21 +1,7 @@
-// let data = ['btc','eos', 'ltc', 'ada', 'eth', 'poe'];
-// let equal_symbols = [];
-// let action = 'buy';
-// for(let i=0;i< data.length; i++){
-//     equal_symbols.push([data[i], action]);
-// }
-// console.log(equal_symbols);
 
-
-const ccxt = require('ccxt');
-const exchange = new ccxt['binance']();
-exchange.enableRateLimit = true;        
-exchange.options['warnOnFetchOHLCVLimitArgument'] = true;
 const ema = require('./ema');
 
-async function equal_ema(symbol_l, interval){
-
-    const ohlcv = await exchange.fetchOHLCV(symbol_l, interval);
+async function equal_ema(ohlcv){
 
     let equal_ema_condition;
     let ema55 =await ema.calculateEma( ohlcv, 55);
@@ -41,7 +27,8 @@ async function equal_ema(symbol_l, interval){
 
 }
 
-(async function calling_data(){
-    let checking = await equal_ema('NANO/BTC', '15m');
-    console.log(checking);
-})();
+
+
+module.exports={
+    equal_ema
+};

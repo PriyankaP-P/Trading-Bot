@@ -9,6 +9,7 @@ exchange.options['warnOnFetchOHLCVLimitArgument'] = true;
 const markets = require('./markets');
 const ema = require('./ema');
 const orders = require('./orders');
+const if_equal = require('./if-ema-equal');
 
 
 
@@ -17,19 +18,10 @@ async function loop (data, interval) {
     let watch_symbols =[];
     for (let i = 0; i < data.length; i++) {
         const ohlcv = await exchange.fetchOHLCV(data[i], interval);
-        let ema55 =await ema.calculateEma( ohlcv, 55);
-        let ema21 =await ema.calculateEma( ohlcv, 21);
-        let ema13 =await ema.calculateEma( ohlcv, 13);
-        let ema8 =await ema.calculateEma( ohlcv, 8);
+        let condition = await if_equal.equal_ema(ohlcv);
+        
 
-        let perCent55_21 = ((ema55-ema21)/ema55)*100;
-        let perCent55_13 = ((ema55-ema13)/ema55)*100;
-        let perCent55_8 = ((ema55-ema8)/ema55)*100;
-
-        if((perCent55_21 <= 0.5 && perCent55_21 >= -0.5)||
-          (perCent55_13 <= 0.5 && perCent55_13 >= -0.5)
-         ||(perCent55_8 <= 0.5 && perCent55_8 >= -0.5)) {
-    
+        if(condition === true) {
             watch_symbols.push(data[i]);
        }else{
         //    console.log('no data for i=' + i + 'symbol='+ data[i]);
