@@ -10,8 +10,10 @@ const data = [ [ 'ADA/ETH', 'bid' ],
 [ 'NPXS/ETH', 'bid' ],
 [ 'WAN/ETH', 'ask' ] ];
 
+for(let i=0;i<data.length ;i++){
+    console.log(data[i]);
+}
 
-console.log(data[0][0]);
 
 
 

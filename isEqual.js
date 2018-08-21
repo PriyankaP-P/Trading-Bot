@@ -63,8 +63,8 @@ async function loop (data, interval) {
 
 };
 
-async function arr_list(interval) { 
-    
+async function arr_list() { 
+       const interval = '15m';
        try{
             let local_symbols = await markets.symbolsUsed();
             // console.log(local_symbols);

@@ -14,7 +14,7 @@ async function symbolsUsed(){
     let btc_arr =[];
 
     for(let i=0; i<symbol_used.length; i++){
-        if((local_response[symbol_used[i]].quoteVolume >=1000) &&
+        if((local_response[symbol_used[i]].quoteVolume >=500) &&
          (symbol_used[i].includes('/BTC'))) {
             
             btc_arr.push(symbol_used[i]); 
