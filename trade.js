@@ -1,30 +1,47 @@
 "use strict";
-
-// const database = require('./knexfile'); 
+const database = require('./knexfile'); 
 const tickers = require('./tickers');
-const date= new Date();
-// const limitOrder = require('./limitOrder');
 const isEqual = require('./isEqual');
+const date = new Date();
 
 let call_arr =[];
 
 async function record(data1){
-    console.log(data1.length);
-    let open_positions= [];
+    // console.log(data1.length);
+    let possible_positions= [];
+    let amount = 1;
     for(let i =0; i< data1.length; i++){
-       
+        
+       let transaction = '';
+       let position = '';
        let price = await tickers.tics(data1[i][0], data1[i][1]);
-       console.log(`price = ${price}  0= ${data1[i][i]}   1= ${data1[i][i+1]}` );
-       open_positions.push([data1[i][0]], data1[i][1], price);
+    //    console.log(`price = ${price}  0= ${data1[i][0]}   1= ${data1[i][1]}` );
+     if(data1[i][1] === 'bid'){
+        transaction = 'buy';
+        position = 'long';
+     }else if(data1[i][1] === 'ask'){
+        transaction = 'sell';
+        position = 'short';
+     }
+       possible_positions.push([data1[i][0], data1[i][1], price, transaction]);
+       database('transactions').insert({trade_date: date, symbol_pair: data1[i][0], 
+        price_btc: price, quantity: amount, position_type: position,
+         transaction_type: transaction}).then(function(row){
+        console.log(row);
+    }).catch(function(err){
+        console.log(err);
+    })
+
+
    }
 
-   return open_positions;
+   return possible_positions;
 };
 
 
 (async function call_trade_symbol(){
-    let ans = await record(call_arr = await isEqual.arr_list());
+    let res = await record(call_arr = await isEqual.arr_list());
     console.log(call_arr);
-    console.log(ans);
+    console.log(res);
     
 })();

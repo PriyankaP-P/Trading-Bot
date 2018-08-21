@@ -8,7 +8,8 @@ exchange.options['warnOnFetchOHLCVLimitArgument'] = true;
 
 const markets = require('./markets');
 const ema = require('./ema');
-// const database = require('./knexfile'); 
+const orders = require('./orders');
+
 
 
 async function loop (data, interval) {
@@ -34,7 +35,11 @@ async function loop (data, interval) {
         //    console.log('no data for i=' + i + 'symbol='+ data[i]);
         }     
     }    
-    // console.log(watch_symbols);
+    console.log(`watch_symbols =  ${watch_symbols}`);
+    let open_arr = await orders.open_orders();
+    watch_symbols = watch_symbols.filter(item => open_arr.every(item2 => item2 !== item));
+
+    console.log(`watch_symbols =  ${watch_symbols}`);
 
     const trade_symbols =[];    
        

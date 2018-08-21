@@ -1,25 +1,18 @@
 
 
-const data = [ [ 'ADA/ETH', 'bid' ],
-[ 'BCH/ETH', 'bid' ],
-[ 'ELF/ETH', 'ask' ],
-[ 'EOS/ETH', 'bid' ],
-[ 'GTO/ETH', 'bid' ],
-[ 'LOOM/ETH', 'ask' ],
-[ 'NEO/ETH', 'ask' ],
-[ 'NPXS/ETH', 'bid' ],
-[ 'WAN/ETH', 'ask' ] ];
+let data = ['ADA/ETH','BCH/ETH','ELF/ETH','EOS/ETH'];
+ 
 
-for(let i=0;i<data.length ;i++){
-    console.log(data[i]);
-}
+// for(let i=0;i<data.length ;i++){
+//     console.log(data[i]);
+// }
+
+let d2 =['ELF/ETH','EOS/ETH'];
+
+data = data.filter(item => d2.every(item2 => item2 !== item));
 
 
-
-
-
-
-
+console.log(data);
 
 
 
