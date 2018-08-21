@@ -35,8 +35,8 @@ async function loop (data, interval) {
         //    console.log('no data for i=' + i + 'symbol='+ data[i]);
         }     
     }    
-    console.log(`watch_symbols =  ${watch_symbols}`);
-    let open_arr = await orders.open_orders();
+    console.log(`watch_symbols =  ${ watch_symbols}`);
+    let open_arr = await orders.open_symbols();
     watch_symbols = watch_symbols.filter(item => open_arr.every(item2 => item2 !== item));
 
     console.log(`watch_symbols =  ${watch_symbols}`);

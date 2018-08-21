@@ -2,29 +2,30 @@
 
 const database = require('./knexfile'); 
 
-let open=[];
+let order_pairs =  database.select('symbol_pair').from('transactions').then(function(rows){
+        return rows;
+    }).catch(function(error){
+        console.log(error);
+    });
 
-async function open_orders(){
+    
 
-    // database('transactions').insert({trade_date: date, symbol_pair: data1[i][0], 
-    //     price_btc: price, quantity: amount, position_type: position,
-    //      transaction_type: transaction}).then(function(row){
-    //     console.log(row);
-    // }).catch(function(err){
-    //     console.log(err);
-    // })
-    open = ['VET/BTC','REP/BTC','VEN/BTC','YOYOW/BTC'];
-    return open;
-    // setTimeout(async function delay (){
-    //     open = ['VET/BTC'];
-    //     return open;
-    // }, 1000);
-    // let getOpen = await delay();
-    // console.log(getOpen);
-    // return getOpen;
+
+async function open_symbols(){
+    let response = await order_pairs;
+    let open_arr =[];
+    for(let i=0; i< response.length; i++){
+        open_arr.push(response[i].symbol_pair);
+    }
+    console.log(open_arr);
+  
+    return open_arr;
+
 
 }
 
+
 module.exports = {
-    open_orders
+    open_symbols
 };
+

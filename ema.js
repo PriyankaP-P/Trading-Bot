@@ -39,8 +39,7 @@ async function calculateEma(ohlcv, period){
         // }
         return ema[ema.length-2];
     }catch(e){
-        console.log(exchange.iso8601 (Date.now()), e.constructor.name, e.message);
-        console.log('Failed');
+        console.log(e + 'Failed');
     }
     
 }
