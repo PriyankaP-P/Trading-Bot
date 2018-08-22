@@ -1,18 +1,19 @@
 
 
-let data = ['ADA/ETH','BCH/ETH','ELF/ETH','EOS/ETH'];
+let data = ['ADA/ETH','BCH/ETH','ADA/ETH','ELF/ETH','EOS/ETH', 'ADA/ETH'];
  
 
 // for(let i=0;i<data.length ;i++){
 //     console.log(data[i]);
 // }
 
-let d2 =['ELF/ETH','EOS/ETH'];
+// let d2 =['ELF/ETH'];
+console.log(data.filter(function(elem, pos){
+    return data.indexOf(elem) == pos;
+}));
 
-data = data.filter(item => d2.every(item2 => item2 !== item));
 
-
-console.log(data);
+// console.log(data);
 
 
 

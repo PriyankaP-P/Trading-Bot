@@ -22,12 +22,7 @@ async function makeOrder(symbol, side, amount, price){
    
     try {
         let response = await exchange.createOrder(symbol, orderType, side, amount, price);
-        // let timestamp = response['timestamp'];
-        // let id = response['id'];
-        // console.log(response);
-        // console.log('succeeded');
-        // console.log("\n");
-        // console.log('Timestamp of order= ' + timestamp + "\n" + side+ 'order Id = '+ id);
+       
         return response;
     } catch (e) {
         console.log(exchange.iso8601 (Date.now()), e.constructor.name, e.message);
@@ -60,16 +55,14 @@ let orders_to_place = database('transactions')
         let dateTime = sending_orders['datetime'];
         let status =sending_orders['status'];
         console.log(sending_orders);
-        console.log( tradeId + "\n\n\n");
-        console.log( status + "\n\n\n");
-        console.log( dateTime + "\n\n\n");
+      
     }
-    const result = await exchange.fetchClosedOrders('EOS/BTC');
-    console.log(result);
+  
 })();
 
 setInterval(async function closed_trades(){
-
+    const result = await exchange.fetchClosedOrders('EOS/BTC');
+    console.log(result);
 
 },20000);
 // makeOrder(symbol, side, amount, price);
