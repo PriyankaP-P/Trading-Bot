@@ -1,10 +1,8 @@
 "use strict";
 const database = require('./knexfile'); 
 const tickers = require('./tickers');
-const isEqual = require('./isEqual');
 const date = new Date();
 
-let call_arr =[];
     
 
 async function record(data1){
@@ -36,14 +34,13 @@ async function record(data1){
    }
 
    return possible_positions;
-};
+}
 
 
-async function call_trade_symbol(interval, base_currency, daily_cutoff_vol){
+async function call_trade_symbol(trade_symb_data){
     try{
-        let call_arr = await isEqual.arr_list(interval, base_currency, daily_cutoff_vol);
-        let res = await record(call_arr);
-        console.log(call_arr);
+        
+        let res = await record(trade_symb_data);
         console.log(res);
     }catch(e){
         console.log(e);
