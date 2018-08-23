@@ -1,7 +1,7 @@
 "use strict";
 
 const trade = require('./trade');
-// const long = require('./long');
+const long = require('./long');
 const isEqual = require('./isEqual');
 const markets = require('./markets');
 const orders = require('./orders');
@@ -21,17 +21,17 @@ setInterval(async function app(){
         console.log(e);
     }
     
-}, 50000);
+}, 30000);
 
 
-// setInterval(async function sale_app(){
-//     try{
-//         const interval = '15m';
+setInterval(async function sale_app(){
+    try{
+        const interval = '15m';
         
-//         await long.long_positions(interval);
-//         console.log("sale app works");
-//     }catch(e){
-//         console.log(e);
-//     }
+        await long.long_positions(interval);
+        console.log("sale app works");
+    }catch(e){
+        console.log(e);
+    }
     
-// }, 20000);
+}, 20000);
