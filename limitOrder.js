@@ -11,10 +11,6 @@ const exchange = new ccxt.binance ({
     'timeout': 60000,
     'enableRateLImit': true,
 })
-// let symbol = 'EOS/BTC';
-// let amount = 15.00000000;
-// let price = 0.0005339; 
-// let side = 'buy';
 
 async function makeOrder(symbol, side, amount, price){
 
@@ -22,7 +18,7 @@ async function makeOrder(symbol, side, amount, price){
    
     try {
         let response = await exchange.createOrder(symbol, orderType, side, amount, price);
-       
+        console.log(response);
         return response;
     } catch (e) {
         console.log(exchange.iso8601 (Date.now()), e.constructor.name, e.message);
@@ -31,42 +27,140 @@ async function makeOrder(symbol, side, amount, price){
      
 }
 
-let orders_to_place = database('transactions')
-                        .where('fulfilled', false)
-                        .select()
-                        .then(function(rows){
-                            return rows;
-                        }).catch(function(error){
-                            console.log(error);
-                        });
 
-(async function placeOrders(){
-    let order_list = await orders_to_place;
-    console.log(order_list);
+async function placeOrders(){
+    try{    
+    let order_list = await database('transactions')
+                                .where({fulfilled: false,
+                                    order_status: 'open'})
+                                .whereNull('exchange_client_id')
+                                .select()
+                                .then(function(rows){
+                                    return rows;
+                                }).catch(function(error){
+                                    console.log(error);
+                                });
+
+        
     for(let i =0; i< order_list.length; i++){
-
+        
+        let transactionId = order_list[i].transaction_id;
         let symbol =order_list[i].symbol_pair;
         let side = order_list[i].transaction_type;
-        let amount = order_list[i].quantity;
-        let price = order_list[i].price_btc;
+        let price = order_list[i].price_base_currency;
+        let amount = (order_list[i].equivalent_amt_base_currency)/price;
 
-        let sending_orders = await makeOrder(symbol,side , amount , price);
-        let tradeId = sending_orders['id'];
-        let dateTime = sending_orders['datetime'];
-        let status =sending_orders['status'];
-        console.log(sending_orders);
-      
+        let sending_orders = await makeOrder(symbol, side, amount, price);
+        
+        let order_info = await database('transactions')
+                                            .where('transaction_id', transactionId)
+                                            .update({exchange_client_id: sending_orders['id'],
+                                                    exchange_timestamp: sending_orders['timestamp']})
+                                            .then(function(rows){
+                                                return rows;
+                                            }).catch(function(error){
+                                                console.log(error);
+                                            }); 
+                     
     }
-  
-})();
+    }catch(e){
+        console.log(exchange.iso8601 (Date.now()), e.constructor.name, e.message);
+        console.log('Failed');
 
-setInterval(async function closed_trades(){
-    const result = await exchange.fetchClosedOrders('EOS/BTC');
-    console.log(result);
+    }
+}
 
-},20000);
-// makeOrder(symbol, side, amount, price);
 
-// module.exports = {
-//     makeOrder
-// };
+async function order_status(){
+    try{
+    let open_orders_array = await database('transactions')
+                                .where('order_status', 'open')
+                                .whereNotNull('exchange_client_id')
+                                .select('transaction_id', 'symbol_pair', 'exchange_client_id')
+                                .then(function(row){
+                                  return row;
+                                }).catch(function(err){
+                                console.log(err);
+                                })
+    // console.log(open_orders_array);
+    for(let i=0; i< open_orders_array.length; i++){
+        let id = open_orders_array[i].exchange_client_id;
+        let symbol = open_orders_array[i].symbol_pair;
+        let result = await exchange.fetchOrder(id, symbol);
+        // console.log(result);
+        if(result.status === 'canceled'){
+           
+            let update_order = await database('transactions')
+                                .where('transaction_id', open_orders_array[i].transaction_id )
+                                .update('order_status', result.status)
+                                .then(function(row){
+                                 return row;
+                                }).catch(function(err){
+                                console.log(err);
+                                })
+        }else if(result.status === 'closed'){
+            let update_order = await database('transactions')
+                                .where('transaction_id', open_orders_array[i].transaction_id )
+                                .update({'order_status': result.status, 'fulfilled': true})
+                                .then(function(row){
+                                return row;
+                                }).catch(function(err){
+                                console.log(err);
+                                })
+        }
+    }
+        }catch(e){
+            console.log(exchange.iso8601 (Date.now()), e.constructor.name, e.message);
+            console.log('Failed');
+
+}
+}
+
+async function cancel_orders(){
+    try{
+    let cancel_list = await database('transactions')
+                                            .where('order_status', 'open')
+                                            .whereNotNull('exchange_client_id')
+                                            .select('transaction_id', 'symbol_pair', 'exchange_client_id',
+                                             'exchange_timestamp')
+                                            .then(function(row){
+                                            return row;
+                                            }).catch(function(err){
+                                            console.log(err);
+                                            })
+        // console.log(cancel_list);
+    for(let i =0;i< cancel_list.length; i++){
+        let id = cancel_list[i].exchange_client_id;
+        let symbol = cancel_list[i].symbol_pair;
+        
+        if(exchange.milliseconds() >= (parseInt(cancel_list[i].exchange_timestamp) + (180*1000))){
+          
+            let terminate = exchange.cancelOrder(id, symbol);
+
+            console.log(terminate);
+            console.log(`order id = ${id} cancelled`)
+        }
+    }
+        }catch(e){
+            console.log(exchange.iso8601 (Date.now()), e.constructor.name, e.message);
+            console.log('Failed');
+
+    }
+}
+
+
+setInterval(async function call(){
+    await placeOrders();
+    await order_status();
+    await cancel_orders();
+
+}, 2000);
+
+
+
+
+module.exports = {
+    makeOrder,
+    placeOrders,
+    order_status
+};

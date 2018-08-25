@@ -22,7 +22,7 @@ async function account_balance(standard_trade_currency) {
     
     let base_balance =trade_balance[0].free ;
     
-    console.log(base_balance);
+    // console.log(base_balance);
     
     return base_balance;    
     

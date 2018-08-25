@@ -24,7 +24,8 @@ async function record(data1, available_balance, trade_amt){//get total balance
             possible_positions.push([data1[i][0], data1[i][1], price, transaction]);
             
             database('transactions').insert({trade_date: date, symbol_pair: data1[i][0], 
-                price_btc: price, quantity: trade_amt, transaction_type: transaction, fulfilled: 'f', order_status: 'open' })
+                price_base_currency: price, equivalent_amt_base_currency: trade_amt, 
+                transaction_type: transaction, fulfilled: 'f', order_status: 'open' })
                 .then(function(row){
                 console.log(row);
             }).catch(function(err){
@@ -36,7 +37,7 @@ async function record(data1, available_balance, trade_amt){//get total balance
                 console.log("insufficient base currency balance")
             }
             }
-            // return available_balance;
+            return available_balance;
         }catch(e){
         console.log(e);
     }

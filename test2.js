@@ -1,8 +1,31 @@
 
+const database = require('./knexfile'); 
+const date = new Date();
+
+  database('transactions').where('transaction_id', '38ee4fd3-5aec-4d56-88c3-7867bff733ee')
+                        .update({'exchange_client_id': null,
+                                'exchange_timestamp': null,
+                                'order_status': 'open',
+                            'fulfilled': false})
+                        .then(function(row){
+                        console.log(row);
+                    }).catch(function(err){
+                        console.log(err);
+                    })
 
 
 
+// let data = {id: 233, symbol: 'EOS/BTC', uid: 'hgfdgjui7898hjko5668' }
+// let data1 = {id: 234, symbol: 'LTC/BTC', uid: 'hgfdgjui78984r4tfddhjko5668' }
+// let arr =[data, data1];
+// // console.log(arr);
+// let a =[];
+// for(let i=0; i<arr.length ;i++){
+//     a.push(arr[i]);
+// }
 
+// // console.log(a);
+// console.log(a[0]);
 
 
 

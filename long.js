@@ -57,7 +57,7 @@ async function long_positions(interval){
             let price = await tickers.tics(response_obj[i].symbol_pair, action);
 
             database('transactions').insert({trade_date: date, symbol_pair: response_obj[i].symbol_pair, 
-            price_btc: price, quantity: response_obj[i].quantity, transaction_type: trans_type,
+            price_base_currency: price, equivalent_amt_base_currency: response_obj[i].equivalent_amt_base_currency, transaction_type: trans_type,
             fulfilled: 'f', order_status: 'open'})//quantity might have to be changed after deducting trading fees
                                     .then(function(row){
                                     
@@ -75,7 +75,17 @@ async function long_positions(interval){
      
 }
 
-
+setInterval(async function sale_app(){
+    try{
+        const interval = '15m';
+        
+        await long_positions(interval);
+        console.log("sale app works");
+    }catch(e){
+        console.log(e);
+    }
+    
+}, 20000);
 
 
 module.exports={
