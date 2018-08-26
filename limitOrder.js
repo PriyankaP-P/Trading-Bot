@@ -101,7 +101,8 @@ async function order_status(){
         }else if(result.status === 'closed'){
             let update_order = await database('transactions')
                                 .where('transaction_id', open_orders_array[i].transaction_id )
-                                .update({'order_status': result.status, 'fulfilled': true})
+                                .update({'order_status': result.status, 'fulfilled': true,
+                                 'position_status': 'new'})
                                 .then(function(row){
                                 return row;
                                 }).catch(function(err){
@@ -133,7 +134,7 @@ async function cancel_orders(){
         let id = cancel_list[i].exchange_client_id;
         let symbol = cancel_list[i].symbol_pair;
         
-        if(exchange.milliseconds() >= (parseInt(cancel_list[i].exchange_timestamp) + (180*1000))){
+        if(exchange.nonce() >= (parseInt(cancel_list[i].exchange_timestamp) + (180*1000))){
           
             let terminate = exchange.cancelOrder(id, symbol);
 
@@ -148,12 +149,55 @@ async function cancel_orders(){
     }
 }
 
+async function monitor_position_status(){
+    try{
+        
+         database('transactions')
+                        .where({transaction_type: 'sell',
+                                 fulfilled: true,
+                                 order_status: 'closed',
+                                 position_status: 'new'})
+                         .whereNotNull('exchange_client_id')
+                         .update('position_status', 'old')
+                         .then(function(row){
+                         return row;
+                         }).catch(function(err){
+                         console.log(err);      
+                         })
+        
+        let list_old_transactions = await database('transactions')
+                                                    .where({transaction_type: 'sell',
+                                                            fulfilled: true,
+                                                            order_status: 'closed',
+                                                            position_status: 'old'})
+                                                    .whereNotNull('selling_pair_id')
+                                                    .select('transaction_id')
+                                                    .then(function(row){
+                                                        return row;
+                                                    }).catch(function(err){
+                                                        console.log(err);
+                                                    })
+        for(let i =0; i<list_old_transactions.length; i++){
+                             database('transactions').where('transaction_id', list_old_transactions[i].selling_pair_id)
+                                                     .update('position_status', 'old')
+                                                     .then(function(row){
+                                                        return row;
+                                                    }).catch(function(err){
+                                                        console.log(err);
+                                                    })
+        }
+             
+    }catch(e){
+        console.log(exchange.iso8601 (Date.now()), e.constructor.name, e.message);
+        console.log('Failed');
+    }
 
+}
 setInterval(async function call(){
     await placeOrders();
     await order_status();
     await cancel_orders();
-
+    await monitor_position_status();
 }, 2000);
 
 
