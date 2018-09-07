@@ -2,11 +2,8 @@
 const database = require('./knexfile'); 
 const date = new Date();
 
-  database('transactions').where('transaction_id', '38ee4fd3-5aec-4d56-88c3-7867bff733ee')
-                        .update({'exchange_client_id': null,
-                                'exchange_timestamp': null,
-                                'order_status': 'open',
-                            'fulfilled': false})
+  database('transactions').where('transaction_id', '7cba3de4-9e42-4f23-8b81-2b70e15e1201')
+                        .del()
                         .then(function(row){
                         console.log(row);
                     }).catch(function(err){

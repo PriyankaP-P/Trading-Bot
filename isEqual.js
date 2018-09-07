@@ -1,10 +1,14 @@
 
 const ccxt = require('ccxt');
-const exchange = new ccxt['binance']();
-
-exchange.enableRateLimit = true;
-        
-exchange.options['warnOnFetchOHLCVLimitArgument'] = true;
+const exchange = new ccxt['binance']({
+    'enableRateLimit': true,
+    'options': {
+        'adjustForTimeDifference': true,
+        'verbose': true,
+        'recvWindow': 10000000,
+        'warnOnFetchOHLCVLimitArgument': true
+    }
+});
 
 const ema = require('./ema');
 

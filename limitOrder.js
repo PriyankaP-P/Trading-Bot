@@ -2,14 +2,20 @@
 
 const ccxt = require('ccxt');
 const database = require('./knexfile');
+const balances = require('./checkBalance');
+
 
 
 const exchange = new ccxt.binance ({
     'apiKey': 'Ll8IQXn6q4ejxCM1QbQSUhUHqKR1ClRFh8U9YOACtw8hnwBGfZ9cpXTGmurVF1cl',
     'secret': '5nIYua2pdA2muFNt40JaksHRtqIXmzk38MGMwePPEeW2uKvB48BQNRjCKaaUU0k4',
-    'verbose': false,
     'timeout': 60000,
     'enableRateLImit': true,
+    'options': {
+        'adjustForTimeDifference': true,
+        'verbose': true,
+        'recvWindow': 10000000
+    }
 })
 
 async function makeOrder(symbol, side, amount, price){
@@ -30,6 +36,8 @@ async function makeOrder(symbol, side, amount, price){
 
 async function placeOrders(){
     try{    
+
+    let amount;    
     let order_list = await database('transactions')
                                 .where({fulfilled: false,
                                     order_status: 'open'})
@@ -41,17 +49,22 @@ async function placeOrders(){
                                     console.log(error);
                                 });
 
-        
+    
     for(let i =0; i< order_list.length; i++){
         
         let transactionId = order_list[i].transaction_id;
         let symbol =order_list[i].symbol_pair;
         let side = order_list[i].transaction_type;
         let price = order_list[i].price_base_currency;
-        let amount = (order_list[i].equivalent_amt_base_currency)/price;
-
-        let sending_orders = await makeOrder(symbol, side, amount, price);
+       if(side === 'sell'){
+            let coin = symbol.split("/");
+            amount = await balances.account_balance(coin[0]);
         
+       }else if(side === 'buy'){
+            amount = (order_list[i].equivalent_amt_base_currency)/price;
+       }
+        
+       let sending_orders = await makeOrder(symbol, side, amount, price);
         let order_info = await database('transactions')
                                             .where('transaction_id', transactionId)
                                             .update({exchange_client_id: sending_orders['id'],
@@ -82,12 +95,12 @@ async function order_status(){
                                 }).catch(function(err){
                                 console.log(err);
                                 })
-    // console.log(open_orders_array);
+  
     for(let i=0; i< open_orders_array.length; i++){
         let id = open_orders_array[i].exchange_client_id;
         let symbol = open_orders_array[i].symbol_pair;
         let result = await exchange.fetchOrder(id, symbol);
-        // console.log(result);
+        
         if(result.status === 'canceled'){
            
             let update_order = await database('transactions')
@@ -129,7 +142,7 @@ async function cancel_orders(){
                                             }).catch(function(err){
                                             console.log(err);
                                             })
-        // console.log(cancel_list);
+        
     for(let i =0;i< cancel_list.length; i++){
         let id = cancel_list[i].exchange_client_id;
         let symbol = cancel_list[i].symbol_pair;
@@ -171,12 +184,13 @@ async function monitor_position_status(){
                                                             order_status: 'closed',
                                                             position_status: 'old'})
                                                     .whereNotNull('selling_pair_id')
-                                                    .select('transaction_id')
+                                                    .select('selling_pair_id')
                                                     .then(function(row){
                                                         return row;
                                                     }).catch(function(err){
                                                         console.log(err);
                                                     })
+        
         for(let i =0; i<list_old_transactions.length; i++){
                              database('transactions').where('transaction_id', list_old_transactions[i].selling_pair_id)
                                                      .update('position_status', 'old')
@@ -193,6 +207,9 @@ async function monitor_position_status(){
     }
 
 }
+
+
+
 setInterval(async function call(){
     await placeOrders();
     await order_status();

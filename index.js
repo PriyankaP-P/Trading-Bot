@@ -15,8 +15,8 @@ setInterval(async function app(){
         const interval = '15m';// also declared in long.js
         const standard_trade_currency = 'BTC';
         let base_currency = '/' + standard_trade_currency;
-        let daily_cutoff_vol = 1000;
-        const trade_amt= 0.005;
+        let daily_cutoff_vol = 1500;
+        const trade_amt= 0.01;
         
         let local_symbols = await markets.symbolsUsed(base_currency, daily_cutoff_vol);
         let arr_to_scan = await orders.open_symbols(local_symbols);
@@ -29,6 +29,6 @@ setInterval(async function app(){
         console.log(e);
     }
     
-}, 20000);
+}, 30000);
 
 

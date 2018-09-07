@@ -17,7 +17,7 @@ setInterval(async function clear(){
         
         for(let i =0; i< clear_list.length; i++){
             let temp = Date.parse(clear_list[i].trade_date);         
-            let elapsedTime = temp + (5*60*1000);   
+            let elapsedTime = temp + (3*60*1000);   
             if( temp <= elapsedTime){
                 await database('transactions')
                                             .where('transaction_id', clear_list[i].transaction_id)

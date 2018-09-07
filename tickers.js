@@ -6,7 +6,12 @@ const ccxt = require ('ccxt');
 async function tics(symbol, action){
     
     const exchange = new ccxt['binance']({
-        enableRateLimit: true
+        enableRateLimit: true,
+        'options': {
+            'adjustForTimeDifference': true,
+            'verbose': true,
+            'recvWindow': 10000000
+        }
     });
     //const symbol = 'ONT/BTC';
 
@@ -17,10 +22,10 @@ async function tics(symbol, action){
     let result;
    
     if(action === "bid"){
-        result = bid;// - (bid*0.20)   ,bid - (bid*0.00001)  enter bid price at 0.1% lower than current bid if code was faster
+        result = bid;//- (bid*0.20)   ,bid - (bid*0.00001)  enter bid price at 0.1% lower than current bid if code was faster
         
     } else if(action === "ask"){
-        result = ask ;//+ (ask*0.20) 
+        result = ask; //  + (ask*0.20)
         
     } else {
         result =  undefined;

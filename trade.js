@@ -52,7 +52,7 @@ async function call_trade_symbol(isEqual_result, available_balance , trade_amt){
     try{
              
         let res = await record(isEqual_result, available_balance , trade_amt);
-        console.log(res);
+        // console.log(res);
     }catch(e){
         console.log(e);
     }

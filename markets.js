@@ -1,7 +1,13 @@
 "use strict";
 
 const ccxt = require('ccxt');
-const exchange = new ccxt['binance']();
+const exchange = new ccxt['binance']({
+    'options': {
+        'adjustForTimeDifference': true,
+        'verbose': true,
+        'recvWindow': 10000000
+    }
+});
 
 
 async function symbolsUsed(base_currency, daily_cutoff_vol){
