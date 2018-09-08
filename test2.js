@@ -2,14 +2,30 @@
 const database = require('./knexfile'); 
 const date = new Date();
 
-  database('transactions').where('transaction_id', '7cba3de4-9e42-4f23-8b81-2b70e15e1201')
-                        .del()
+  database('transactions').insert({trade_date: date, symbol_pair: 'LTC/BTC',
+                            price_base_currency: 0.008946, equivalent_amt_base_currency: 0.01, 
+                            transaction_type: 'sell', fulfilled: 't', order_status: 'closed',
+                            exchange_client_id: '63047189', exchange_timestamp: '1536359093097',
+                            position_status: 'old',selling_pair_id: 'da1bb6f2-1a90-41f2-97fd-a139032246c7'
+                        })
                         .then(function(row){
                         console.log(row);
                     }).catch(function(err){
                         console.log(err);
                     })
 
+ database('transactions').insert({trade_date: date, symbol_pair: 'ONT/BTC',
+                    price_base_currency: 0.005046, equivalent_amt_base_currency: 0.01, 
+                    transaction_type: 'sell', fulfilled: 't', order_status: 'closed',
+                    exchange_client_id: '69347149', exchange_timestamp: '1538359093097',
+                    position_status: 'old', selling_pair_id: '87e172c9-2b27-4ca7-987d-2449db219a3e'
+                })
+                .then(function(row){
+                console.log(row);
+            }).catch(function(err){
+                console.log(err);
+            })
+// where('transaction_id', '7cba3de4-9e42-4f23-8b81-2b70e15e1201')
 
 
 // let data = {id: 233, symbol: 'EOS/BTC', uid: 'hgfdgjui7898hjko5668' }

@@ -22,10 +22,10 @@ async function update_sell_orders(entry, action){
     const trans_type = 'sell';
     let price = await tickers.tics(entry.symbol_pair, action);
                     
-                    database('transactions').insert({trade_date: date, symbol_pair: entry.symbol_pair, 
+                await database('transactions').insert({trade_date: date, symbol_pair: entry.symbol_pair, 
                     price_base_currency: price, equivalent_amt_base_currency: entry.equivalent_amt_base_currency,
                     transaction_type: trans_type,fulfilled: 'f', order_status: 'open', 
-                    selling_pair_id: entry.transaction_id})//quantity might have to be changed after deducting trading fees
+                    selling_pair_id: entry.transaction_id})
                     .then(function(row){
                         console.log(row);
                         return row;
@@ -70,7 +70,7 @@ async function long_positions(interval){
                         
         if(open_sell_orders.length >0){                                
             for(let j =0; j< open_sell_orders.length; j++){
-                if(condition === true && timePassed > (6*60*1000) && sell_list[i].transaction_id !== open_sell_orders[j].selling_pair_id ){ 
+                if(condition === true && timePassed > (20*60*1000) && sell_list[i].transaction_id !== open_sell_orders[j].selling_pair_id ){ 
             
                  await update_sell_orders(sell_list[i], action);
                     
@@ -79,7 +79,7 @@ async function long_positions(interval){
                 }   
             }
         }else{
-            if(condition === true && timePassed > (6*60*1000)){ 
+            if(condition === true && timePassed > (20*60*1000)){ 
             
                 await update_sell_orders(sell_list[i], action);
                 
@@ -96,7 +96,7 @@ async function long_positions(interval){
 
 setInterval(async function sale_app(){
     try{
-        const interval = '15m';
+        const interval = '30m';
         
         await long_positions(interval);
         console.log("sale app works");
