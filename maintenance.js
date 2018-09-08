@@ -1,7 +1,7 @@
 const database = require ('./knexfile');
 const date = new Date();
 
-setInterval(async function clear(){
+setInterval(async function purge_db(){
     try{
 
         let clear_list = await database('transactions')
@@ -35,3 +35,20 @@ setInterval(async function clear(){
         console.log('Failed');
     }
 },120000);
+
+
+function get_timeframe(interval){
+    let timeframe = '';
+    for(let c=0; c< interval.length; c++){
+        if(interval[c] < 'A'){
+            timeframe += interval[c];
+        }
+    }
+    let conv= parseInt(timeframe);
+    return conv;
+    
+}
+
+module.exports ={
+    get_timeframe
+};

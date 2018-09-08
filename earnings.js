@@ -48,4 +48,4 @@ setInterval(async function rev_percent(){
     }catch(error){
         console.log(error);
     }
-}, 60000);
+}, 180000);

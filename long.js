@@ -16,6 +16,7 @@ const tickers = require('./tickers');
 const if_equal = require('./if-ema-equal');
 const date = new Date();
 const database = require('./knexfile'); 
+const maintenance = require('./maintenance');
 
 
 async function update_sell_orders(entry, action){
@@ -33,7 +34,8 @@ async function update_sell_orders(entry, action){
                         console.log(err);
                     })
 }
-                    
+
+
 async function long_positions(interval){
 
     let sell_list =await database('transactions')
@@ -50,7 +52,8 @@ async function long_positions(interval){
 
     // console.log(sell_list);
     let action = 'ask';
-    
+    let timeframe = maintenance.get_timeframe(interval);
+    console.log(timeframe);
     for(let i=0; i< sell_list.length; i++){
 
         const ohlcv = await exchange.fetchOHLCV(sell_list[i].symbol_pair, interval);
@@ -67,10 +70,10 @@ async function long_positions(interval){
                                         }).catch(function(error){
                                             console.log(error);
                                         })
-                        
+                      
         if(open_sell_orders.length >0){                                
             for(let j =0; j< open_sell_orders.length; j++){
-                if(condition === true && timePassed > (20*60*1000) && sell_list[i].transaction_id !== open_sell_orders[j].selling_pair_id ){ 
+                if(condition === true && timePassed > (timeframe*3*60*1000) && sell_list[i].transaction_id !== open_sell_orders[j].selling_pair_id ){ 
             
                  await update_sell_orders(sell_list[i], action);
                     
@@ -79,7 +82,7 @@ async function long_positions(interval){
                 }   
             }
         }else{
-            if(condition === true && timePassed > (20*60*1000)){ 
+            if(condition === true && timePassed > (timeframe*3*60*1000)){ 
             
                 await update_sell_orders(sell_list[i], action);
                 
@@ -96,7 +99,7 @@ async function long_positions(interval){
 
 setInterval(async function sale_app(){
     try{
-        const interval = '30m';
+        const interval = '15m';
         
         await long_positions(interval);
         console.log("sale app works");

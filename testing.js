@@ -60,32 +60,39 @@
 
 
 
-"use strict";
+// "use strict";
 
-const ccxt = require ('ccxt');
+// const ccxt = require ('ccxt');
 
-let binance = new ccxt.binance({
-    'apiKey': 'Ll8IQXn6q4ejxCM1QbQSUhUHqKR1ClRFh8U9YOACtw8hnwBGfZ9cpXTGmurVF1cl',
-    'secret': '5nIYua2pdA2muFNt40JaksHRtqIXmzk38MGMwePPEeW2uKvB48BQNRjCKaaUU0k4',
-    'options': {
-        'adjustForTimeDifference': true,
-        'verbose': true,
-        'recvWindow': 10000000
-    }        
-});
+// let binance = new ccxt.binance({
+//     'apiKey': 'Ll8IQXn6q4ejxCM1QbQSUhUHqKR1ClRFh8U9YOACtw8hnwBGfZ9cpXTGmurVF1cl',
+//     'secret': '5nIYua2pdA2muFNt40JaksHRtqIXmzk38MGMwePPEeW2uKvB48BQNRjCKaaUU0k4',
+//     'options': {
+//         'adjustForTimeDifference': true,
+//         'verbose': true,
+//         'recvWindow': 10000000
+//     }        
+// });
 
 
 
-(async function tradeBal() {
+// (async function tradeBal() {
     
-    let balance = await binance.fetchBalance ();
+//     let balance = await binance.fetchBalance ();
     
-    let symbol = 'ONT';
-    let find_trade = balance.info.balances.filter(each => each.asset === symbol);
-    let amount = find_trade[0].free;
-    console.log(amount);
+//     let symbol = 'ONT';
+//     let find_trade = balance.info.balances.filter(each => each.asset === symbol);
+//     let amount = find_trade[0].free;
+//     console.log(amount);
     
-    // return base_balance;    
+//     // return base_balance;    
     
-})();
-
+// })();
+let interval = '3m';
+let timeframe = '';
+for(let c=0; c< interval.length; c++){
+    if(interval[c] < 'A'){
+        timeframe += interval[c];
+    }
+}
+console.log(parseInt(timeframe));

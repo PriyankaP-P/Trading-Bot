@@ -9,14 +9,14 @@ const balances = require('./checkBalance');
 const earnings = require('./earnings');
 
 const limitOrder = require('./limitOrder');
-const purge_db = require('./purge_db')
+const maintenance = require('./maintenance')
 
 setInterval(async function app(){
     try{
-        const interval = '30m';// also declared in long.js
+        const interval = '15m';// also declared in long.js
         const standard_trade_currency = 'BTC';
         let base_currency = '/' + standard_trade_currency;
-        let daily_cutoff_vol = 700;
+        let daily_cutoff_vol = 500;
         const trade_amt= 0.005;
         
         let local_symbols = await markets.symbolsUsed(base_currency, daily_cutoff_vol);
@@ -30,6 +30,6 @@ setInterval(async function app(){
         console.log(e);
     }
     
-}, 30000);
+}, 20000);
 
 
