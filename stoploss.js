@@ -70,6 +70,7 @@ async function cut_loss(stop_loss_percent){
                 }
             }
         }else{
+            
             if(last_price <= criteria ){//<=
                     await database('transactions').insert({ trade_date: date, symbol_pair: symbol_pair,
                                                 price_base_currency: last_price,
