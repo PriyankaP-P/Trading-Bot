@@ -58,7 +58,7 @@ async function cut_loss(stop_loss_percent){
         if(open_sell_orders_for_stoploss.length >0){                                
             for(let j =0; j< open_sell_orders_for_stoploss.length; j++){
              
-                if(last_price >= criteria && 
+                if(last_price <= criteria && 
                     current_buys[i].transaction_id !== open_sell_orders_for_stoploss[j].selling_pair_id){//<=
                         await database('transactions').insert({ trade_date: date, symbol_pair: symbol_pair,
                                                     price_base_currency: last_price,
