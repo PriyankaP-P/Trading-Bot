@@ -70,13 +70,15 @@ async function cut_loss(stop_loss_percent){
                 }
             }
         }else{
-            await database('transactions').insert({ trade_date: date, symbol_pair: symbol_pair,
-                                            price_base_currency: last_price,
-                                            equivalent_amt_base_currency: current_buys[i].equivalent_amt_base_currency,
-                                            transaction_type: 'sell', fulfilled: 'f',
-                                            order_status: 'open', selling_pair_id: current_buys[i].transaction_id})
-                                            .then(rows => rows)
-                                            .catch(error =>console.log(error))
+            if(last_price <= criteria ){//<=
+                    await database('transactions').insert({ trade_date: date, symbol_pair: symbol_pair,
+                                                price_base_currency: last_price,
+                                                equivalent_amt_base_currency: current_buys[i].equivalent_amt_base_currency,
+                                                transaction_type: 'sell', fulfilled: 'f',
+                                                order_status: 'open', selling_pair_id: current_buys[i].transaction_id})
+                                                .then(rows => rows)
+                                                .catch(error =>console.log(error))
+            }
         }
     }
     }catch(e){
@@ -86,7 +88,7 @@ async function cut_loss(stop_loss_percent){
 
 
 setInterval(async function prevent_loss(){
-    const stop_loss_percent = 2;
+    const stop_loss_percent = 3;
     await cut_loss(stop_loss_percent);
 }, 20000);
 
