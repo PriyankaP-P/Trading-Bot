@@ -86,7 +86,7 @@ async function cut_loss(stop_loss_percent){
 
 
 setInterval(async function prevent_loss(){
-    const stop_loss_percent = 3;
+    const stop_loss_percent = 2;
     await cut_loss(stop_loss_percent);
 }, 20000);
 
