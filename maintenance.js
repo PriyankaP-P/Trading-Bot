@@ -1,4 +1,17 @@
+
 const database = require ('./knexfile');
+"use strict";
+
+const ccxt = require('ccxt');
+const exchange = new ccxt['binance']({
+    'enableRateLimit': true,
+    'options': {
+        'verbose': true,
+        'adjustForTimeDifference': true,
+        'recvWindow': 10000000,
+        'warnOnFetchOHLCVLimitArgument': true
+    }
+});
 const date = new Date();
 
 setInterval(async function purge_db(){

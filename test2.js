@@ -15,6 +15,7 @@ const date = new Date();
 //                     })
 
  database('transactions').where('transaction_id', 'd70d1973-853c-4e7b-9ca9-f23121782660')
+            
             .del()    
             .then(function(row){
                 console.log(row);
