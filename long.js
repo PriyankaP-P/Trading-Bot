@@ -5,8 +5,8 @@ const ccxt = require('ccxt');
 const exchange = new ccxt['binance']({
     'enableRateLimit': true,
     'options': {
-        'adjustForTimeDifference': true,
         'verbose': true,
+        'adjustForTimeDifference': true,
         'recvWindow': 10000000,
         'warnOnFetchOHLCVLimitArgument': true
     }
@@ -53,13 +53,19 @@ async function long_positions(interval){
     // console.log(sell_list);
     let action = 'ask';
     let timeframe = maintenance.get_timeframe(interval);
-    console.log(timeframe);
+    let delay;
+    if(timeframe > 4 ){
+        delay = timeframe; 
+    }else {
+        delay =timeframe *60;
+    }
+    console.log(`timeframe  = ${timeframe}  delay = ${delay}`);
     for(let i=0; i< sell_list.length; i++){
 
         const ohlcv = await exchange.fetchOHLCV(sell_list[i].symbol_pair, interval);
         let condition = await if_equal.equal_ema(ohlcv);
         let timePassed = parseInt(sell_list[i].exchange_timestamp);
-
+        console.log(`time passed = ${timePassed}`)
         let open_sell_orders = await database('transactions')
                                         .where({transaction_type: 'sell',
                                                 fulfilled: false,
@@ -73,7 +79,7 @@ async function long_positions(interval){
                       
         if(open_sell_orders.length >0){                                
             for(let j =0; j< open_sell_orders.length; j++){
-                if(condition === true && timePassed > (timeframe*3*60*1000) && sell_list[i].transaction_id !== open_sell_orders[j].selling_pair_id ){ 
+                if(condition === true && timePassed > (timePassed + (delay*3*60*1000)) && sell_list[i].transaction_id !== open_sell_orders[j].selling_pair_id ){ 
             
                  await update_sell_orders(sell_list[i], action);
                     
@@ -82,7 +88,7 @@ async function long_positions(interval){
                 }   
             }
         }else{
-            if(condition === true && timePassed > (timeframe*3*60*1000)){ 
+            if(condition === true && timePassed > (timePassed + (delay*3*60*1000))){ 
             
                 await update_sell_orders(sell_list[i], action);
                 

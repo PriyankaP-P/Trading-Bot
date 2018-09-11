@@ -9,7 +9,8 @@ const balances = require('./checkBalance');
 const earnings = require('./earnings');
 
 const limitOrder = require('./limitOrder');
-const maintenance = require('./maintenance')
+const maintenance = require('./maintenance');
+const stoploss = require('./stoploss');
 
 setInterval(async function app(){
     try{

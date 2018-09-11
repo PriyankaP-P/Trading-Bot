@@ -88,11 +88,29 @@
 //     // return base_balance;    
     
 // })();
-let interval = '3m';
-let timeframe = '';
-for(let c=0; c< interval.length; c++){
-    if(interval[c] < 'A'){
-        timeframe += interval[c];
+// let interval = '3m';
+// let timeframe = '';
+// for(let c=0; c< interval.length; c++){
+//     if(interval[c] < 'A'){
+//         timeframe += interval[c];
+//     }
+// }
+// console.log(parseInt(timeframe));
+
+(async () => {
+
+    const ccxt = require('ccxt');
+    const exchange = new ccxt['binance']({
+    'enableRateLimit': true,
+    'options': {
+        'adjustForTimeDifference': true,
+        'verbose': true,
+        'recvWindow': 10000000,
+        'warnOnFetchOHLCVLimitArgument': true
     }
-}
-console.log(parseInt(timeframe));
+    });
+    
+    const result = await exchange.fetchTicker('ETH/BTC');
+    console.log(result['last']);
+
+}) ()
