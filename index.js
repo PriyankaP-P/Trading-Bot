@@ -14,7 +14,7 @@ const stoploss = require('./stoploss');
 
 setInterval(async function app(){
     try{
-        const interval = '15m';// also declared in long.js
+        const interval = '1h';// also declared in long.js
         const standard_trade_currency = 'BTC';
         let base_currency = '/' + standard_trade_currency;
         let daily_cutoff_vol = 500;
