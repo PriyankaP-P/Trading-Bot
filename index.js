@@ -1,7 +1,7 @@
 "use strict";
 
 const trade = require('./trade');
-const long = require('./long');
+// const long = require('./long');
 const isEqual = require('./isEqual');
 const markets = require('./markets');
 const orders = require('./orders');
@@ -17,7 +17,7 @@ setInterval(async function app(){
         const interval = '1h';// also declared in long.js
         const standard_trade_currency = 'BTC';
         let base_currency = '/' + standard_trade_currency;
-        let daily_cutoff_vol = 500;
+        let daily_cutoff_vol = 700;
         const trade_amt= 0.005;
         
         let local_symbols = await markets.symbolsUsed(base_currency, daily_cutoff_vol);
