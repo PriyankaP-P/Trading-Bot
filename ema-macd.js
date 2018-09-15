@@ -7,7 +7,7 @@ async function calculateEmaMacd(ohlcv, period){
     //  const ohlcv = await exchange.fetchOHLCV(symbol, interval);
     let ema = [];
     let arr = [];
-    let signal_arr=[];
+    // let signal_arr=[];
     let prec;
     let multiplier = 2/(period +1);
     
@@ -34,12 +34,12 @@ async function calculateEmaMacd(ohlcv, period){
             ema.push(result);
                             
         }
-        for(let x = ema.length-2; x>=ema.length - 100; x--){
-            signal_arr.push(ema[x]);
-        }
-        return signal_arr;
+        // for(let x = ema.length-2; x>=0; x--){
+        //     signal_arr.push(ema[x]);
+        // }
+        return ema;
    }catch(error){
-       console.log(error + 'Failed at ema func');
+       console.log(error + 'Failed at ema-macd func');
    }
     
 }

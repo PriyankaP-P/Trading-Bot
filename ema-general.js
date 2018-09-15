@@ -35,9 +35,9 @@ async function calculateGeneralEma(data, period){
         // for(let x = ema.length-1; x>=ema.length - 10; x--){
         //     console.log(ema[x]);
         // }
-        return ema[ema.length-1];
+        return ema;
    }catch(error){
-       console.log(error + 'Failed at ema func');
+       console.log(error + 'Failed at ema-general func');
    }
     
 }
