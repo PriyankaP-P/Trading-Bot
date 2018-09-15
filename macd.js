@@ -1,0 +1,54 @@
+"use strict";
+
+const ema_general = require('./ema-general');
+const ema_macd = require('./ema-macd');
+const ccxt = require('ccxt');
+const exchange = new ccxt['binance']({
+    'enableRateLimit': true,
+    'options': {
+        'adjustForTimeDifference': true,
+        'verbose': true,
+        'recvWindow': 10000000,
+        'warnOnFetchOHLCVLimitArgument': true
+    }
+});
+
+
+
+async function calc_macd(){
+    try
+    {
+        let macd_arr=[];
+        
+        const ohlcv = await exchange.fetchOHLCV('BNB/BTC', '1h');
+        let ema12 = await ema_macd.calculateEmaMacd(ohlcv, 12);
+        let ema26 = await ema_macd.calculateEmaMacd(ohlcv, 26);
+        
+        for(let i=0; i< ema12.length; i++){
+            let diff = ema12[i] -ema26[i];
+            
+            let temp = Math.round(diff*(Math.pow(10, 8)))/(Math.pow(10, 8));
+            macd_arr.push(temp);
+        }
+        
+        console.log(`ema12= ${ema12}`);  
+        console.log(`ema26= ${ema26}`);   
+        console.log(`macd_arr= ${macd_arr}`);   
+           
+        return macd_arr;   
+
+    }catch(error){
+        console.log("Error at macd function " + error );
+    }
+}
+
+
+(async function call(){
+    let macd_arr_data = await calc_macd();
+    let reversed_arr = macd_arr_data.reverse();
+    let signal = await ema_general.calculateGeneralEma(reversed_arr, 9);
+    // let signal_round = Math.round(signal*(Math.pow(10, 8)))/(Math.pow(10, 8));  
+    console.log(`signal_round =`);
+    console.log(`${signal}`);
+    
+})();

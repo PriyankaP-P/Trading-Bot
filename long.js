@@ -54,9 +54,11 @@ async function long_positions(interval){
     let action = 'ask';
     let timeframe = maintenance.get_timeframe(interval);
     let delay;
-    if(timeframe > 4 ){
+    if(interval === '1m' || interval === '3m' || interval == '5m' || interval === '15m' ||
+        interval === '30m'){
         delay = timeframe; 
-    }else {
+    }else if(interval === '1h' || interval === '2h' ||
+            interval === '4h' || interval == '6h' || interval === '8h' ) {
         delay =timeframe *60;
     }
     console.log(`timeframe  = ${timeframe}  delay = ${delay}`);
@@ -82,7 +84,7 @@ async function long_positions(interval){
                 if(condition === true && timePassed > (timePassed + (delay*2*60*1000)) && sell_list[i].transaction_id !== open_sell_orders[j].selling_pair_id ){ 
             
                  await update_sell_orders(sell_list[i], action);
-                    
+                 console.log("checking for sell condition ");   
                 }else {
                     console.log("condition not met");
                 }   
@@ -91,7 +93,7 @@ async function long_positions(interval){
             if(condition === true && timePassed > (timePassed + (delay*2*60*1000))){ 
             
                 await update_sell_orders(sell_list[i], action);
-                
+                console.log("checking for sell condition");
             }else {
                 console.log("condition not met");
             }   
