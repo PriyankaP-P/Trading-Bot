@@ -47,7 +47,7 @@ async function cut_loss(stop_loss_percent){
         let symbol_pair = current_buys[i].symbol_pair;
         let last_price = await get_price(symbol_pair);
         console.log(last_price);
-        let open_sell_orders_for_stoploss = await database('transactions')
+        let open_sell_orders_for_stoploss = await database('transactions')//from here till nest comment mark code repeated in trailing-stop , convert to function
                                                 .where({transaction_type: 'sell',
                                                         fulfilled: false,
                                                         order_status: 'open'})
@@ -80,7 +80,7 @@ async function cut_loss(stop_loss_percent){
                                                 .then(rows => rows)
                                                 .catch(error =>console.log(error))
             }
-        }
+        }//
     }
     }catch(e){
         console.log(e);
@@ -88,9 +88,12 @@ async function cut_loss(stop_loss_percent){
 }
 
 
+setInterval(async function prevent_loss(){
+    const stop_loss_percent = 3;
+    await cut_loss(stop_loss_percent);
+}, 20000);
 
 
 module.exports = {
-    get_price,
-    cut_loss
+    get_price
 };

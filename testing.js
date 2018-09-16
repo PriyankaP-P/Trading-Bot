@@ -110,9 +110,9 @@
     }
     });
     
-    // const result = await exchange.fetchTicker('ETH/BTC');
-    // console.log(result['last']);
-    const ohlcv = await exchange.fetchOHLCV('ETH/BTC', '1h');
-    console.log(ohlcv[0][4]);
+    const result = await exchange.fetchTicker('ETH/BTC');
+    console.log(result);
+    // const ohlcv = await exchange.fetchOHLCV('ETH/BTC', '1h');
+    // console.log(ohlcv[0][4]);
 
-}) ()
+}) ();

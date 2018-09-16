@@ -49,7 +49,7 @@ async function calc_macd(){
     let signal_round =[];
   
     let macd_arr_data = await calc_macd();
-    // console.log(macd_arr_data.length);
+    console.log(macd_arr_data.reverse());
     let signal = await ema_general.calculateGeneralEma(macd_arr_data, 9);
     for(let i=0; i< signal.length; i ++){
         let temp =Math.round(signal[i]*(Math.pow(10, 8)))/(Math.pow(10, 8));
@@ -57,7 +57,7 @@ async function calc_macd(){
     }
     let rev = signal_round.reverse();
     // for(let j= rev.length-1; j>=0; j--){
-        console.log(rev.length);
+    //     console.log(rev[j]);
     // }
     }catch(e){
         console.log('error at call func in macd.js '+ e);

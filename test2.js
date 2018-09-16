@@ -2,11 +2,11 @@
 const database = require('./knexfile'); 
 const date = new Date();
 
-//   database('transactions').insert({trade_date: date, symbol_pair: 'LTC/BTC',
-//                             price_base_currency: 0.008946, equivalent_amt_base_currency: 0.01, 
-//                             transaction_type: 'sell', fulfilled: 't', order_status: 'closed',
+//   database('transactions').insert({trade_date: date, symbol_pair: 'BNB/BTC',
+//                             price_base_currency: 0.00149060, equivalent_amt_base_currency: 0.005000000, 
+//                             transaction_type: 'buy', fulfilled: 't', order_status: 'closed',
 //                             exchange_client_id: '63047189', exchange_timestamp: '1536359093097',
-//                             position_status: 'old',selling_pair_id: 'da1bb6f2-1a90-41f2-97fd-a139032246c7'
+//                             position_status: 'new'
 //                         })
 //                         .then(function(row){
 //                         console.log(row);
@@ -14,14 +14,17 @@ const date = new Date();
 //                         console.log(err);
 //                     })
 
- database('transactions').where('transaction_id', 'd70d1973-853c-4e7b-9ca9-f23121782660')
-            
-            .del()    
-            .then(function(row){
-                console.log(row);
-            }).catch(function(err){
-                console.log(err);
-            })
+
+
+// // database('transactions').update()
+ database('transactions').where('transaction_id', '9fa881c4-1ae1-4c72-a115-5996b6c68288')
+                         .update({fulfilled: 'true',
+                                order_status: 'closed' })    
+                        .then(function(row){
+                            console.log(row);
+                        }).catch(function(err){
+                        console.log(err);
+                        }) 
 // where('transaction_id', '7cba3de4-9e42-4f23-8b81-2b70e15e1201')
 //, selling_pair_id: '87e172c9-2b27-4ca7-987d-2449db219a3e'
 

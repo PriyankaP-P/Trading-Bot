@@ -22,10 +22,10 @@ async function tics(symbol, action){
     let result;
    
     if(action === "bid"){
-        result = bid;//- (bid*0.20)   ,bid - (bid*0.00001)  enter bid price at 0.1% lower than current bid if code was faster
+        result = bid- (bid*0.0002);//  enter bid price at 0.02% lower than current bid if code was faster
         
     } else if(action === "ask"){
-        result = ask; //  + (ask*0.20)
+        result = ask+ (ask*0.0002); 
         
     } else {
         result =  undefined;
