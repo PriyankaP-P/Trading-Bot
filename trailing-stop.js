@@ -220,7 +220,7 @@ async function update_trailing_stop(){
 
 setInterval(async function call_all(){
     try{
-        const trailing_percent = 1;
+        // const trailing_percent = 1;
         await start_trailing();
         await update_highest_price();
         await update_trailing_stop();
