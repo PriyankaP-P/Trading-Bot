@@ -107,7 +107,7 @@ async function long_positions(interval){
 
 setInterval(async function sale_app(){
     try{
-        const interval = '1h';
+        const interval = '15m';
         
         await long_positions(interval);
         console.log("sale app works");

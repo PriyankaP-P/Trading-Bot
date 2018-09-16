@@ -15,16 +15,15 @@ const date = new Date();
 //                     })
 
 
+// database('transactions').update()
+// database('transactions').select('transaction_type')
+//                         .whereIn('transaction_id' , '06193978-d8f8-46cf-96eb-b6d0caeb05ca')
 
-// // database('transactions').update()
- database('transactions').where('transaction_id', '9fa881c4-1ae1-4c72-a115-5996b6c68288')
-                         .update({fulfilled: 'true',
-                                order_status: 'closed' })    
-                        .then(function(row){
-                            console.log(row);
-                        }).catch(function(err){
-                        console.log(err);
-                        }) 
+//                         .then(function(row){
+//                             console.log(row);
+//                         }).catch(function(err){
+//                         console.log(err);
+//                         }) 
 // where('transaction_id', '7cba3de4-9e42-4f23-8b81-2b70e15e1201')
 //, selling_pair_id: '87e172c9-2b27-4ca7-987d-2449db219a3e'
 

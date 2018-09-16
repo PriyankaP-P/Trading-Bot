@@ -14,7 +14,7 @@ const stoploss = require('./stoploss');
 
 setInterval(async function app(){
     try{
-        const interval = '1h';// also declared in long.js
+        const interval = '15m';// also declared in long.js
         const standard_trade_currency = 'BTC';
         let base_currency = '/' + standard_trade_currency;
         let daily_cutoff_vol = 700;
@@ -26,7 +26,7 @@ setInterval(async function app(){
         let isEqual_result = await isEqual.arr_list(arr_to_scan, interval);
         let available_balance = await balances.account_balance(standard_trade_currency);
         await trade.call_trade_symbol(isEqual_result, available_balance, trade_amt);
-        await trailing_stop.trailing_stop(trailing_percent);
+        await trailing_stop.trailing_stop_func(trailing_percent);
         console.log("scan app works");
     }catch(e){
         console.log(e);

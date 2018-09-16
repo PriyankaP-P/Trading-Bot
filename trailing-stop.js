@@ -51,6 +51,7 @@ async function start_trailing(){
                                                         trailing_status: 't'})
                                                         .then(row => row)
                                                         .catch(error => console.log(error))
+                        console.log('trailing started');
                     }
                 }
             } else{
@@ -61,6 +62,8 @@ async function start_trailing(){
                                                 trailing_status: 't'})
                                                 .then(row => row)
                                                 .catch(error => console.log(error))
+                console.log('trailing started');
+
             }
            
            
@@ -79,7 +82,7 @@ async function update_highest_price(){
                                                 .catch(e => console.log(e))
         for(let i=0; i< open_trail.length; i++){
             let updated_price = await stoploss.get_price(open_trail[i].symbol_pair);
-            if(updated_price > open_trail[i].trailing_price){
+            if(updated_price > open_trail[i].trailing_price){//>
                 await database('trail').where('transaction_id', open_trail[i].transaction_id)
                                         .update('trailing_price', updated_price)
                                         .then(row => row)
@@ -96,10 +99,10 @@ async function update_highest_price(){
 
 
 
-async function trailing_stop(trailing_percent){
+async function trailing_stop_func(trailing_percent){
     try{
         let currentPrice;
-        // const trailing_percent = 1;
+        
         let percent_conv = trailing_percent/100;
         let check_price = await database('trail').where('trailing_status', 'true')
                                                 .select()
@@ -187,15 +190,17 @@ async function update_trailing_stop(){
         if(fetch_closed.length > 0){
             for(let i=0; i< fetch_closed.length; i++){
                 let corresponding_sale = await database('transactions')
-                                                 .where('selling_pair_id', fetch_closed[i].transaction_id)
-                                                 .select('order_status')
-                                                  .then(function(row){
-                                                  return row;
-                                                  }).catch(function(err){
+                                                .where('selling_pair_id', fetch_closed[i].transaction_id)
+                                                .select('order_status')
+                                                .then(function(row){
+                                                    return row;
+                                                }).catch(function(err){
                                                   console.log(err);
-                                                  })
+                                                })
 
-                if(corresponding_sale[0].order_status === 'closed'){
+              if(corresponding_sale.length>0)
+               { 
+                   if(corresponding_sale[0].order_status === 'closed'){
                     await database('trail').where('transaction_id', fetch_closed[i].transaction_id)
                                             .update('trailing_status', 'false')
                                             .then(function(row){
@@ -203,7 +208,9 @@ async function update_trailing_stop(){
                                             }).catch(function(err){
                                             console.log(err);
                                             })
-                }
+                }else{
+                    console.log("no closed orders");
+                }}
         }}
     }catch(error){
         console.log(error);
@@ -212,11 +219,18 @@ async function update_trailing_stop(){
 
 
 setInterval(async function call_all(){
-    await start_trailing();
-    await update_highest_price();
-    await update_trailing_stop();
-}, 30000);
+    try{
+        const trailing_percent = 1;
+        await start_trailing();
+        await update_highest_price();
+        await update_trailing_stop();
+        // await trailing_stop_func(trailing_percent);
+    }catch(e){
+        console.log(e);
+    }
+    
+}, 2000);
 
 module.exports={
-    trailing_stop
+    trailing_stop_func
 };
