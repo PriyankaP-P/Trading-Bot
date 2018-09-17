@@ -81,7 +81,7 @@ async function long_positions(interval){
                       
         if(open_sell_orders.length >0){                                
             for(let j =0; j< open_sell_orders.length; j++){
-                if(condition === true && timePassed > (timePassed + (delay*2*60*1000)) && sell_list[i].transaction_id !== open_sell_orders[j].selling_pair_id ){ 
+                if(condition === true && timePassed > (timePassed + (delay*60*1000)) && sell_list[i].transaction_id !== open_sell_orders[j].selling_pair_id ){ 
             
                  await update_sell_orders(sell_list[i], action);
                  console.log("checking for sell condition ");   
@@ -90,7 +90,7 @@ async function long_positions(interval){
                 }   
             }
         }else{
-            if(condition === true && timePassed > (timePassed + (delay*2*60*1000))){ 
+            if(condition === true && timePassed > (timePassed + (delay*60*1000))){ 
             
                 await update_sell_orders(sell_list[i], action);
                 console.log("checking for sell condition");
