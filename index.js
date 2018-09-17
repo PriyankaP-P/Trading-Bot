@@ -38,7 +38,7 @@ setInterval(async function app() {
         let currentTime = start_time + (180 * 60 * 60000);
         let nowTime =+time;
         console.log(`current time ${nowTime},,,, ${currentTime}`);
-    if (nowTime >= (start_time + (180 * 60 * 60000))) {
+    if (nowTime >= (start_time + (1.5 * 60 * 60000))) {
       //(180 * 60 * 60000)
       await trade.call_trade_symbol(
         isEqual_result,
