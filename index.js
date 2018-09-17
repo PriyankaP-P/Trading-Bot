@@ -19,7 +19,7 @@ console.log(start_time);
 setInterval(async function app() {
   try {
       let time = new Date();
-    const interval = "15m"; // also declared in long.js
+    const interval = "1h"; // also declared in long.js
     const standard_trade_currency = "BTC";
     let base_currency = "/" + standard_trade_currency;
     let daily_cutoff_vol = 700;
