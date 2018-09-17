@@ -35,7 +35,7 @@ setInterval(async function app() {
     let available_balance = await balances.account_balance(
       standard_trade_currency
     );
-        let currentTime = start_time + (180 * 60 * 60000);
+        let currentTime = start_time + (1.5 * 60 * 60000);
         let nowTime =+time;
         console.log(`current time ${nowTime},,,, ${currentTime}`);
     if (nowTime >= (start_time + (1.5 * 60 * 60000))) {
