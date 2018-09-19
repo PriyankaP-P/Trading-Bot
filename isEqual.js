@@ -72,6 +72,8 @@ async function loop (data, interval) {
                 if(error) throw error;
             } 
         ); 
+    console.log('trade symbols');
+    console.log(trade_symbols);
     return trade_symbols;
    } catch (err){
     console.log(err);

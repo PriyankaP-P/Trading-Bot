@@ -9,7 +9,6 @@ const date = new Date();
 
 async function record(data1, available_balance, trade_amt){//get total balance
     try{
-        let possible_positions= [];
         
        console.log(available_balance);
         let amount = available_balance;
@@ -38,9 +37,7 @@ async function record(data1, available_balance, trade_amt){//get total balance
             if(data1[i][1] === 'bid' && available_balance> trade_amt){
 
                 transaction = 'buy';
-                
-                possible_positions.push([data1[i][0], data1[i][1], price, transaction]);
-                
+                              
                 let add = await database('transactions').insert({trade_date: date, symbol_pair: data1[i][0], 
                     price_base_currency: price, equivalent_amt_base_currency: trade_amt, 
                     transaction_type: transaction, fulfilled: 'f', order_status: 'open' })
