@@ -31,7 +31,7 @@ setInterval(async function app() {
     let base_currency = "/" + standard_trade_currency;
     let daily_cutoff_vol = 700;
     const trade_amt = 0.005;
-    const trailing_percent = 1;
+    const trailing_percent = 3;
 
     let local_symbols = await markets.symbolsUsed(
       base_currency,
