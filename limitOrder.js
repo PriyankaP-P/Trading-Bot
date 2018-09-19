@@ -5,8 +5,8 @@ const database = require("./knexfile");
 const balances = require("./checkBalance");
 
 const exchange = new ccxt.binance({
-  apiKey: "Ll8IQXn6q4ejxCM1QbQSUhUHqKR1ClRFh8U9YOACtw8hnwBGfZ9cpXTGmurVF1cl",
-  secret: "5nIYua2pdA2muFNt40JaksHRtqIXmzk38MGMwePPEeW2uKvB48BQNRjCKaaUU0k4",
+  apiKey: "L-8IQXn6q4ejxCM1QbQSUhUHqKR1ClRFh-------ACtw8hnwBGfZ9cpXTGmurVF1cl",
+  secret: "5n------pdA2muFNt40JaksHRtqIXmzk38MGMwePPEeW2uKvB48BQNRjCKaaUU0k4",
   timeout: 60000,
   enableRateLImit: true,
   options: {

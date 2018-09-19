@@ -9,13 +9,13 @@ async function equal_ema(ohlcv){
     let ema13 =await ema.calculateEma(ohlcv, 13);
     let ema8 =await ema.calculateEma(ohlcv, 8);
     
-    let perCent55_21 = ((ema55-ema21)/ema55)*100;
-    let perCent55_13 = ((ema55-ema13)/ema55)*100;
-    let perCent55_8 = ((ema55-ema8)/ema55)*100;
+    let perCent21_55 = ((ema21-ema55)/ema55)*100;
+    let perCent13_55 = ((ema13-ema55)/ema55)*100;
+    let perCent8_55 = ((ema8-ema55)/ema55)*100;
 
-    if((perCent55_21 <= 0.05 && perCent55_21 >= -0.05)||
-      (perCent55_13 <= 0.05 && perCent55_13 >= -0.05)
-     ||(perCent55_8 <= 0.05 && perCent55_8 >= -0.05)) {
+    if((perCent21_55 <= 0.05 && perCent21_55 >= -0.05)||
+      (perCent13_55 <= 0.05 && perCent13_55 >= -0.05)
+     ||(perCent8_55 <= 0.05 && perCent8_55 >= -0.05)) {
            
         equal_ema_condition = true;
 
