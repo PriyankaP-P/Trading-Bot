@@ -49,7 +49,13 @@ async function record(data1, available_balance, trade_amt){//get total balance
                 }).catch(function(err){
                     console.log(err);
                 })
-
+                fs.appendFile(
+                    "log.txt",
+                    `${date}  placing sell order at ${price} for ${data1[i][0]} \n`,
+                    error => {
+                        if(error) throw error;
+                    } 
+                );
                     available_balance= available_balance - trade_amt;
             }else{
                 console.log("insufficient base currency balance");
