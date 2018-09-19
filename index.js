@@ -13,8 +13,7 @@ const maintenance = require("./maintenance");
 const stoploss = require("./stoploss");
 const date = new Date();
 
-const start_time = +date;
-console.log(start_time);
+
 
 setInterval(async function app() {
   try {
@@ -35,11 +34,7 @@ setInterval(async function app() {
     let available_balance = await balances.account_balance(
       standard_trade_currency
     );
-        let currentTime = start_time + (1.5 * 60 * 60000);
-        let nowTime =+time;
-        console.log(`current time ${nowTime},,,, ${currentTime}`);
-    if (nowTime >= (start_time + (1.5 * 60 * 60000))) {
-      //(180 * 60 * 60000)
+        
       await trade.call_trade_symbol(
         isEqual_result,
         available_balance,
@@ -47,15 +42,13 @@ setInterval(async function app() {
       );
       await trailing_stop.trailing_stop_func(trailing_percent);
       console.log("scan app works");
-    } else {
-      console.log("Scanning market");
-    }
+   
   } catch (e) {
     console.log(e);
   }
 }, 20000);
 
 setInterval(async function prevent_loss() {
-  const stop_loss_percent = 2;
+  const stop_loss_percent = 1;
   await stoploss.cut_loss(stop_loss_percent);
 }, 20000);

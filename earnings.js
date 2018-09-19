@@ -20,8 +20,7 @@ async function past_trades(){
                                 return rows;
                             }).catch(function(error){
                                 console.log(error);})
-        let percent_change = ((buy_pair[0].price_base_currency - 
-                            list_old_trades[i].price_base_currency)/buy_pair[0].price_base_currency)*100;
+        let percent_change = ((list_old_trades[i].price_base_currency- buy_pair[0].price_base_currency )/buy_pair[0].price_base_currency)*100;
         
      
         await database('revenue').insert({buying_price: buy_pair[0].price_base_currency,

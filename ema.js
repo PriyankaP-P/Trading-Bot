@@ -33,9 +33,7 @@ async function calculateEma(ohlcv, period){
             ema.push(result);
                             
         }
-        // for(let x = ema.length-1; x>=ema.length - 10; x--){
-        //     console.log(ema[x]);
-        // }
+        
         return ema[ema.length-2];
    }catch(error){
        console.log(error + 'Failed at ema func');
