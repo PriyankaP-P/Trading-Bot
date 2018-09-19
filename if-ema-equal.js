@@ -13,9 +13,9 @@ async function equal_ema(ohlcv){
     let perCent55_13 = ((ema55-ema13)/ema55)*100;
     let perCent55_8 = ((ema55-ema8)/ema55)*100;
 
-    if((perCent55_21 <= 0.02 && perCent55_21 >= -0.02)||
-      (perCent55_13 <= 0.02 && perCent55_13 >= -0.02)
-     ||(perCent55_8 <= 0.02 && perCent55_8 >= -0.02)) {
+    if((perCent55_21 <= 0.05 && perCent55_21 >= -0.05)||
+      (perCent55_13 <= 0.05 && perCent55_13 >= -0.05)
+     ||(perCent55_8 <= 0.05 && perCent55_8 >= -0.05)) {
            
         equal_ema_condition = true;
 
