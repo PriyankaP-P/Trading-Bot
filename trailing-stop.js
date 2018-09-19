@@ -3,6 +3,7 @@
 const database = require("./knexfile.js");
 const stoploss = require("./stoploss");
 const date = new Date();
+const fs = require('fs');
 
 const ccxt = require("ccxt");
 const exchange = new ccxt["binance"]({
@@ -55,6 +56,13 @@ async function start_trailing() {
               .then(row => row)
               .catch(error => console.log(error));
             console.log("trailing started");
+            fs.appendFile(
+              "log.txt",
+              `${date}  trailing started,scanned for duplicates, transac_id =  ${transac_id} trailing_price: ${price}\n`,
+              error => {
+                  if(error) throw error;
+              } 
+          );
           }
         }
       } else {
@@ -69,6 +77,13 @@ async function start_trailing() {
           .then(row => row)
           .catch(error => console.log(error));
         console.log("trailing started");
+        fs.appendFile(
+          "log.txt",
+          `${date}  trailing started, transac_id =  ${transac_id} trailing_price: ${price}\n`,
+          error => {
+              if(error) throw error;
+          } 
+      );
       }
     }
   } catch (error) {

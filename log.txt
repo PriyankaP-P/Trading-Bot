@@ -1,0 +1,38 @@
+--------------Log files---------- 
+ 
+ 
+Tue Sep 18 2018 19:40:13 GMT-0700 (Pacific Daylight Time)     timeframe  = 1  delay = 60  
+Tue Sep 18 2018 19:40:13 GMT-0700 (Pacific Daylight Time)  sale app works 
+Tue Sep 18 2018 19:40:13 GMT-0700 (Pacific Daylight Time) coins scanned for volume limit =  ADA/BTC,BCH/BTC,BNB/BTC,DOCK/BTC,EOS/BTC,ETC/BTC,ETH/BTC,HOT/BTC,ICX/BTC,IOTA/BTC,LTC/BTC,NANO/BTC,NEO/BTC,RCN/BTC,TRX/BTC,VET/BTC,VIBE/BTC,XLM/BTC,XRP/BTC 
+Tue Sep 18 2018 19:40:13 GMT-0700 (Pacific Daylight Time) open_arr =   
+Tue Sep 18 2018 19:40:13 GMT-0700 (Pacific Daylight Time) new_open_arr =   
+Tue Sep 18 2018 19:40:13 GMT-0700 (Pacific Daylight Time) filtered_symbols =  ADA/BTC,BCH/BTC,BNB/BTC,DOCK/BTC,EOS/BTC,ETC/BTC,ETH/BTC,HOT/BTC,ICX/BTC,IOTA/BTC,LTC/BTC,NANO/BTC,NEO/BTC,RCN/BTC,TRX/BTC,VET/BTC,VIBE/BTC,XLM/BTC,XRP/BTC 
+Tue Sep 18 2018 19:40:13 GMT-0700 (Pacific Daylight Time)     timeframe  = 1  delay = 60  
+Tue Sep 18 2018 19:40:13 GMT-0700 (Pacific Daylight Time)  sale app works 
+Tue Sep 18 2018 19:40:13 GMT-0700 (Pacific Daylight Time) coins scanned for volume limit =  ADA/BTC,BCH/BTC,BNB/BTC,DOCK/BTC,EOS/BTC,ETC/BTC,ETH/BTC,HOT/BTC,ICX/BTC,IOTA/BTC,LTC/BTC,NANO/BTC,NEO/BTC,RCN/BTC,TRX/BTC,VET/BTC,VIBE/BTC,XLM/BTC,XRP/BTC 
+Tue Sep 18 2018 19:40:13 GMT-0700 (Pacific Daylight Time) open_arr =   
+Tue Sep 18 2018 19:40:13 GMT-0700 (Pacific Daylight Time) new_open_arr =   
+Tue Sep 18 2018 19:40:13 GMT-0700 (Pacific Daylight Time) filtered_symbols =  ADA/BTC,BCH/BTC,BNB/BTC,DOCK/BTC,EOS/BTC,ETC/BTC,ETH/BTC,HOT/BTC,ICX/BTC,IOTA/BTC,LTC/BTC,NANO/BTC,NEO/BTC,RCN/BTC,TRX/BTC,VET/BTC,VIBE/BTC,XLM/BTC,XRP/BTC 
+Tue Sep 18 2018 19:40:13 GMT-0700 (Pacific Daylight Time)  equal_symbols =   
+Tue Sep 18 2018 19:40:13 GMT-0700 (Pacific Daylight Time)  trade symbol =  
+Tue Sep 18 2018 19:40:13 GMT-0700 (Pacific Daylight Time)  result trade symbol =  
+Tue Sep 18 2018 19:40:13 GMT-0700 (Pacific Daylight Time)  available balance(amount) = 0.00601838 
+Tue Sep 18 2018 19:40:13 GMT-0700 (Pacific Daylight Time) scan app works 
+Tue Sep 18 2018 19:40:13 GMT-0700 (Pacific Daylight Time)     timeframe  = 1  delay = 60  
+Tue Sep 18 2018 19:40:13 GMT-0700 (Pacific Daylight Time)  sale app works 
+Tue Sep 18 2018 19:40:13 GMT-0700 (Pacific Daylight Time)  trade symbol =  
+Tue Sep 18 2018 19:40:13 GMT-0700 (Pacific Daylight Time)  result trade symbol =  
+Tue Sep 18 2018 19:40:13 GMT-0700 (Pacific Daylight Time)  equal_symbols =   
+Tue Sep 18 2018 19:40:13 GMT-0700 (Pacific Daylight Time)  available balance(amount) = 0.00601838 
+Tue Sep 18 2018 19:40:13 GMT-0700 (Pacific Daylight Time) scan app works 
+Tue Sep 18 2018 19:40:13 GMT-0700 (Pacific Daylight Time)     timeframe  = 1  delay = 60  
+Tue Sep 18 2018 19:40:13 GMT-0700 (Pacific Daylight Time)  sale app works 
+Tue Sep 18 2018 19:40:13 GMT-0700 (Pacific Daylight Time) coins scanned for volume limit =  ADA/BTC,BCH/BTC,BNB/BTC,DOCK/BTC,EOS/BTC,ETC/BTC,ETH/BTC,HOT/BTC,ICX/BTC,IOTA/BTC,LTC/BTC,NANO/BTC,NEO/BTC,RCN/BTC,TRX/BTC,VET/BTC,VIBE/BTC,XLM/BTC,XRP/BTC 
+Tue Sep 18 2018 19:40:13 GMT-0700 (Pacific Daylight Time) open_arr =   
+Tue Sep 18 2018 19:40:13 GMT-0700 (Pacific Daylight Time) filtered_symbols =  ADA/BTC,BCH/BTC,BNB/BTC,DOCK/BTC,EOS/BTC,ETC/BTC,ETH/BTC,HOT/BTC,ICX/BTC,IOTA/BTC,LTC/BTC,NANO/BTC,NEO/BTC,RCN/BTC,TRX/BTC,VET/BTC,VIBE/BTC,XLM/BTC,XRP/BTC 
+Tue Sep 18 2018 19:40:13 GMT-0700 (Pacific Daylight Time) new_open_arr =   
+Tue Sep 18 2018 19:40:13 GMT-0700 (Pacific Daylight Time)  equal_symbols =   
+Tue Sep 18 2018 19:40:13 GMT-0700 (Pacific Daylight Time)  result trade symbol =  
+Tue Sep 18 2018 19:40:13 GMT-0700 (Pacific Daylight Time)  trade symbol =  
+Tue Sep 18 2018 19:40:13 GMT-0700 (Pacific Daylight Time)  available balance(amount) = 0.00601838 
+Tue Sep 18 2018 19:40:13 GMT-0700 (Pacific Daylight Time) scan app works 

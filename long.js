@@ -1,6 +1,6 @@
 
 "use strict";
-
+const fs = require('fs');
 const ccxt = require('ccxt');
 const exchange = new ccxt['binance']({
     'enableRateLimit': true,
@@ -62,12 +62,27 @@ async function long_positions(interval){
         delay =timeframe *60;
     }
     console.log(`timeframe  = ${timeframe}  delay = ${delay}`);
+    fs.appendFile(
+        "log.txt",
+        `${date}     timeframe  = ${timeframe}  delay = ${delay}  \n`,
+        error => {
+            if(error) throw error;
+        } 
+    );
+
     for(let i=0; i< sell_list.length; i++){
 
         const ohlcv = await exchange.fetchOHLCV(sell_list[i].symbol_pair, interval);
         let condition = await if_equal.equal_ema(ohlcv);
         let timePassed = parseInt(sell_list[i].exchange_timestamp);
         console.log(`time passed = ${timePassed}`)
+        fs.appendFile(
+            "log.txt",
+            `${date}     time passed = ${timePassed} \n`,
+            error => {
+                if(error) throw error;
+            } 
+        );
         let open_sell_orders = await database('transactions')
                                         .where({transaction_type: 'sell',
                                                 fulfilled: false,
@@ -111,6 +126,14 @@ setInterval(async function sale_app(){
         
         await long_positions(interval);
         console.log("sale app works");
+        fs.appendFile(
+            "log.txt",
+            `${date}  sale app works \n`,
+            error => {
+                if(error) throw error;
+            } 
+        );
+        
     }catch(e){
         console.log(e);
     }

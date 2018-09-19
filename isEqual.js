@@ -1,5 +1,6 @@
-
+const fs =require('fs');
 const ccxt = require('ccxt');
+const date = new Date();
 const exchange = new ccxt['binance']({
     'enableRateLimit': true,
     'options': {
@@ -29,6 +30,14 @@ async function loop (data, interval) {
         }    
         }    
         console.log(`equal_symbols =  ${ equal_symbols}`);
+        
+        fs.appendFile(
+            "log.txt",
+            `${date}  equal_symbols =  ${ equal_symbols} \n`,
+            error => {
+                if(error) throw error;
+            } 
+        );
         const trade_symbols =[];    
         
         for (let i = 0; i < equal_symbols.length; i++) {
@@ -47,8 +56,22 @@ async function loop (data, interval) {
             } 
         else{
             console.log('action = '+ action + ' for symbol=' + equal_symbols[i]);
+            fs.appendFile(
+                "log.txt",
+                `${date}  action = ${action} for symbol = ${equal_symbols[i]} \n`,
+                error => {
+                    if(error) throw error;
+                } 
+            );
             }      
-    }   
+    }  
+        fs.appendFile(
+            "log.txt",
+            `${date}  trade symbol = ${await trade_symbols} \n`,
+            error => {
+                if(error) throw error;
+            } 
+        ); 
     return trade_symbols;
    } catch (err){
     console.log(err);
@@ -60,7 +83,13 @@ async function arr_list(arr_to_scan, interval) {
    
        try{
             let result_tradeSymbol = await loop(arr_to_scan, interval);
-            
+            fs.appendFile(
+                "log.txt",
+                `${date}  result trade symbol = ${result_tradeSymbol} \n`,
+                error => {
+                    if(error) throw error;
+                } 
+            ); 
             return result_tradeSymbol;
        }catch (err){
              console.log(err);

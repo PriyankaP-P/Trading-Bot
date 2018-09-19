@@ -1,6 +1,7 @@
 "use strict";
 
 const database = require('./knexfile.js');
+const fs = require('fs');
 const date = new Date();
 const ccxt = require('ccxt');
 const exchange = new ccxt['binance']({
@@ -67,6 +68,13 @@ async function cut_loss(stop_loss_percent){
                                                     order_status: 'open', selling_pair_id: current_buys[i].transaction_id})
                                                     .then(rows => rows)
                                                     .catch(error =>console.log(error))
+                      fs.appendFile(
+                           "log.txt",
+                           `${date}  stoploss created, filtered for duplicate, selling pair id = ${current_buys[i].transaction_id} \n`,
+                           error => {
+                               if(error) throw error;
+                           } 
+                       );
                 }
             }
         }else{
@@ -79,6 +87,15 @@ async function cut_loss(stop_loss_percent){
                                                 order_status: 'open', selling_pair_id: current_buys[i].transaction_id})
                                                 .then(rows => rows)
                                                 .catch(error =>console.log(error))
+
+
+                 fs.appendFile(
+                     "log.txt",
+                     `${date}  stoploss created,first occurance, selling pair id = ${current_buys[i].transaction_id} \n`,
+                     error => {
+                         if(error) throw error;
+                     } 
+                 );
             }
         }
     }

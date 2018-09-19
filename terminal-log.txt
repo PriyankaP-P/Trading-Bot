@@ -1,0 +1,29 @@
+timeframe  = 1  delay = 60
+sale app works
+[]
+new_open_arr = 
+filtered_symbols =  ADA/BTC,BCH/BTC,BNB/BTC,DOCK/BTC,EOS/BTC,ETC/BTC,ETH/BTC,HOT/BTC,ICX/BTC,IOTA/BTC,LTC/BTC,NANO/BTC,NEO/BTC,RCN/BTC,TRX/BTC,VET/BTC,VIBE/BTC,XLM/BTC,XRP/BTC
+timeframe  = 1  delay = 60
+sale app works
+[]
+new_open_arr = 
+filtered_symbols =  ADA/BTC,BCH/BTC,BNB/BTC,DOCK/BTC,EOS/BTC,ETC/BTC,ETH/BTC,HOT/BTC,ICX/BTC,IOTA/BTC,LTC/BTC,NANO/BTC,NEO/BTC,RCN/BTC,TRX/BTC,VET/BTC,VIBE/BTC,XLM/BTC,XRP/BTC
+equal_symbols =  
+0.00601838
+amount = 0.00601838
+scan app works
+timeframe  = 1  delay = 60
+sale app works
+equal_symbols =  
+0.00601838
+amount = 0.00601838
+scan app works
+timeframe  = 1  delay = 60
+sale app works
+[]
+new_open_arr = 
+filtered_symbols =  ADA/BTC,BCH/BTC,BNB/BTC,DOCK/BTC,EOS/BTC,ETC/BTC,ETH/BTC,HOT/BTC,ICX/BTC,IOTA/BTC,LTC/BTC,NANO/BTC,NEO/BTC,RCN/BTC,TRX/BTC,VET/BTC,VIBE/BTC,XLM/BTC,XRP/BTC
+equal_symbols =  
+0.00601838
+amount = 0.00601838
+scan app works

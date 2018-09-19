@@ -1,5 +1,6 @@
 "use strict";
-
+const fs =require('fs');
+const date = new Date();
 const ccxt = require('ccxt');
 const exchange = new ccxt['binance']({
     'options': {
@@ -26,6 +27,15 @@ async function symbolsUsed(base_currency, daily_cutoff_vol){
             btc_arr.push(symbol_used[i]); 
         }
     }
+        
+    fs.appendFile(
+        "log.txt",
+        `${date} coins scanned for volume limit =  ${btc_arr} \n`,
+        error => {
+            if(error) throw error;
+        } 
+    );    
+    
     return btc_arr;
 }
 

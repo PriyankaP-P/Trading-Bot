@@ -12,7 +12,15 @@ const limitOrder = require("./limitOrder");
 const maintenance = require("./maintenance");
 const stoploss = require("./stoploss");
 const date = new Date();
+const fs = require('fs');
 
+fs.writeFile(
+  "log.txt",
+  "--------------Log files---------- \n \n \n",
+  error => {
+    if(error) throw error;
+  }
+);
 
 
 setInterval(async function app() {
@@ -42,13 +50,20 @@ setInterval(async function app() {
       );
       await trailing_stop.trailing_stop_func(trailing_percent);
       console.log("scan app works");
+      fs.appendFile(
+        "log.txt",
+        `${date} scan app works \n`,
+        error => {
+            if(error) throw error;
+        } 
+    );
    
   } catch (e) {
     console.log(e);
   }
-}, 20000);
+}, 40000);
 
 setInterval(async function prevent_loss() {
   const stop_loss_percent = 1;
   await stoploss.cut_loss(stop_loss_percent);
-}, 20000);
+}, 30000);
