@@ -1,0 +1,19 @@
+----------Processing prospective buy logs----------
+ 
+ 
+date = Wed Sep 26 2018 22:51:30 GMT+0000 (Greenwich Mean Time),  prospective buys= 4738,GNT/BTC,1537992000000 
+date = Wed Sep 26 2018 22:51:30 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Wed Sep 26 2018 22:51:30 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Wed Sep 26 2018 22:51:30 GMT+0000 (Greenwich Mean Time),  result = 4738,GNT/BTC,1537992000000 
+date = Wed Sep 26 2018 22:51:30 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Wed Sep 26 2018 22:51:30 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Wed Sep 26 2018 22:51:30 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Wed Sep 26 2018 22:51:30 GMT+0000 (Greenwich Mean Time),  result =  
+date = Wed Sep 26 2018 22:51:30 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Wed Sep 26 2018 22:51:30 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Wed Sep 26 2018 22:51:30 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Wed Sep 26 2018 22:51:30 GMT+0000 (Greenwich Mean Time),  result =  
+date = Wed Sep 26 2018 22:51:30 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Wed Sep 26 2018 22:51:30 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Wed Sep 26 2018 22:51:30 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Wed Sep 26 2018 22:51:30 GMT+0000 (Greenwich Mean Time),  result =  

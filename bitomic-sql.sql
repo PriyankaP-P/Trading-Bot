@@ -5,13 +5,30 @@ CREATE DATABASE bitomic;
 
 CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
 
+DROP TABLE IF EXISTS marketEma;
+CREATE TABLE marketEma (
+  id SERIAL PRIMARY KEY,
+  symbol_pair VARCHAR NOT NULL,
+  entry_time BIGINT NOT NULL,
+  exchange_time BIGINT NOT NULL,
+  interval VARCHAR NOT NULL,
+  ema55_last_100 NUMERIC(15,9) NOT NULL,
+  ema21_last_100 NUMERIC(15,9) NOT NULL,
+  ema13_last_100 NUMERIC(15,9) NOT NULL,
+  ema8_last_100 NUMERIC(15,9) NOT NULL,
+  percent_diff_21_55 NUMERIC(15,9) NOT NULL,
+  percent_diff_13_55 NUMERIC(15,9) NOT NULL,
+  percent_diff_8_55 NUMERIC(15,9) NOT NULL
+);
+
+
 DROP TABLE IF EXISTS transactions;
 CREATE TABLE transactions (
   transaction_id uuid UNIQUE DEFAULT uuid_generate_v4 (),
   trade_date TIMESTAMP NOT NULL,
   symbol_pair VARCHAR NOT NULL,
   price_base_currency NUMERIC(15, 8) NOT NULL,
-  equivalent_amt_base_currency NUMERIC (1000, 9) NOT NULL,
+  quantity NUMERIC(15, 8),
   transaction_type VARCHAR NOT NULL,
   fulfilled BOOLEAN NOT NULL,
   order_status VARCHAR NOT NULL,

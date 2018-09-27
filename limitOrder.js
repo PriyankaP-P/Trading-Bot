@@ -1,26 +1,15 @@
 "use strict";
 
-const ccxt = require("ccxt");
 const database = require("./knexfile");
-const balances = require("./checkBalance");
-
-const exchange = new ccxt.binance({
-  apiKey: "L-8IQXn6q4ejxCM1QbQSUhUHqKR1ClRFh-------ACtw8hnwBGfZ9cpXTGmurVF1cl",
-  secret: "5n------pdA2muFNt40JaksHRtqIXmzk38MGMwePPEeW2uKvB48BQNRjCKaaUU0k4",
-  timeout: 60000,
-  enableRateLImit: true,
-  options: {
-    adjustForTimeDifference: true,
-    verbose: true,
-    recvWindow: 10000000
-  }
-});
+const balance = require("./checkBalance");
+const binance = require("./personalApi");
+const exchanges = require("./exchanges");
 
 async function makeOrder(symbol, side, amount, price) {
   const orderType = "limit";
 
   try {
-    let response = await exchange.createOrder(
+    let response = await binance.createOrder(
       symbol,
       orderType,
       side,
@@ -29,8 +18,10 @@ async function makeOrder(symbol, side, amount, price) {
     );
     console.log(response);
     return response;
-  } catch (e) {
-    console.log(exchange.iso8601(Date.now()), e.constructor.name, e.message);
+  } catch (err) {
+    console.log("--------------------------");
+    console.log(err.constructor.name, err.message);
+    console.log("--------------------------");
     console.log("Failed");
   }
 }
@@ -59,9 +50,9 @@ async function placeOrders() {
       let price = order_list[i].price_base_currency;
       if (side === "sell") {
         let coin = symbol.split("/");
-        amount = await balances.account_balance(coin[0]);
+        amount = await balances.account_balance(coin[0]); // correct to only amount used in particular trade, subtract exchange fees
       } else if (side === "buy") {
-        amount = order_list[i].equivalent_amt_base_currency / price;
+        amount = order_list[i].quantity;
       }
 
       let sending_orders = await makeOrder(symbol, side, amount, price);
@@ -78,8 +69,10 @@ async function placeOrders() {
           console.log(error);
         });
     }
-  } catch (e) {
-    console.log(exchange.iso8601(Date.now()), e.constructor.name, e.message);
+  } catch (err) {
+    console.log("--------------------------");
+    console.log(err.constructor.name, err.message);
+    console.log("--------------------------");
     console.log("Failed");
   }
 }
@@ -100,7 +93,7 @@ async function order_status() {
     for (let i = 0; i < open_orders_array.length; i++) {
       let id = open_orders_array[i].exchange_client_id;
       let symbol = open_orders_array[i].symbol_pair;
-      let result = await exchange.fetchOrder(id, symbol);
+      let result = await binance.fetchOrder(id, symbol);
 
       if (result.status === "canceled") {
         let update_order = await database("transactions")
@@ -128,8 +121,10 @@ async function order_status() {
           });
       }
     }
-  } catch (e) {
-    console.log(exchange.iso8601(Date.now()), e.constructor.name, e.message);
+  } catch (err) {
+    console.log("--------------------------");
+    console.log(err.constructor.name, err.message);
+    console.log("--------------------------");
     console.log("Failed");
   }
 }
@@ -157,17 +152,19 @@ async function cancel_orders() {
       let symbol = cancel_list[i].symbol_pair;
 
       if (
-        exchange.nonce() >=
+        exchanges.nonce() >=
         parseInt(cancel_list[i].exchange_timestamp) + 180 * 1000
       ) {
-        let terminate = exchange.cancelOrder(id, symbol);
+        let terminate = binance.cancelOrder(id, symbol);
 
         console.log(terminate);
         console.log(`order id = ${id} cancelled`);
       }
     }
-  } catch (e) {
-    console.log(exchange.iso8601(Date.now()), e.constructor.name, e.message);
+  } catch (err) {
+    console.log("--------------------------");
+    console.log(err.constructor.name, err.message);
+    console.log("--------------------------");
     console.log("Failed");
   }
 }
@@ -218,7 +215,7 @@ async function monitor_position_status() {
         });
     }
   } catch (e) {
-    console.log(exchange.iso8601(Date.now()), e.constructor.name, e.message);
+    console.log(exchanges.iso8601(Date.now()), e.constructor.name, e.message);
     console.log("Failed");
   }
 }

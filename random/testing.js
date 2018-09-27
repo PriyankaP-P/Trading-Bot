@@ -1,3 +1,15 @@
+const fs =require('fs');
+const ccxt = require('ccxt');
+const date = new Date();
+const exchange = new ccxt['binance']({
+    'enableRateLimit': true,
+    'options': {
+        'adjustForTimeDifference': true,
+        'verbose': true,
+        'recvWindow': 10000000,
+        'warnOnFetchOHLCVLimitArgument': true
+    }
+});
 
 const ema = require('./ema');
 
@@ -23,7 +35,7 @@ async function equal(ohlcv){
 
 
 module.exports={
-    equal_ema
+    equal
 };
 
 

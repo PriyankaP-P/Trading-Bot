@@ -1,9 +1,8 @@
-
-const database = require('./knexfile'); 
+const database = require("../knexfile");
 const date = new Date();
 
 //   database('transactions').insert({trade_date: date, symbol_pair: 'BNB/BTC',
-//                             price_base_currency: 0.00149060, equivalent_amt_base_currency: 0.005000000, 
+//                             price_base_currency: 0.00149060, equivalent_amt_base_currency: 0.005000000,
 //                             transaction_type: 'buy', fulfilled: 't', order_status: 'closed',
 //                             exchange_client_id: '63047189', exchange_timestamp: '1536359093097',
 //                             position_status: 'new'
@@ -14,16 +13,23 @@ const date = new Date();
 //                         console.log(err);
 //                     })
 
-
 // database('transactions').update()
-// database('transactions').select('transaction_type')
-//                         .whereIn('transaction_id' , '06193978-d8f8-46cf-96eb-b6d0caeb05ca')
+database("transactions")
+  .update({
+    fulfilled: "t",
+    order_status: "closed",
+    exchange_client_id: "18599619",
+    exchange_timestamp: "1537992138800",
+    position_status: "new"
+  })
+  .where("transaction_id", "ea65115b-a46e-48ac-91cb-579d7a166d21")
 
-//                         .then(function(row){
-//                             console.log(row);
-//                         }).catch(function(err){
-//                         console.log(err);
-//                         }) 
+  .then(function(row) {
+    console.log(row);
+  })
+  .catch(function(err) {
+    console.log(err);
+  });
 // where('transaction_id', '7cba3de4-9e42-4f23-8b81-2b70e15e1201')
 //, selling_pair_id: '87e172c9-2b27-4ca7-987d-2449db219a3e'
 
@@ -39,31 +45,7 @@ const date = new Date();
 // // console.log(a);
 // console.log(a[0]);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // let data = ['ADA/ETH','BCH/ETH','ADA/ETH','ELF/ETH','EOS/ETH', 'ADA/ETH'];
- 
 
 // // for(let i=0;i<data.length ;i++){
 // //     console.log(data[i]);
@@ -74,7 +56,6 @@ const date = new Date();
 //     return data.indexOf(elem) == pos;
 // }));
 
-
 // console.log(data);
 
 // "use strict";
@@ -84,8 +65,7 @@ const date = new Date();
 
 // (async function get_all(){
 //     const dict = await exchange.fetchMarkets();
-    
-  
+
 //     console.log(dict);
 // })();
 
