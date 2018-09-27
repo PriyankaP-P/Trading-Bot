@@ -7,6 +7,7 @@ const fs = require("fs");
 const orders = require("./orders");
 const balance = require("./checkBalance");
 const trade = require("./trade");
+const testSell = require("./testSell");
 // const limitOrder = require("./limitOrder");
 
 const interval = "1h";
