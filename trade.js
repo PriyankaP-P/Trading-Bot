@@ -52,13 +52,13 @@ async function record(tradingPairs, available_balance, trade_amt) {
       if (available_balance > trade_amt) {
         let addEntry = await database("transactions")
           .insert({
-            trade_date: date,
+            trade_date: Date.now(),
             symbol_pair: tradingPairs[i],
             price_base_currency: price,
             quantity: quantity,
             transaction_type: "buy",
             fulfilled: "f",
-            order_status: "open"
+            order_status: "CREATED"
           })
           .then(row => row)
           .catch(err => console.log(err));

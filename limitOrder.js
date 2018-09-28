@@ -32,7 +32,7 @@ async function placeOrders() {
     let order_list = await database("transactions")
       .where({
         fulfilled: false,
-        order_status: "open"
+        order_status: "CREATED"
       })
       .whereNull("exchange_client_id")
       .select()
@@ -50,7 +50,7 @@ async function placeOrders() {
       let price = order_list[i].price_base_currency;
       if (side === "sell") {
         let coin = symbol.split("/");
-        amount = await balances.account_balance(coin[0]); // correct to only amount used in particular trade, subtract exchange fees
+        amount = await balance.account_balance(coin[0]); // correct to only amount used in particular trade, subtract exchange fees
       } else if (side === "buy") {
         amount = order_list[i].quantity;
       }
@@ -80,7 +80,7 @@ async function placeOrders() {
 async function order_status() {
   try {
     let open_orders_array = await database("transactions")
-      .where("order_status", "open")
+      .where("order_status", "CREATED")
       .whereNotNull("exchange_client_id")
       .select("transaction_id", "symbol_pair", "exchange_client_id")
       .then(function(row) {
@@ -95,23 +95,36 @@ async function order_status() {
       let symbol = open_orders_array[i].symbol_pair;
       let result = await binance.fetchOrder(id, symbol);
 
-      if (result.status === "canceled") {
+      if (result.info.status === "CANCELED") {
         let update_order = await database("transactions")
           .where("transaction_id", open_orders_array[i].transaction_id)
-          .update("order_status", result.status)
+          .update("order_status", result.info.status)
           .then(function(row) {
             return row;
           })
           .catch(function(err) {
             console.log(err);
           });
-      } else if (result.status === "closed") {
+      } else if (result.info.status === "FILLED") {
         let update_order = await database("transactions")
           .where("transaction_id", open_orders_array[i].transaction_id)
           .update({
-            order_status: result.status,
+            order_status: result.info.status,
             fulfilled: true,
             position_status: "new"
+          })
+          .then(function(row) {
+            return row;
+          })
+          .catch(function(err) {
+            console.log(err);
+          });
+      } else if (result.info.status === "PARTIALLY_FILLED") {
+        let update_order = await database("transactions")
+          .where("transaction_id", open_orders_array[i].transaction_id)
+          .update({
+            order_status: result.info.status,
+            fulfilled: false
           })
           .then(function(row) {
             return row;
@@ -132,7 +145,7 @@ async function order_status() {
 async function cancel_orders() {
   try {
     let cancel_list = await database("transactions")
-      .where("order_status", "open")
+      .where("order_status", "CREATED")
       .whereNotNull("exchange_client_id")
       .select(
         "transaction_id",
@@ -175,7 +188,7 @@ async function monitor_position_status() {
       .where({
         transaction_type: "sell",
         fulfilled: true,
-        order_status: "closed",
+        order_status: "FILLED",
         position_status: "new"
       })
       .whereNotNull("exchange_client_id")
@@ -191,7 +204,7 @@ async function monitor_position_status() {
       .where({
         transaction_type: "sell",
         fulfilled: true,
-        order_status: "closed",
+        order_status: "FILLED",
         position_status: "old"
       })
       .whereNotNull("selling_pair_id")

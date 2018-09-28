@@ -106,297 +106,293 @@ async function watchEma(scannedCoins, interval) {
   }
 }
 
-
 async function model1(tradePairs) {
-    try {
-      const prospectiveBuys = [];
-      let closePairs;
-      console.log(tradePairs.length);
-      for (let i = 0; i < tradePairs.length; i++) {
-        closePairs = await database("marketema")
-          .groupBy("marketema.id")
-          .orderBy("entry_time", "desc") //most recent entry has position =0
-          .having("symbol_pair", "=", tradePairs[i])
-          .limit(8)
-          .then(row => row)
-          .catch(error => console.log(error));
-  
-        //   console.log(closePairs);
-        let startPosition = -1;
-        let count = 0;
-        let occurances = 0;
-        for (let j = 0; j < closePairs.length; j++) {
+  try {
+    const prospectiveBuys = [];
+    let closePairs;
+    console.log(tradePairs.length);
+    for (let i = 0; i < tradePairs.length; i++) {
+      closePairs = await database("marketema")
+        .groupBy("marketema.id")
+        .orderBy("entry_time", "desc") //most recent entry has position =0
+        .having("symbol_pair", "=", tradePairs[i])
+        .limit(8)
+        .then(row => row)
+        .catch(error => console.log(error));
+
+      //   console.log(closePairs);
+      let startPosition = -1;
+      let count = 0;
+      let occurances = 0;
+      for (let j = 0; j < closePairs.length; j++) {
+        if (
+          closePairs[j].percent_diff_21_55 < 0 &&
+          closePairs[j].percent_diff_13_55 < 0 &&
+          closePairs[j].percent_diff_8_55 < 0
+        ) {
+          startPosition = j;
+        } else {
+          startPosition = -1;
+        }
+        occurances = 0;
+        while (startPosition !== -1 && startPosition < closePairs.length) {
           if (
-            closePairs[j].percent_diff_21_55 < 0 &&
-            closePairs[j].percent_diff_13_55 < 0 &&
-            closePairs[j].percent_diff_8_55 < 0
+            closePairs[startPosition].percent_diff_21_55 < 0 &&
+            closePairs[startPosition].percent_diff_13_55 < 0 &&
+            closePairs[startPosition].percent_diff_8_55 < 0
           ) {
-            startPosition = j;
+            occurances = occurances + 1;
+            count = startPosition;
+            startPosition++;
           } else {
             startPosition = -1;
           }
-          occurances = 0;
-          while (startPosition !== -1 && startPosition < closePairs.length) {
-            if (
-              closePairs[startPosition].percent_diff_21_55 < 0 &&
-              closePairs[startPosition].percent_diff_13_55 < 0 &&
-              closePairs[startPosition].percent_diff_8_55 < 0
-            ) {
-              occurances = occurances + 1;
-              count = startPosition;
-              startPosition++;
-            } else {
-              startPosition = -1;
-            }
-          }
-          if (occurances >= 5) {
+        }
+        if (occurances >= 5) {
+          break;
+        }
+      }
+
+      // if (occurances >= 5) {
+      //   console.log(`count=${count}`);
+
+      //   console.log(
+      //     `startPosition=${count -
+      //       occurances +
+      //       1}, occurances= ${occurances} ,symbol pair = ${
+      //       closePairs[count - occurances + 1].symbol_pair
+      //     }, exchange timestamp = ${
+      //       closePairs[count - occurances + 1].exchange_time
+      //     } id =${
+      //       closePairs[count - occurances + 1].id
+      //     } , last occurance of negative at id= ${
+      //       closePairs[count].id //here count = count - occurances + 1 + (occurances - 1)
+      //     }`
+      //   );
+      // } else {
+      //   console.log(
+      //     `no 5 or more numbers negative in a row for symbol pair = ${
+      //       closePairs[count - occurances + 1].symbol_pair
+      //     }`
+      //   );
+      // }
+
+      let buyPosition = -1;
+
+      if (occurances >= 5) {
+        let endOfNegative = occurances;
+        console.log(`endOfNegative = ${endOfNegative}`);
+        for (
+          let trailCount = endOfNegative;
+          trailCount < closePairs.length;
+          trailCount++
+        ) {
+          if (
+            closePairs[trailCount].percent_diff_21_55 < 0 &&
+            closePairs[trailCount].percent_diff_13_55 > 0 &&
+            closePairs[trailCount].percent_diff_8_55 > 0
+          ) {
+            buyPosition = trailCount;
             break;
           }
         }
-  
-        if (occurances >= 5) {
-          console.log(`count=${count}`);
-  
+
+        if (buyPosition !== -1) {
+          prospectiveBuys.push([
+            closePairs[buyPosition].id,
+            closePairs[buyPosition].symbol_pair,
+            closePairs[buyPosition].exchange_time
+          ]);
           console.log(
-            `startPosition=${count -
-              occurances +
-              1}, occurances= ${occurances} ,symbol pair = ${
-              closePairs[count - occurances + 1].symbol_pair
-            }, exchange timestamp = ${
-              closePairs[count - occurances + 1].exchange_time
-            } id =${
-              closePairs[count - occurances + 1].id
-            } , last occurance of negative at id= ${
-              closePairs[count].id //here count = count - occurances + 1 + (occurances - 1)
-            }`
-          );
-        } else {
-          console.log(
-            `no 5 or more numbers negative in a row for symbol pair = ${
-              closePairs[count - occurances + 1].symbol_pair
-            }`
+            `buy ${closePairs[buyPosition].symbol_pair} at position id = ${
+              closePairs[buyPosition].id
+            }, exchange timestamp = ${closePairs[buyPosition].exchange_time}`
           );
         }
-  
-        let buyPosition = -1;
-  
-        if (occurances >= 5) {
-          let endOfNegative = occurances;
-          console.log(`endOfNegative = ${endOfNegative}`);
-          for (
-            let trailCount = endOfNegative;
-            trailCount < closePairs.length;
-            trailCount++
-          ) {
-            if (
-              closePairs[trailCount].percent_diff_21_55 < 0 &&
-              closePairs[trailCount].percent_diff_13_55 > 0 &&
-              closePairs[trailCount].percent_diff_8_55 > 0
-            ) {
-              buyPosition = trailCount;
-              break;
-            }
-          }
-  
-          if (buyPosition !== -1) {
-            prospectiveBuys.push([
-              closePairs[buyPosition].id,
-              closePairs[buyPosition].symbol_pair,
-              closePairs[buyPosition].exchange_time
-            ]);
-            console.log(
-              `buy ${closePairs[buyPosition].symbol_pair} at position id = ${
-                closePairs[buyPosition].id
-              }, exchange timestamp = ${closePairs[buyPosition].exchange_time}`
-            );
-          }
-        }
-        console.log(prospectiveBuys);
-        console.log("-------------------------------------------");
-        
       }
-      fs.appendFile(
-        "buyLogs.txt",
-        `date = ${date},  prospective buys= ${prospectiveBuys} \n`,
-        error => {
-          if (error) throw error;
-        }
-      );
-      return prospectiveBuys;
-    } catch (err) {
-      console.log("--------------------------");
-      console.log(err.constructor.name, err.message);
-      console.log("--------------------------");
-      console.log("Failed");
+      console.log(prospectiveBuys);
+      console.log("-------------------------------------------");
     }
+    fs.appendFile(
+      "buyLogs.txt",
+      `date = ${date},  prospective buys= ${prospectiveBuys} \n`,
+      error => {
+        if (error) throw error;
+      }
+    );
+    return prospectiveBuys;
+  } catch (err) {
+    console.log("--------------------------");
+    console.log(err.constructor.name, err.message);
+    console.log("--------------------------");
+    console.log("Failed");
   }
-  
-  async function model2(tradePairs) {
-    try {
-      const buys_model2 = [];
-      let closePairs;
-      console.log(tradePairs.length);
-      for (let i = 0; i < tradePairs.length; i++) {
-        closePairs = await database("marketema")
-          .groupBy("marketema.id")
-          .orderBy("entry_time", "desc") //most recent entry has position =0
-          .having("symbol_pair", "=", tradePairs[i])
-          .limit(8)
-          .then(row => row)
-          .catch(error => console.log(error));
-        let startPosition = -1;
-        let count = 0;
-        let occurances = 0;
-        for (let j = 0; j < closePairs.length; j++) {
+}
+
+async function model2(tradePairs) {
+  try {
+    const buys_model2 = [];
+    let closePairs;
+    console.log(tradePairs.length);
+    for (let i = 0; i < tradePairs.length; i++) {
+      closePairs = await database("marketema")
+        .groupBy("marketema.id")
+        .orderBy("entry_time", "desc") //most recent entry has position =0
+        .having("symbol_pair", "=", tradePairs[i])
+        .limit(8)
+        .then(row => row)
+        .catch(error => console.log(error));
+      let startPosition = -1;
+      let count = 0;
+      let occurances = 0;
+      for (let j = 0; j < closePairs.length; j++) {
+        if (
+          closePairs[j].percent_diff_21_55 < 0 &&
+          closePairs[j].percent_diff_13_55 < 0 &&
+          closePairs[j].percent_diff_8_55 < 0
+        ) {
+          startPosition = j;
+        } else {
+          startPosition = -1;
+        }
+        occurances = 0;
+        while (startPosition !== -1 && startPosition < closePairs.length) {
           if (
-            closePairs[j].percent_diff_21_55 < 0 &&
-            closePairs[j].percent_diff_13_55 < 0 &&
-            closePairs[j].percent_diff_8_55 < 0
+            closePairs[startPosition].percent_diff_21_55 < 0 &&
+            closePairs[startPosition].percent_diff_13_55 < 0 &&
+            closePairs[startPosition].percent_diff_8_55 < 0
           ) {
-            startPosition = j;
+            occurances = occurances + 1;
+            count = startPosition;
+            startPosition++;
           } else {
             startPosition = -1;
           }
-          occurances = 0;
-          while (startPosition !== -1 && startPosition < closePairs.length) {
-            if (
-              closePairs[startPosition].percent_diff_21_55 < 0 &&
-              closePairs[startPosition].percent_diff_13_55 < 0 &&
-              closePairs[startPosition].percent_diff_8_55 < 0
-            ) {
-              occurances = occurances + 1;
-              count = startPosition;
-              startPosition++;
-            } else {
-              startPosition = -1;
-            }
-          }
-          if (occurances >= 5) {
+        }
+        if (occurances >= 5) {
+          break;
+        }
+      }
+
+      // if (occurances >= 5) {
+      //   console.log(`count=${count}`);
+
+      //   console.log(
+      //     `startPosition=${count -
+      //       occurances +
+      //       1}, occurances= ${occurances} ,symbol pair = ${
+      //       closePairs[count - occurances + 1].symbol_pair
+      //     }, exchange timestamp = ${
+      //       closePairs[count - occurances + 1].exchange_time
+      //     } id =${
+      //       closePairs[count - occurances + 1].id
+      //     } , last occurance of negative at id= ${
+      //       closePairs[count].id //here count = count - occurances + 1 + (occurances - 1)
+      //     }`
+      //   );
+      // } else {
+      //   console.log(
+      //     `no 5 or more numbers negative in a row for symbol pair = ${
+      //       closePairs[count - occurances + 1].symbol_pair
+      //     }`
+      //   );
+      // }
+
+      let buyPosition = -1;
+
+      if (occurances >= 5) {
+        let endOfNegative = occurances;
+        console.log(`endOfNegative = ${endOfNegative}`);
+        for (
+          let trailCount = endOfNegative;
+          trailCount < closePairs.length;
+          trailCount++
+        ) {
+          if (
+            closePairs[trailCount].percent_diff_21_55 > 0 &&
+            closePairs[trailCount].percent_diff_13_55 > 0 &&
+            closePairs[trailCount].percent_diff_8_55 > 0
+          ) {
+            buyPosition = trailCount;
             break;
           }
         }
-  
-        if (occurances >= 5) {
-          console.log(`count=${count}`);
-  
+
+        if (buyPosition !== -1) {
+          buys_model2.push([
+            closePairs[buyPosition].id,
+            closePairs[buyPosition].symbol_pair,
+            closePairs[buyPosition].exchange_time
+          ]);
           console.log(
-            `startPosition=${count -
-              occurances +
-              1}, occurances= ${occurances} ,symbol pair = ${
-              closePairs[count - occurances + 1].symbol_pair
-            }, exchange timestamp = ${
-              closePairs[count - occurances + 1].exchange_time
-            } id =${
-              closePairs[count - occurances + 1].id
-            } , last occurance of negative at id= ${
-              closePairs[count].id //here count = count - occurances + 1 + (occurances - 1)
-            }`
-          );
-        } else {
-          console.log(
-            `no 5 or more numbers negative in a row for symbol pair = ${
-              closePairs[count - occurances + 1].symbol_pair
-            }`
+            `buy ${closePairs[buyPosition].symbol_pair} at position id = ${
+              closePairs[buyPosition].id
+            }, exchange timestamp = ${closePairs[buyPosition].exchange_time}`
           );
         }
-  
-        let buyPosition = -1;
-  
-        if (occurances >= 5) {
-          let endOfNegative = occurances;
-          console.log(`endOfNegative = ${endOfNegative}`);
-          for (
-            let trailCount = endOfNegative;
-            trailCount < closePairs.length;
-            trailCount++
-          ) {
-            if (
-              closePairs[trailCount].percent_diff_21_55 > 0 &&
-              closePairs[trailCount].percent_diff_13_55 > 0 &&
-              closePairs[trailCount].percent_diff_8_55 > 0
-            ) {
-              buyPosition = trailCount;
-              break;
-            }
-          }
-  
-          if (buyPosition !== -1) {
-            buys_model2.push([
-              closePairs[buyPosition].id,
-              closePairs[buyPosition].symbol_pair,
-              closePairs[buyPosition].exchange_time
-            ]);
-            console.log(
-              `buy ${closePairs[buyPosition].symbol_pair} at position id = ${
-                closePairs[buyPosition].id
-              }, exchange timestamp = ${closePairs[buyPosition].exchange_time}`
-            );
-          }
-        }
-        console.log(buys_model2);
-        console.log("-------------------------------------------");
-       
       }
-      fs.appendFile(
-        "buyLogs.txt",
-        `date = ${date}, buys model2 = ${buys_model2} \n`,
-        error => {
-          if (error) throw error;
-        }
-      );
-      return buys_model2;
-    } catch (err) {
-      console.log("--------------------------");
-      console.log(err.constructor.name, err.message);
-      console.log("--------------------------");
-      console.log("Failed");
+      console.log(buys_model2);
+      console.log("-------------------------------------------");
     }
-  }
-  
-  async function model3(tradePairs) {
-    try {
-      const buys_model3 = [];
-      let closePairs;
-      console.log(tradePairs.length);
-      for (let i = 0; i < tradePairs.length; i++) {
-        // console.log(tradePairs[i], " i= " + i);
-        closePairs = await database("marketema")
-          .groupBy("marketema.id")
-          .orderBy("entry_time", "desc") //most recent entry has position =0
-          .having("symbol_pair", "=", tradePairs[i])
-          .limit(8)
-          .then(row => row)
-          .catch(error => console.log(error));
-        for (let j = 4; j < closePairs.length - 2; j++) {
-          if (
-            closePairs[j].percent_diff_21_55 === 0 &&
-            (closePairs[j + 2].percent_diff_8_55 > 0.1 &&
-              closePairs[j + 2].percent_diff_13_55 > 0.1)
-          ) {
-            buys_model3.push([
-              closePairs[j + 2].id,
-              closePairs[j + 2].symbol_pair,
-              closePairs[j + 2].exchange_time
-            ]);
-          }
-        }
-        
+    fs.appendFile(
+      "buyLogs.txt",
+      `date = ${date}, buys model2 = ${buys_model2} \n`,
+      error => {
+        if (error) throw error;
       }
-      fs.appendFile(
-        "buyLogs.txt",
-        `date = ${date}, buys model3 = ${buys_model3} \n`,
-        error => {
-          if (error) throw error;
-        }
-      );
-      return buys_model3;
-    } catch (err) {
-      console.log("--------------------------");
-      console.log(err.constructor.name, err.message);
-      console.log("--------------------------");
-      console.log("Failed");
-    }
+    );
+    return buys_model2;
+  } catch (err) {
+    console.log("--------------------------");
+    console.log(err.constructor.name, err.message);
+    console.log("--------------------------");
+    console.log("Failed");
   }
+}
+
+async function model3(tradePairs) {
+  try {
+    const buys_model3 = [];
+    let closePairs;
+    console.log(tradePairs.length);
+    for (let i = 0; i < tradePairs.length; i++) {
+      // console.log(tradePairs[i], " i= " + i);
+      closePairs = await database("marketema")
+        .groupBy("marketema.id")
+        .orderBy("entry_time", "desc") //most recent entry has position =0
+        .having("symbol_pair", "=", tradePairs[i])
+        .limit(8)
+        .then(row => row)
+        .catch(error => console.log(error));
+      for (let j = 4; j < closePairs.length - 2; j++) {
+        if (
+          closePairs[j].percent_diff_21_55 === 0 &&
+          (closePairs[j + 2].percent_diff_8_55 > 0.1 &&
+            closePairs[j + 2].percent_diff_13_55 > 0.1)
+        ) {
+          buys_model3.push([
+            closePairs[j + 2].id,
+            closePairs[j + 2].symbol_pair,
+            closePairs[j + 2].exchange_time
+          ]);
+        }
+      }
+    }
+    fs.appendFile(
+      "buyLogs.txt",
+      `date = ${date}, buys model3 = ${buys_model3} \n`,
+      error => {
+        if (error) throw error;
+      }
+    );
+    return buys_model3;
+  } catch (err) {
+    console.log("--------------------------");
+    console.log(err.constructor.name, err.message);
+    console.log("--------------------------");
+    console.log("Failed");
+  }
+}
 
 module.exports = {
   calculateEma,

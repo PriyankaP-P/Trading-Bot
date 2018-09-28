@@ -8,7 +8,8 @@ const orders = require("./orders");
 const balance = require("./checkBalance");
 const trade = require("./trade");
 const testSell = require("./testSell");
-// const limitOrder = require("./limitOrder");
+const limitOrder = require("./limitOrder");
+const utility = require("./utility");
 
 const interval = "1h";
 let trading_strategy = "ema";
@@ -31,6 +32,14 @@ const tradeAmt = 0.005;
       fs.writeFile(
         "buyLogs.txt",
         "----------Processing prospective buy logs----------\n \n \n",
+        error => {
+          if (error) throw err;
+        }
+      );
+
+      fs.writeFile(
+        "sellLogs.txt",
+        "----------Processing prospective sell logs----------\n \n \n",
         error => {
           if (error) throw err;
         }

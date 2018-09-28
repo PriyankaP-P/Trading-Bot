@@ -25,7 +25,7 @@ CREATE TABLE marketEma (
 DROP TABLE IF EXISTS transactions;
 CREATE TABLE transactions (
   transaction_id uuid UNIQUE DEFAULT uuid_generate_v4 (),
-  trade_date TIMESTAMP NOT NULL,
+  trade_date BIGINT NOT NULL,
   symbol_pair VARCHAR NOT NULL,
   price_base_currency NUMERIC(15, 8) NOT NULL,
   quantity NUMERIC(15, 8),
