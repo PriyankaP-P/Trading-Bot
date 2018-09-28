@@ -153,35 +153,11 @@ async function model1(tradePairs) {
         }
       }
 
-      // if (occurances >= 5) {
-      //   console.log(`count=${count}`);
-
-      //   console.log(
-      //     `startPosition=${count -
-      //       occurances +
-      //       1}, occurances= ${occurances} ,symbol pair = ${
-      //       closePairs[count - occurances + 1].symbol_pair
-      //     }, exchange timestamp = ${
-      //       closePairs[count - occurances + 1].exchange_time
-      //     } id =${
-      //       closePairs[count - occurances + 1].id
-      //     } , last occurance of negative at id= ${
-      //       closePairs[count].id //here count = count - occurances + 1 + (occurances - 1)
-      //     }`
-      //   );
-      // } else {
-      //   console.log(
-      //     `no 5 or more numbers negative in a row for symbol pair = ${
-      //       closePairs[count - occurances + 1].symbol_pair
-      //     }`
-      //   );
-      // }
-
       let buyPosition = -1;
 
       if (occurances >= 5) {
         let endOfNegative = occurances;
-        console.log(`endOfNegative = ${endOfNegative}`);
+
         for (
           let trailCount = endOfNegative;
           trailCount < closePairs.length;
@@ -210,8 +186,6 @@ async function model1(tradePairs) {
           );
         }
       }
-      console.log(prospectiveBuys);
-      console.log("-------------------------------------------");
     }
     fs.appendFile(
       "buyLogs.txt",
@@ -274,35 +248,11 @@ async function model2(tradePairs) {
         }
       }
 
-      // if (occurances >= 5) {
-      //   console.log(`count=${count}`);
-
-      //   console.log(
-      //     `startPosition=${count -
-      //       occurances +
-      //       1}, occurances= ${occurances} ,symbol pair = ${
-      //       closePairs[count - occurances + 1].symbol_pair
-      //     }, exchange timestamp = ${
-      //       closePairs[count - occurances + 1].exchange_time
-      //     } id =${
-      //       closePairs[count - occurances + 1].id
-      //     } , last occurance of negative at id= ${
-      //       closePairs[count].id //here count = count - occurances + 1 + (occurances - 1)
-      //     }`
-      //   );
-      // } else {
-      //   console.log(
-      //     `no 5 or more numbers negative in a row for symbol pair = ${
-      //       closePairs[count - occurances + 1].symbol_pair
-      //     }`
-      //   );
-      // }
-
       let buyPosition = -1;
 
       if (occurances >= 5) {
         let endOfNegative = occurances;
-        console.log(`endOfNegative = ${endOfNegative}`);
+
         for (
           let trailCount = endOfNegative;
           trailCount < closePairs.length;
@@ -331,8 +281,6 @@ async function model2(tradePairs) {
           );
         }
       }
-      console.log(buys_model2);
-      console.log("-------------------------------------------");
     }
     fs.appendFile(
       "buyLogs.txt",

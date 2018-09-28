@@ -36,18 +36,8 @@ async function record(tradingPairs, available_balance, trade_amt) {
     );
     for (let i = 0; i < tradingPairs.length; i++) {
       let price = await getPrice(tradingPairs[i], action);
-      console.log(`Price = ${price}`);
-      let quantity = trade_amt / price;
-      console.log(`quantity = ${quantity}`);
 
-      console.log(`Buying ${tradingPairs[i]} at price = ${price}`);
-      fs.appendFile(
-        "log.txt",
-        `${date} - Buying  ${tradingPairs[i]} at price = ${price} \n`,
-        error => {
-          if (error) throw error;
-        }
-      );
+      let quantity = trade_amt / price;
 
       if (available_balance > trade_amt) {
         let addEntry = await database("transactions")
@@ -63,12 +53,24 @@ async function record(tradingPairs, available_balance, trade_amt) {
           .then(row => row)
           .catch(err => console.log(err));
 
-        available_balance = available_balance - trade_amt;
-      } else {
-        console.log("insufficient base currency balance");
+        console.log(`Price = ${price}`);
+        console.log(`quantity = ${quantity}`);
+        console.log(`Buying ${tradingPairs[i]} at price = ${price}`);
         fs.appendFile(
           "log.txt",
-          `${date}  insufficient base currency balance \n`,
+          `${date} - Buying  ${tradingPairs[i]} at price = ${price} \n`,
+          error => {
+            if (error) throw error;
+          }
+        );
+        available_balance = available_balance - trade_amt;
+      } else {
+        console.log(
+          "Insufficient base currency balance, wait for base currency balance to be available"
+        );
+        fs.appendFile(
+          "log.txt",
+          `${date}  Insufficient base currency balance, wait for base currency balance to be available \n`,
           error => {
             if (error) throw error;
           }
