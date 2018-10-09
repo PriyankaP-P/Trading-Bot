@@ -15,7 +15,7 @@ const interval = "1h";
 let trading_strategy = "ema";
 let standard_trade_currency = "BTC";
 let database_vol = 0;
-let user_cutoff_volume = 10;
+let user_cutoff_volume = 100;
 const base_currency = "/" + standard_trade_currency;
 const tradeAmt = 0.005;
 
