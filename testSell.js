@@ -9,7 +9,7 @@ const balance = require("./checkBalance");
 
 async function sellModel1(symbol) {
   try {
-    const action = "wait";
+    let action = "wait";
 
     let marketStatus = await database("marketema")
       .groupBy("marketema.id")
@@ -70,12 +70,12 @@ async function sellModel1(symbol) {
           startPosition = -1;
         }
       }
-      if (occurances === 7) {
+      if (occurances >= 5) {
         break;
       }
     }
 
-    if (occurances === 7) {
+    if (occurances >= 5) {
       action = "sell";
       console.log(
         `Time to sell ${marketStatus[marketStatus.length - 1].symbol_pair}, ${

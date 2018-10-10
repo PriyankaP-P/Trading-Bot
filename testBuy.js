@@ -10,7 +10,7 @@ function calculateEma(processed_ohlcv, period) {
     const close_price_index = 4;
     let ema = [];
     let arr = [];
-    let prec = 8;
+    let prec;
     let multiplier = 2 / (period + 1);
 
     for (let count = 0; count < period; count++) {
@@ -26,7 +26,8 @@ function calculateEma(processed_ohlcv, period) {
       let calc =
         multiplier * (processed_ohlcv[i][close_price_index] - ema[i - 1]) +
         ema[i - 1];
-
+      if (processed_ohlcv[i][close_price_index] < 0.00009) prec = 11;
+      else prec = 8;
       let result = Math.round(calc * Math.pow(10, prec)) / Math.pow(10, prec);
       ema.push(result);
     }

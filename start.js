@@ -10,6 +10,7 @@ const trade = require("./trade");
 const testSell = require("./testSell");
 const limitOrder = require("./limitOrder");
 const utility = require("./utility");
+const stoploss = require("./stoploss");
 
 const interval = "1h";
 let trading_strategy = "ema";
@@ -18,6 +19,7 @@ let database_vol = 0;
 let user_cutoff_volume = 10;
 const base_currency = "/" + standard_trade_currency;
 const tradeAmt = 0.005;
+const stop_loss_percent = 1;
 
 (async function bitomic() {
   try {
@@ -155,6 +157,8 @@ setInterval(async function() {
         if (error) throw error;
       }
     );
+
+    await stoploss.cut_loss(stop_loss_percent);
   } else {
     console.log("Waiting for database to acquire Ema history.............");
   }

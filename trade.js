@@ -5,19 +5,28 @@ const date = new Date();
 const exchanges = require("./exchanges");
 
 async function getPrice(symbol, action) {
-  let finalPrice;
-  const response = await exchanges.fetchTicker(symbol);
-  let lastPrice = response["last"];
-  if (action === "buy") {
-    finalPrice = lastPrice - lastPrice * 0.0003; //  enter bid price at 0.03% lower than current bid
-  } else if (action === "sell") {
-    finalPrice = lastPrice + lastPrice * 0.0003;
+  try {
+    let finalPrice;
+    const response = await exchanges.fetchTicker(symbol);
+    let lastPrice = response["last"];
+    if (action === "buy") {
+      finalPrice = lastPrice - lastPrice * 0.0003; //  enter bid price at 0.03% lower than current bid
+    } else if (action === "sell") {
+      finalPrice = lastPrice + lastPrice * 0.0003;
+    }
+    let rounded_price =
+      Math.round(finalPrice * Math.pow(10, 8)) / Math.pow(10, 8);
+    console.log(`last price = ${lastPrice}`);
+    console.log(
+      `Placing order for symbol=${symbol} at price = ${rounded_price}`
+    );
+    return finalPrice;
+  } catch (err) {
+    console.log("--------------------------");
+    console.log(err.constructor.name, err.message);
+    console.log("--------------------------");
+    console.log("Failed");
   }
-  let rounded_price =
-    Math.round(finalPrice * Math.pow(10, 8)) / Math.pow(10, 8);
-  console.log(`last price = ${lastPrice}`);
-  console.log(`Placing order for symbol=${symbol} at price = ${rounded_price}`);
-  return finalPrice;
 }
 
 async function record(tradingPairs, available_balance, trade_amt) {

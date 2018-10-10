@@ -81,6 +81,7 @@ async function order_status() {
   try {
     let open_orders_array = await database("transactions")
       .where("order_status", "CREATED")
+      .orWhere("order_status", "PARTIALLY_FILLED")
       .whereNotNull("exchange_client_id")
       .select("transaction_id", "symbol_pair", "exchange_client_id")
       .then(function(row) {
