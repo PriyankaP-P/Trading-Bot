@@ -17,9 +17,9 @@ async function getPrice(symbol, action) {
     let rounded_price =
       Math.round(finalPrice * Math.pow(10, 8)) / Math.pow(10, 8);
     console.log(`last price = ${lastPrice}`);
-    console.log(
-      `Placing order for symbol=${symbol} at price = ${rounded_price}`
-    );
+    // console.log(
+    //   `Placing order for symbol=${symbol} at price = ${rounded_price}`
+    // );
     return finalPrice;
   } catch (err) {
     console.log("--------------------------");

@@ -244,14 +244,14 @@ async function model2(tradePairs) {
             startPosition = -1;
           }
         }
-        if (occurances >= 5) {
+        if (occurances >= 6) {
           break;
         }
       }
 
       let buyPosition = -1;
 
-      if (occurances >= 5) {
+      if (occurances >= 6) {
         let endOfNegative = occurances;
 
         for (

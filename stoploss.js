@@ -25,7 +25,7 @@ async function cut_loss(stop_loss_percent) {
       .where({
         transaction_type: "buy",
         fulfilled: "true",
-        order_status: "closed",
+        order_status: "FILLED",
         position_status: "new"
       })
       .whereNotNull("exchange_client_id")
@@ -45,7 +45,7 @@ async function cut_loss(stop_loss_percent) {
         .where({
           transaction_type: "sell",
           fulfilled: false,
-          order_status: "open"
+          order_status: "CREATED"
         })
         .select("selling_pair_id")
         .then(rows => rows)
@@ -70,7 +70,7 @@ async function cut_loss(stop_loss_percent) {
                 quantity: amount,
                 transaction_type: "sell",
                 fulfilled: "f",
-                order_status: "open",
+                order_status: "CREATED",
                 selling_pair_id: current_buys[i].transaction_id
               })
               .then(rows => rows)
@@ -97,7 +97,7 @@ async function cut_loss(stop_loss_percent) {
               quantity: amount,
               transaction_type: "sell",
               fulfilled: "f",
-              order_status: "open",
+              order_status: "CREATED",
               selling_pair_id: current_buys[i].transaction_id
             })
             .then(rows => rows)

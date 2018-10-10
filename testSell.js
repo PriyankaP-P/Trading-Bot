@@ -70,12 +70,12 @@ async function sellModel1(symbol) {
           startPosition = -1;
         }
       }
-      if (occurances >= 5) {
+      if (occurances >= 3) {
         break;
       }
     }
 
-    if (occurances >= 5) {
+    if (occurances >= 3) {
       action = "sell";
       console.log(
         `Time to sell ${marketStatus[marketStatus.length - 1].symbol_pair}, ${

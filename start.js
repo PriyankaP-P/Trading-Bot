@@ -7,10 +7,11 @@ const fs = require("fs");
 const orders = require("./orders");
 const balance = require("./checkBalance");
 const trade = require("./trade");
-const testSell = require("./testSell");
+// const testSell = require("./testSell");
 const limitOrder = require("./limitOrder");
 const utility = require("./utility");
 const stoploss = require("./stoploss");
+const trailing_stop = require("./trailing-stop");
 
 const interval = "1h";
 let trading_strategy = "ema";

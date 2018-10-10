@@ -45,7 +45,9 @@ CREATE TABLE revenue (
   symbol_pair VARCHAR NOT NULL,
   selling_pair_id VARCHAR NOT NULL UNIQUE,
   buying_price  NUMERIC(15, 8) NOT NULL,
+  quantity_bought NUMERIC(15, 8),
   selling_price NUMERIC(15, 8) NOT NULL,
+  quantity_sold NUMERIC(15, 8),
   percent_gain_loss NUMERIC(15, 4)
 );
 

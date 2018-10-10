@@ -6,13 +6,15 @@ const balance = require("./checkBalance");
 const date = new Date();
 const fs = require("fs");
 
+const exchanges = require("./exchanges");
+
 async function start_trailing() {
   try {
     let new_longs = await database("transactions")
       .where({
         transaction_type: "buy",
         fulfilled: "true",
-        order_status: "FILLED",
+        order_status: "closed",
         position_status: "new"
       })
       .whereNotNull("exchange_client_id")
@@ -106,9 +108,6 @@ async function update_highest_price() {
 
 async function db_entry(check_each_price, currentPrice) {
   try {
-    console.log("check_each_price");
-    console.log(check_each_price);
-    console.log("))))");
     let coin;
     let amount;
     let get_buy_pair_data = await database("transactions")
@@ -128,7 +127,7 @@ async function db_entry(check_each_price, currentPrice) {
         quantity: amount,
         transaction_type: "sell",
         fulfilled: "f",
-        order_status: "CREATED",
+        order_status: "open",
         selling_pair_id: get_buy_pair_data[0].transaction_id
       })
       .then(rows => rows)
@@ -162,7 +161,7 @@ async function trailing_stop_func(trailing_percent) {
         .where({
           transaction_type: "sell",
           fulfilled: false,
-          order_status: "CREATED"
+          order_status: "open"
         })
         .select("selling_pair_id")
         .then(rows => rows)
@@ -175,12 +174,57 @@ async function trailing_stop_func(trailing_percent) {
               open_sell_orders_for_trailing[j].selling_pair_id
           ) {
             await db_entry(check_price[i], currentPrice);
+            // let get_buy_pair_data = await database("transactions")
+            //   .where("transaction_id", check_price[i].transaction_id)
+            //   .select()
+            //   .then(row => row)
+            //   .catch(e => console.log(e));
+            // let symbol_pair = get_buy_pair_data[0].symbol_pair;
+            // coin = symbol_pair.split("/");
+            // amount = await balance.account_balance(coin[0]);
+
+            // await database("transactions")
+            //   .insert({
+            //     trade_date: Date.now(),
+            //     symbol_pair: check_price[i].symbol_pair,
+            //     price_base_currency: currentPrice,
+            //     quantity: amount,
+            //     transaction_type: "sell",
+            //     fulfilled: "f",
+            //     order_status: "open",
+            //     selling_pair_id: get_buy_pair_data[0].transaction_id
+            //   })
+            //   .then(rows => rows)
+            //   .catch(error => console.log(error));
           }
         }
       } else {
         if (to_check === true) {
           //true
           await db_entry(check_price[i], currentPrice);
+          // let get_buy_pair_data = await database("transactions")
+          //   .where("transaction_id", check_price[i].transaction_id)
+          //   .select()
+          //   .then(row => row)
+          //   .catch(e => console.log(e));
+          // let symbol_pair = get_buy_pair_data[0].symbol_pair;
+          // coin = symbol_pair.split("/");
+          // amount = await balance.account_balance(coin[0]);
+          // //  console.log(get_buy_pair_data[0].equivalent_amt_base_currency);
+
+          // await database("transactions")
+          //   .insert({
+          //     trade_date: Date.now(),
+          //     symbol_pair: check_price[i].symbol_pair,
+          //     price_base_currency: currentPrice,
+          //     quantity: amount,
+          //     transaction_type: "sell",
+          //     fulfilled: "f",
+          //     order_status: "open",
+          //     selling_pair_id: get_buy_pair_data[0].transaction_id
+          //   })
+          //   .then(rows => rows)
+          //   .catch(error => console.log(error));
         }
       }
     }
@@ -214,7 +258,7 @@ async function update_trailing_stop() {
           });
 
         if (corresponding_sale.length > 0) {
-          if (corresponding_sale[0].order_status === "FILLED") {
+          if (corresponding_sale[0].order_status === "closed") {
             await database("trail")
               .where("transaction_id", fetch_closed[i].transaction_id)
               .update("trailing_status", "false")
@@ -237,16 +281,16 @@ async function update_trailing_stop() {
 
 setInterval(async function call_all() {
   try {
-    const trailing_percent = 2.5;
+    // const trailing_percent = 1;
     await start_trailing();
     await update_highest_price();
     await update_trailing_stop();
-    await trailing_stop_func(trailing_percent);
+    // await trailing_stop_func(trailing_percent);
   } catch (e) {
     console.log(e);
   }
 }, 2000);
 
-// module.exports = {
-//   trailing_stop_func
-// };
+module.exports = {
+  trailing_stop_func
+};

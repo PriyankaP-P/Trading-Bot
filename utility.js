@@ -5,14 +5,14 @@ const database = require("./knexfile");
 const exchanges = require("./exchanges");
 
 setInterval(async function clean_Db_marketema() {
-  let time = Date.now() - 4 * 60 * 60000;
+  let time = Date.now() - 1 * 60 * 60000;
   console.log(time);
   await database("marketema")
     .where("entry_time", "<", time)
     .delete()
     .then(row => row)
     .catch(error => console.log(error));
-}, 7200000);
+}, 300000);
 
 setInterval(async function purge_db() {
   try {
