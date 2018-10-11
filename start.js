@@ -12,6 +12,7 @@ const limitOrder = require("./limitOrder");
 const utility = require("./utility");
 const stoploss = require("./stoploss");
 const trailing_stop = require("./trailing-stop");
+const earnings = require("./earnings");
 
 const interval = "1h";
 let trading_strategy = "ema";
