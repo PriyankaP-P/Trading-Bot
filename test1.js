@@ -5,27 +5,23 @@ const fs = require("fs");
 const database = require("./knexfile");
 
 (async function sellModel1() {
-  // await database("trail")
-  //   .where({ transaction_id: "2503c92e-1b09-4c0a-a519-2d275d38725c" })
-  //   .delete()
-  //   .then(row => row)
-  //   .catch(error => console.log(error));
   let existing_entries = await database("revenue")
     .select("selling_pair_id")
     .then(row => row)
     .catch(error => console.log(error));
 
-  console.log(existing_entries);
+  console.log(existing_entries.length);
   if (existing_entries.length > 0) {
-    for (let j = 0; j < existing_entries; j++) {
+    for (let j = 0; j < existing_entries.length; j++) {
       if (
         existing_entries[j].selling_pair_id !==
         "2503c92e-1b09-4c0a-a519-2d275d38725c"
       ) {
+        console.log("new entry");
         await database("revenue")
           .insert({
-            symbol_pair: "ADA/BTC",
-            selling_pair_id: "6503c92e-1b09-4c0a-a519-2d275d38725c",
+            symbol_pair: "ETH/BTC",
+            selling_pair_id: "8503c92e-1b09-4c0a-a519-2d275d38725c",
             buying_price: 0.097,
             quantity_bought: 11,
             selling_price: 1.075,
@@ -37,23 +33,19 @@ const database = require("./knexfile");
       }
     }
   } else {
-    if (
-      existing_entries[j].selling_pair_id !==
-      "2503c92e-1b09-4c0a-a519-2d275d38725c"
-    ) {
-      await database("revenue")
-        .insert({
-          symbol_pair: "ADA/BTC",
-          selling_pair_id: "6503c92e-1b09-4c08-a519-2d275d38925c",
-          buying_price: 0.097,
-          quantity_bought: 11,
-          selling_price: 1.075,
-          quantity_sold: 10,
-          percent_gain_loss: 1
-        })
-        .then(row => console.log(row))
-        .catch(error => console.log(error));
-    }
+    await database("revenue")
+      .insert({
+        symbol_pair: "ETH/BTC",
+        selling_pair_id: "8503c92e-1b09-4c08-a519-2d275d38925c",
+        buying_price: 0.097,
+        quantity_bought: 11,
+        selling_price: 1.075,
+        quantity_sold: 10,
+        percent_gain_loss: 1
+      })
+      .then(row => console.log(row))
+      .catch(error => console.log(error));
+    console.log("First entry");
   }
 })();
 

@@ -111,6 +111,7 @@ async function db_entry(check_each_price, currentPrice) {
     console.log("))))");
     let coin;
     let amount;
+    let sellOrderAmount;
     let get_buy_pair_data = await database("transactions")
       .where("transaction_id", check_each_price.transaction_id)
       .select()
@@ -120,12 +121,16 @@ async function db_entry(check_each_price, currentPrice) {
     coin = symbol_pair.split("/");
     amount = await balance.account_balance(coin[0]);
 
+    if (amount > get_buy_pair_data[0].quantity)
+      sellOrderAmount = get_buy_pair_data[0].quantity;
+    else sellOrderAmount = amount;
+
     await database("transactions")
       .insert({
         trade_date: Date.now(),
         symbol_pair: check_each_price.symbol_pair,
         price_base_currency: currentPrice,
-        quantity: amount,
+        quantity: sellOrderAmount,
         transaction_type: "sell",
         fulfilled: "f",
         order_status: "CREATED",

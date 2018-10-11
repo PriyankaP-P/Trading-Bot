@@ -211,17 +211,22 @@ async function sellModel2(symbol) {
 
 async function update_sell_orders(entry, action) {
   const trans_type = "sell";
+  let sellOrderAmount;
   let symbol = entry.symbol_pair;
   let price = await trade.getPrice(entry.symbol_pair, action);
   let coin = symbol.split("/");
   let amount = await balance.account_balance(coin[0]); // correct to only amount used in particular trade, subtract exchange fees
+
+  if (amount > get_buy_pair_data[0].quantity)
+    sellOrderAmount = get_buy_pair_data[0].quantity;
+  else sellOrderAmount = amount;
 
   await database("transactions")
     .insert({
       trade_date: Date.now(),
       symbol_pair: entry.symbol_pair,
       price_base_currency: price,
-      quantity: amount,
+      quantity: sellOrderAmount,
       transaction_type: trans_type,
       fulfilled: "f",
       order_status: "CREATED",

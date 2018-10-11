@@ -1,1291 +1,995 @@
 ----------Processing prospective buy logs----------
  
  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  prospective buys=  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model2 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time), buys model3 =  
-date = Thu Oct 11 2018 00:18:11 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 = 7409,ARDR/BTC,1539259200000 
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result = 7409,ARDR/BTC,1539259200000 
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 = 7409,ARDR/BTC,1539259200000 
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result = 7409,ARDR/BTC,1539259200000 
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  prospective buys=  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model2 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time), buys model3 =  
+date = Thu Oct 11 2018 13:21:54 GMT+0000 (Greenwich Mean Time),  result =  

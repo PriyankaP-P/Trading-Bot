@@ -48,7 +48,8 @@ CREATE TABLE revenue (
   quantity_bought NUMERIC(15, 8),
   selling_price NUMERIC(15, 8) NOT NULL,
   quantity_sold NUMERIC(15, 8),
-  percent_gain_loss NUMERIC(15, 4)
+  perunit_gain_loss NUMERIC(15, 4),
+  base_currency_change NUMERIC(15, 4)
 );
 
 DROP TABLE IF EXISTS trail;

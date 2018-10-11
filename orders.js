@@ -9,7 +9,10 @@ async function open_symbols(list) {
   let filtered_symbols = [];
 
   let response = await database("transactions")
-    .where("transaction_type", "buy")
+    .where({
+      transaction_type: "buy",
+      fulfilled: "t"
+    })
     .select("symbol_pair", "trade_date")
     .then(function(rows) {
       return rows;
