@@ -5,7 +5,7 @@ const database = require("./knexfile");
 const fs = require("fs");
 const date = new Date();
 
-function calculateEma(processed_ohlcv, period) {
+function calculateEma(ohlcv, period) {
   try {
     const close_price_index = 4;
     let ema = [];
@@ -14,7 +14,7 @@ function calculateEma(processed_ohlcv, period) {
     let multiplier = 2 / (period + 1);
 
     for (let count = 0; count < period; count++) {
-      arr.push(processed_ohlcv[count][close_price_index]);
+      arr.push(ohlcv[count][close_price_index]);
     }
 
     let sma_arr = arr.slice(0, period - 1);
@@ -22,18 +22,26 @@ function calculateEma(processed_ohlcv, period) {
     let sma1 = sum / period;
     ema.push(sma1);
 
-    for (let i = 1; i < processed_ohlcv.length; i++) {
+    for (let i = 1; i < ohlcv.length; i++) {
       let calc =
-        multiplier * (processed_ohlcv[i][close_price_index] - ema[i - 1]) +
-        ema[i - 1];
-      if (processed_ohlcv[i][close_price_index] < 0.00009) prec = 11;
-      else prec = 8;
+        multiplier * (ohlcv[i][close_price_index] - ema[i - 1]) + ema[i - 1];
+
+      if (ohlcv[i][close_price_index] < 0.00009) {
+        prec = 11;
+      } else {
+        prec = 8;
+      }
       let result = Math.round(calc * Math.pow(10, prec)) / Math.pow(10, prec);
       ema.push(result);
     }
+    // console.log(`ema 1= ${ema}`);
     return ema;
   } catch (error) {
-    console.log(error + "Failed at ema func");
+    console.log(error + "--Failed at ema func");
+
+    console.log(error.constructor.name, error.message);
+    console.log("--------------------------");
+    console.log("Failed");
   }
 }
 
@@ -49,6 +57,7 @@ async function percent(value, basis_value) {
 
 async function watchEma(scannedCoins, interval) {
   try {
+    // console.log(`Scanned coins from watchEma= ${scannedCoins}`);
     for (let j = 0; j < scannedCoins.length; j++) {
       fs.appendFile(
         "emaThink.txt",
@@ -61,42 +70,47 @@ async function watchEma(scannedCoins, interval) {
       );
       let time = [];
       const ohlcv = await exchanges.fetchOHLCV(scannedCoins[j], interval);
-      for (let t = 0; t < ohlcv.length; t++) {
-        let temp = ohlcv[t][0];
-        time.push(temp);
-      }
-      let recentFirstTime = time.reverse();
+      // console.log(`coin = ${scannedCoins[j]}ohlcv length =${ohlcv.length}`);
+      if (ohlcv.length === 500) {
+        for (let t = 0; t < ohlcv.length; t++) {
+          let temp = ohlcv[t][0];
+          time.push(temp);
+        }
+        let recentFirstTime = time.reverse();
 
-      let ema55 = await calculateEma(ohlcv, 55);
-      let ema55_reverse = ema55.reverse();
-      let ema21 = await calculateEma(ohlcv, 21);
-      let ema21_reverse = ema21.reverse();
-      let ema13 = await calculateEma(ohlcv, 13);
-      let ema13_reverse = ema13.reverse();
-      let ema8 = await calculateEma(ohlcv, 8);
-      let ema8_reverse = ema8.reverse();
+        let ema55 = await calculateEma(ohlcv, 55);
+        let ema55_reverse = ema55.reverse();
 
-      for (let i = 1; i < 9; i++) {
-        let percent21_55 = await percent(ema21_reverse[i], ema55_reverse[i]);
-        let percent13_55 = await percent(ema13_reverse[i], ema55_reverse[i]);
-        let percent8_55 = await percent(ema8_reverse[i], ema55_reverse[i]);
-        let time = Date.now();
-        let db_entry = await database("marketema")
-          .insert({
-            symbol_pair: scannedCoins[j],
-            entry_time: time,
-            exchange_time: recentFirstTime[i],
-            interval: interval,
-            ema55_last_100: ema55_reverse[i],
-            ema21_last_100: ema21_reverse[i],
-            ema13_last_100: ema13_reverse[i],
-            ema8_last_100: ema8_reverse[i],
-            percent_diff_21_55: percent21_55,
-            percent_diff_13_55: percent13_55,
-            percent_diff_8_55: percent8_55
-          })
-          .then(row => row)
-          .catch(error => console.log(error));
+        let ema21 = await calculateEma(ohlcv, 21);
+        let ema21_reverse = ema21.reverse();
+
+        let ema13 = await calculateEma(ohlcv, 13);
+        let ema13_reverse = ema13.reverse();
+
+        let ema8 = await calculateEma(ohlcv, 8);
+        let ema8_reverse = ema8.reverse();
+        for (let i = 1; i < 9; i++) {
+          let percent21_55 = await percent(ema21_reverse[i], ema55_reverse[i]);
+          let percent13_55 = await percent(ema13_reverse[i], ema55_reverse[i]);
+          let percent8_55 = await percent(ema8_reverse[i], ema55_reverse[i]);
+          let time = Date.now();
+          let db_entry = await database("marketema")
+            .insert({
+              symbol_pair: scannedCoins[j],
+              entry_time: time,
+              exchange_time: recentFirstTime[i],
+              interval: interval,
+              ema55_last_100: ema55_reverse[i],
+              ema21_last_100: ema21_reverse[i],
+              ema13_last_100: ema13_reverse[i],
+              ema8_last_100: ema8_reverse[i],
+              percent_diff_21_55: percent21_55,
+              percent_diff_13_55: percent13_55,
+              percent_diff_8_55: percent8_55
+            })
+            .then(row => row)
+            .catch(error => console.log(error));
+        }
       }
     }
   } catch (err) {

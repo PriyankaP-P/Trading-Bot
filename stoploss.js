@@ -35,6 +35,7 @@ async function cut_loss(stop_loss_percent) {
     let percent_conv = stop_loss_percent / 100;
     let coin;
     let amount;
+    let sellOrderAmount;
     for (let i = 0; i < current_buys.length; i++) {
       let buy_price = current_buys[i].price_base_currency;
       let criteria = buy_price - buy_price * percent_conv;
@@ -54,6 +55,10 @@ async function cut_loss(stop_loss_percent) {
       coin = symbol_pair.split("/");
       amount = await balance.account_balance(coin[0]);
 
+      if (amount > current_buys[i].quantity)
+        sellOrderAmount = current_buys[i].quantity;
+      else sellOrderAmount = amount;
+
       if (open_sell_orders_for_stoploss.length > 0) {
         for (let j = 0; j < open_sell_orders_for_stoploss.length; j++) {
           if (
@@ -67,7 +72,7 @@ async function cut_loss(stop_loss_percent) {
                 trade_date: Date.now(),
                 symbol_pair: symbol_pair,
                 price_base_currency: last_price,
-                quantity: amount,
+                quantity: sellOrderAmount,
                 transaction_type: "sell",
                 fulfilled: "f",
                 order_status: "CREATED",
@@ -94,7 +99,7 @@ async function cut_loss(stop_loss_percent) {
               trade_date: Date.now(),
               symbol_pair: symbol_pair,
               price_base_currency: last_price,
-              quantity: amount,
+              quantity: sellOrderAmount,
               transaction_type: "sell",
               fulfilled: "f",
               order_status: "CREATED",

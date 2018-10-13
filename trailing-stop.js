@@ -21,7 +21,6 @@ async function start_trailing() {
       .catch(error => console.log(error));
     for (let i = 0; i < new_longs.length; i++) {
       let open_trailing_positions = await database("trail")
-        .where("trailing_status", "true")
         .select("transaction_id")
         .then(rows => rows)
         .catch(error => console.log(error));
@@ -47,7 +46,7 @@ async function start_trailing() {
               .catch(error => console.log(error));
             console.log("trailing started");
             fs.appendFile(
-              "log.txt",
+              "trailLogs.txt",
               `${date}  trailing started,scanned for duplicates, transac_id =  ${transac_id} trailing_price: ${price}\n`,
               error => {
                 if (error) throw error;
@@ -68,7 +67,7 @@ async function start_trailing() {
           .catch(error => console.log(error));
         console.log("trailing started");
         fs.appendFile(
-          "log.txt",
+          "trailLogs.txt",
           `${date}  trailing started, transac_id =  ${transac_id} trailing_price: ${price}\n`,
           error => {
             if (error) throw error;
@@ -219,7 +218,10 @@ async function update_trailing_stop() {
           });
 
         if (corresponding_sale.length > 0) {
-          if (corresponding_sale[0].order_status === "FILLED") {
+          if (
+            corresponding_sale[0].order_status === "FILLED" ||
+            corresponding_sale[0].order_status === "PARTIALLY_FILLED"
+          ) {
             await database("trail")
               .where("transaction_id", fetch_closed[i].transaction_id)
               .update("trailing_status", "false")

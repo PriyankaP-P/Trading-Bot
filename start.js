@@ -48,6 +48,13 @@ const stop_loss_percent = 1;
           if (error) throw err;
         }
       );
+      fs.writeFile(
+        "trailLogs.txt",
+        "----------Ema processing logs----------\n \n \n",
+        error => {
+          if (error) throw err;
+        }
+      );
     }
     await scanApp();
   } catch (err) {
@@ -61,6 +68,7 @@ const stop_loss_percent = 1;
 async function scanApp() {
   try {
     const scannedCoins = await markets.coin_list(base_currency, database_vol);
+    console.log(`scanned coins = ${scannedCoins}`);
     fs.appendFile(
       "emaThink.txt",
       `${date} scanned coin list (new)= ${scannedCoins} at interval= ${interval}\n`, //update time regularly
