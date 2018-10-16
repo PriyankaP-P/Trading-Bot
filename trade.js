@@ -10,9 +10,9 @@ async function getPrice(symbol, action) {
     const response = await exchanges.fetchTicker(symbol);
     let lastPrice = response["last"];
     if (action === "buy") {
-      finalPrice = lastPrice - lastPrice * 0.0003; //  enter bid price at 0.03% lower than current bid
+      finalPrice = lastPrice - lastPrice * 0.001; //  enter bid price at 0.1% lower than current bid
     } else if (action === "sell") {
-      finalPrice = lastPrice + lastPrice * 0.0003;
+      finalPrice = lastPrice + lastPrice * 0.001;
     }
     let rounded_price =
       Math.round(finalPrice * Math.pow(10, 8)) / Math.pow(10, 8);
