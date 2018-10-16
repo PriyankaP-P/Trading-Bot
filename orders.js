@@ -6,9 +6,10 @@ const date = new Date();
 
 async function open_symbols(list) {
   let recently_traded_coins = [];
+  let open_unfulfilled_trades = [];
   let list_of_coins_to_scan_excluding_recent_trades = [];
 
-  let open_unfulfilled_trades = await database("transactions")
+  let unfulfilled_trades = await database("transactions")
     .where({ order_status: "CREATED" })
     .select("symbol_pair")
     .then(row => row)
@@ -35,16 +36,20 @@ async function open_symbols(list) {
       console.log(
         `Timed out coins = ${
           past_trades[i].symbol_pair
-        }, please wait 24 hours before purchase `
+        }, please wait 24 hours before purchase`
       );
     }
   }
   console.log(recently_traded_coins);
+  for (let j = 0; j < unfulfilled_trades.length; j++) {
+    open_unfulfilled_trades.push(unfulfilled_trades[j].symbol_pair);
+  }
   let removal_list = recently_traded_coins.concat(open_unfulfilled_trades);
-  console.log(`removal_list =${removal_list}`);
+  console.log(`removal_list`);
+  console.log(removal_list);
   fs.appendFile(
     "log.txt",
-    `${date} removal_list =  ${removal_list} \n`,
+    `${date} removal_list = ${removal_list} \n`,
     error => {
       if (error) throw error;
     }
