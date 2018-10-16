@@ -15,10 +15,17 @@ async function start_trailing() {
         order_status: "FILLED",
         position_status: "new"
       })
+      .orWhere({
+        transaction_type: "buy",
+        fulfilled: "true",
+        order_status: "PARTIALLY_FILLED",
+        position_status: "new"
+      })
       .whereNotNull("exchange_client_id")
       .select()
       .then(rows => rows)
       .catch(error => console.log(error));
+
     for (let i = 0; i < new_longs.length; i++) {
       let open_trailing_positions = await database("trail")
         .select("transaction_id")
@@ -27,35 +34,22 @@ async function start_trailing() {
 
       let symbol_pair = new_longs[i].symbol_pair;
       let transac_id = new_longs[i].transaction_id;
-
+      let price = await stoploss.get_price(symbol_pair);
+      let count = 0;
       if (open_trailing_positions.length > 0) {
-        for (let j = 0; j < open_trailing_positions; j++) {
+        for (let j = 0; j < open_trailing_positions.length; j++) {
           if (
             new_longs[i].transaction_id !==
             open_trailing_positions[j].transaction_id
           ) {
-            let price = await stoploss.get_price(symbol_pair);
-            await database("trail")
-              .insert({
-                transaction_id: transac_id,
-                symbol_pair: symbol_pair,
-                trailing_price: price,
-                trailing_status: "t"
-              })
-              .then(row => row)
-              .catch(error => console.log(error));
-            console.log("trailing started");
-            fs.appendFile(
-              "trailLogs.txt",
-              `${date}  trailing started,scanned for duplicates, transac_id =  ${transac_id} trailing_price: ${price}\n`,
-              error => {
-                if (error) throw error;
-              }
-            );
+            count = 0;
+          } else {
+            count = 1;
+            break;
           }
         }
-      } else {
-        let price = await stoploss.get_price(symbol_pair);
+      }
+      if (count === 0 || open_trailing_positions.length === 0) {
         await database("trail")
           .insert({
             transaction_id: transac_id,
@@ -68,11 +62,13 @@ async function start_trailing() {
         console.log("trailing started");
         fs.appendFile(
           "trailLogs.txt",
-          `${date}  trailing started, transac_id =  ${transac_id} trailing_price: ${price}\n`,
+          `${date}  trailing started transac_id =  ${transac_id} trailing_price: ${price}\n`,
           error => {
             if (error) throw error;
           }
         );
+      } else {
+        console.log("No new trailing positions");
       }
     }
   } catch (error) {

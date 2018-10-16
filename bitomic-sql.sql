@@ -54,7 +54,7 @@ CREATE TABLE revenue (
 
 DROP TABLE IF EXISTS trail;
 CREATE TABLE trail (
-  transaction_id VARCHAR NOT NULL,
+  transaction_id VARCHAR NOT NULL UNIQUE,
   symbol_pair VARCHAR NOT NULL,
   trailing_price NUMERIC(15, 8) NOT NULL,
   trailing_status BOOLEAN
