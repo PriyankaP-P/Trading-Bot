@@ -18,7 +18,7 @@ const interval = "1h";
 let trading_strategy = "ema";
 let standard_trade_currency = "BTC";
 let database_vol = 0;
-let user_cutoff_volume = 10;
+let user_cutoff_volume = 100;
 const base_currency = "/" + standard_trade_currency;
 const tradeAmt = 0.005;
 const stop_loss_percent = 1;
@@ -55,6 +55,13 @@ const stop_loss_percent = 1;
           if (error) throw err;
         }
       );
+      fs.writeFile(
+        "log.txt",
+        "----------Ema processing logs----------\n \n \n",
+        error => {
+          if (error) throw err;
+        }
+      );
     }
     await scanApp();
   } catch (err) {
@@ -68,10 +75,10 @@ const stop_loss_percent = 1;
 async function scanApp() {
   try {
     const scannedCoins = await markets.coin_list(base_currency, database_vol);
-    console.log(`scanned coins = ${scannedCoins}`);
+    console.log(`coins entered into database = ${scannedCoins}`);
     fs.appendFile(
       "emaThink.txt",
-      `${date} scanned coin list (new)= ${scannedCoins} at interval= ${interval}\n`, //update time regularly
+      `${date} coins entered into databaselist (new)= ${scannedCoins} at interval= ${interval}\n`, //update time regularly
       error => {
         if (error) throw error;
       }
@@ -129,7 +136,7 @@ setInterval(async function() {
       base_currency,
       user_cutoff_volume
     );
-    // console.log(coinsWithVolumeCuttoff);
+    console.log(`coinsWithVolumeCuttoff by user = ${coinsWithVolumeCuttoff}`);
 
     let tradePairs = await orders.open_symbols(coinsWithVolumeCuttoff);
     let run = await testBuy.model1(tradePairs);

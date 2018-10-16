@@ -5,67 +5,80 @@ const fs = require("fs");
 const date = new Date();
 
 async function open_symbols(list) {
-  let open_arr = [];
-  let filtered_symbols = [];
+  let recently_traded_coins = [];
+  let list_of_coins_to_scan_excluding_recent_trades = [];
 
-  let response = await database("transactions")
+  let open_unfulfilled_trades = await database("transactions")
+    .where({ order_status: "CREATED" })
+    .select("symbol_pair")
+    .then(row => row)
+    .catch(err => console.log(err));
+
+  let past_trades = await database("transactions")
     .where({
       transaction_type: "buy",
       fulfilled: "t"
     })
     .select("symbol_pair", "trade_date")
-    .then(function(rows) {
-      return rows;
-    })
-    .catch(function(error) {
-      console.log(error);
-    });
+    .then(row => row)
+    .catch(err => console.log(err));
 
-  console.log(response);
-  for (let i = 0; i < response.length; i++) {
-    let buy_time = response[i].trade_date;
+  console.log(past_trades);
+  for (let i = 0; i < past_trades.length; i++) {
+    let buy_time = past_trades[i].trade_date;
     let time_passed_since_last_trade =
       (Date.now() - buy_time) / (60 * 60 * 1000);
 
     console.log(time_passed_since_last_trade);
     if (time_passed_since_last_trade <= 24) {
-      open_arr.push(response[i].symbol_pair);
+      recently_traded_coins.push(past_trades[i].symbol_pair);
       console.log(
         `Timed out coins = ${
-          response[i].symbol_pair
+          past_trades[i].symbol_pair
         }, please wait 24 hours before purchase `
       );
     }
   }
-  console.log(open_arr);
-  fs.appendFile("log.txt", `${date} open_arr =  ${open_arr} \n`, error => {
-    if (error) throw error;
-  });
-  let new_open_arr = open_arr.filter(function(elem, pos) {
-    return open_arr.indexOf(elem) == pos;
-  });
-  console.log(`new_open_arr = ${new_open_arr}`);
+  console.log(recently_traded_coins);
+  let removal_list = recently_traded_coins.concat(open_unfulfilled_trades);
+  console.log(`removal_list =${removal_list}`);
   fs.appendFile(
     "log.txt",
-    `${date} new_open_arr =  ${new_open_arr} \n`,
+    `${date} removal_list =  ${removal_list} \n`,
     error => {
       if (error) throw error;
     }
   );
-  filtered_symbols = list.filter(item =>
-    new_open_arr.every(item2 => item2 !== item)
+  let duplicates_removed_from_recently_traded_coins = removal_list.filter(
+    function(elem, pos) {
+      return removal_list.indexOf(elem) == pos;
+    }
   );
-  console.log(`filtered_symbols =  ${filtered_symbols}`);
+  console.log(
+    `duplicates_removed_from_recently_traded_coins = ${duplicates_removed_from_recently_traded_coins}`
+  );
   fs.appendFile(
     "log.txt",
-    `${date} filtered_symbols =  ${filtered_symbols} \n`,
+    `${date} duplicates_removed_from_recently_traded_coins =  ${duplicates_removed_from_recently_traded_coins} \n`,
+    error => {
+      if (error) throw error;
+    }
+  );
+  list_of_coins_to_scan_excluding_recent_trades = list.filter(item =>
+    duplicates_removed_from_recently_traded_coins.every(item2 => item2 !== item)
+  );
+  console.log(
+    `list_of_coins_to_scan_excluding_recent_trades =  ${list_of_coins_to_scan_excluding_recent_trades}`
+  );
+  fs.appendFile(
+    "log.txt",
+    `${date} list_of_coins_to_scan_excluding_recent_trades =  ${list_of_coins_to_scan_excluding_recent_trades} \n`,
     error => {
       if (error) throw error;
     }
   );
 
-  console.log(filtered_symbols);
-  return filtered_symbols;
+  return list_of_coins_to_scan_excluding_recent_trades;
 }
 
 module.exports = {
