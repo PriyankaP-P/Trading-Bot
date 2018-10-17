@@ -76,7 +76,7 @@ async function start_trailing() {
   }
 }
 
-async function update_highest_price() {
+setInterval(async function update_highest_price() {
   try {
     let open_trail = await database("trail")
       .where("trailing_status", "true")
@@ -97,7 +97,7 @@ async function update_highest_price() {
   } catch (e) {
     console.log(e);
   }
-}
+}, 500);
 
 async function db_entry(check_each_price, currentPrice) {
   try {
@@ -242,7 +242,7 @@ setInterval(async function call_all() {
   try {
     const trailing_percent = 2.5;
     await start_trailing();
-    await update_highest_price();
+    // await update_highest_price();
     await update_trailing_stop();
     await trailing_stop_func(trailing_percent);
   } catch (e) {
