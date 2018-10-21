@@ -22,7 +22,7 @@ async function makeOrder(symbol, side, amount, price) {
     console.log("--------------------------");
     console.log(err.constructor.name, err.message);
     console.log("--------------------------");
-    console.log("Failed 10");
+    console.log("Failed limit order -1");
   }
 }
 

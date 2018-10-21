@@ -353,7 +353,7 @@ async function model3(tradePairs) {
     console.log("--------------------------");
     console.log(err.constructor.name, err.message);
     console.log("--------------------------");
-    console.log("Failed 8");
+    console.log("Failed 55");
   }
 }
 

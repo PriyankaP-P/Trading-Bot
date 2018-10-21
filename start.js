@@ -21,6 +21,7 @@ let database_vol = 0;
 let user_cutoff_volume = 100;
 const base_currency = "/" + standard_trade_currency;
 const tradeAmt = 0.005;
+const trailing_percent = 2.5;
 const stop_loss_percent = 1;
 
 (async function bitomic() {
@@ -119,6 +120,14 @@ Array.prototype.uniq = function() {
   }
   return res;
 };
+
+setInterval(async function call_all() {
+  try {
+    await trailing_stop.trailing_stop_func(trailing_percent);
+  } catch (e) {
+    console.log(e);
+  }
+}, 2000);
 
 setInterval(async function() {
   let buyList = [];

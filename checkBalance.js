@@ -13,7 +13,7 @@ async function account_balance(symbol) {
     console.log("--------------------------");
     console.log(err.constructor.name, err.message);
     console.log("--------------------------");
-    console.log("Failed");
+    console.log("Failed check balance");
   }
 }
 
