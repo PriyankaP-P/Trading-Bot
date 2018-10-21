@@ -5,14 +5,14 @@ const database = require("./knexfile");
 const exchanges = require("./exchanges");
 
 setInterval(async function clean_Db_marketema() {
-  let time = Date.now() - 1 * 60 * 60000;
+  let time = Date.now() - 2 * 60 * 60000;
   console.log(time);
   await database("marketema")
     .where("entry_time", "<", time)
     .delete()
     .then(row => row)
     .catch(error => console.log(error));
-}, 300000);
+}, 120000);
 
 setInterval(async function purge_db() {
   try {
@@ -47,6 +47,6 @@ setInterval(async function purge_db() {
     }
   } catch (e) {
     console.log(exchange.iso8601(Date.now()), e.constructor.name, e.message);
-    console.log("Failed");
+    console.log("Failed 16");
   }
 }, 120000);

@@ -15,7 +15,7 @@ async function get_price(symbol) {
     console.log("--------------------------");
     console.log(err.constructor.name, err.message);
     console.log("--------------------------");
-    console.log("Failed");
+    console.log("Failed 3");
   }
 }
 
@@ -124,7 +124,7 @@ async function cut_loss(stop_loss_percent) {
     console.log("--------------------------");
     console.log(err.constructor.name, err.message);
     console.log("--------------------------");
-    console.log("Failed");
+    console.log("Failed 4");
   }
 }
 

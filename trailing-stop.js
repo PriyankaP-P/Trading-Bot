@@ -67,8 +67,6 @@ async function start_trailing() {
             if (error) throw error;
           }
         );
-      } else {
-        console.log("No new trailing positions");
       }
     }
   } catch (error) {

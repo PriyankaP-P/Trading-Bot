@@ -41,7 +41,7 @@ function calculateEma(ohlcv, period) {
 
     console.log(error.constructor.name, error.message);
     console.log("--------------------------");
-    console.log("Failed");
+    console.log("Failed 5");
   }
 }
 
@@ -117,7 +117,7 @@ async function watchEma(scannedCoins, interval) {
     console.log("--------------------------");
     console.log(err.constructor.name, err.message);
     console.log("--------------------------");
-    console.log("Failed");
+    console.log("Failed 6");
   }
 }
 
@@ -214,7 +214,7 @@ async function model1(tradePairs) {
     console.log("--------------------------");
     console.log(err.constructor.name, err.message);
     console.log("--------------------------");
-    console.log("Failed");
+    console.log("Failed 7");
   }
 }
 
@@ -309,7 +309,7 @@ async function model2(tradePairs) {
     console.log("--------------------------");
     console.log(err.constructor.name, err.message);
     console.log("--------------------------");
-    console.log("Failed");
+    console.log("Failed 8");
   }
 }
 
@@ -353,7 +353,7 @@ async function model3(tradePairs) {
     console.log("--------------------------");
     console.log(err.constructor.name, err.message);
     console.log("--------------------------");
-    console.log("Failed");
+    console.log("Failed 8");
   }
 }
 

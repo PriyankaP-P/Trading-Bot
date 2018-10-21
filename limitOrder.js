@@ -22,7 +22,7 @@ async function makeOrder(symbol, side, amount, price) {
     console.log("--------------------------");
     console.log(err.constructor.name, err.message);
     console.log("--------------------------");
-    console.log("Failed");
+    console.log("Failed 10");
   }
 }
 
@@ -73,7 +73,7 @@ async function placeOrders() {
     console.log("--------------------------");
     console.log(err.constructor.name, err.message);
     console.log("--------------------------");
-    console.log("Failed");
+    console.log("Failed 11");
   }
 }
 
@@ -139,7 +139,7 @@ async function order_status() {
     console.log("--------------------------");
     console.log(err.constructor.name, err.message);
     console.log("--------------------------");
-    console.log("Failed");
+    console.log("Failed 12");
   }
 }
 
@@ -179,7 +179,7 @@ async function cancel_orders() {
     console.log("--------------------------");
     console.log(err.constructor.name, err.message);
     console.log("--------------------------");
-    console.log("Failed");
+    console.log("Failed 13");
   }
 }
 
@@ -230,7 +230,7 @@ async function monitor_position_status() {
     }
   } catch (e) {
     console.log(exchanges.iso8601(Date.now()), e.constructor.name, e.message);
-    console.log("Failed");
+    console.log("Failed 15");
   }
 }
 

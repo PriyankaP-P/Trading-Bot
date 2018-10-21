@@ -25,7 +25,7 @@ async function getPrice(symbol, action) {
     console.log("--------------------------");
     console.log(err.constructor.name, err.message);
     console.log("--------------------------");
-    console.log("Failed");
+    console.log("Failed 9");
   }
 }
 

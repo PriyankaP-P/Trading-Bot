@@ -25,7 +25,7 @@ async function coin_list(base_currency, daily_cutoff_vol) {
     console.log(err.constructor.name, err.message);
     console.log("--------------------------");
     console.log(exchanges.last_http_response);
-    console.log("Failed");
+    console.log("Failed 17");
   }
 }
 

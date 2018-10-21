@@ -68,7 +68,7 @@ const stop_loss_percent = 1;
     console.log("--------------------------");
     console.log(err.constructor.name, err.message);
     console.log("--------------------------");
-    console.log("Failed");
+    console.log("Failed 1");
   }
 })();
 
@@ -88,7 +88,7 @@ async function scanApp() {
     console.log("--------------------------");
     console.log(err.constructor.name, err.message);
     console.log("--------------------------");
-    console.log("Failed");
+    console.log("Failed 2");
   }
 }
 
