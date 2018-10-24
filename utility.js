@@ -2,12 +2,17 @@
 
 const date = new Date();
 const database = require("./knexfile");
-const exchanges = require("./exchanges");
 
 setInterval(async function clean_Db_marketema() {
   let time = Date.now() - 2 * 60 * 60000;
   console.log(time);
   await database("marketema")
+    .where("entry_time", "<", time)
+    .delete()
+    .then(row => row)
+    .catch(error => console.log(error));
+
+  await database("possibletrades")
     .where("entry_time", "<", time)
     .delete()
     .then(row => row)

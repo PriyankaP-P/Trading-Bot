@@ -21,6 +21,12 @@ CREATE TABLE marketEma (
   percent_diff_8_55 NUMERIC(15,9) NOT NULL
 );
 
+DROP TABLE IF EXISTS possibleTrades;
+CREATE TABLE possibleTrades (
+  id SERIAL PRIMARY KEY,
+  entry_time BIGINT NOT NULL,
+  coins VARCHAR ARRAY NOT NULL
+);
 
 DROP TABLE IF EXISTS transactions;
 CREATE TABLE transactions (

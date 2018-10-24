@@ -73,7 +73,7 @@ async function placeOrders() {
     console.log("--------------------------");
     console.log(err.constructor.name, err.message);
     console.log("--------------------------");
-    console.log("Failed 11");
+    console.log("Failed limitOrder2");
   }
 }
 
@@ -139,7 +139,7 @@ async function order_status() {
     console.log("--------------------------");
     console.log(err.constructor.name, err.message);
     console.log("--------------------------");
-    console.log("Failed 12");
+    console.log("Failed limitOrder3");
   }
 }
 
@@ -179,7 +179,7 @@ async function cancel_orders() {
     console.log("--------------------------");
     console.log(err.constructor.name, err.message);
     console.log("--------------------------");
-    console.log("Failed 13");
+    console.log("Failed limitorder 4");
   }
 }
 

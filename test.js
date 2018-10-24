@@ -7,31 +7,36 @@ const date = new Date();
 
 (async function calculateEma() {
   try {
-    await database("transactions")
-      .insert({
-        trade_date: Date.now(),
-        symbol_pair: "ETH/BTC",
-        price_base_currency: 0.0012,
-        quantity: 1,
-        transaction_type: "buy",
-        fulfilled: "t",
-        order_status: "PARTIALLY_FILLED",
-        exchange_client_id: "63348248",
-        exchange_timestamp: 1536359648561,
-        position_status: "new"
-      })
-      // .where("transaction_id", "a178d65e-e24b-43b5-ba9b-a9bd7dbdf921")
-      // .delete()
-      // // .update({
-      // //   // quantity: 11,
-      // //   // fulfilled: "f"
-      // //   // order_status: "FILLED",
-      // //   // exchange_client_id: "93348248",
-      // //   // exchange_timestamp: 1536359659561,
-      // //   position_status: "new"
-      // // })
-      .then(row => console.log(row))
+    let list = await database("possibletrades")
+      .orderBy("entry_time", "desc")
+      .limit(1)
+      .then(row => row)
       .catch(error => console.log(error));
+
+    console.log(list[0].coins);
+    // await database("transactions")
+    //   .insert({
+    //     trade_date: Date.now(),
+    //     symbol_pair: "ETH/BTC",
+    //     price_base_currency: 0.0012,
+    //     quantity: 1,
+    //     transaction_type: "buy",
+    //     fulfilled: "t",
+    //     order_status: "PARTIALLY_FILLED",
+    //     exchange_client_id: "63348248",
+    //     exchange_timestamp: 1536359648561,
+    //     position_status: "new"
+    //   })
+    // .where("transaction_id", "a178d65e-e24b-43b5-ba9b-a9bd7dbdf921")
+    // .delete()
+    // // .update({
+    // //   // quantity: 11,
+    // //   // fulfilled: "f"
+    // //   // order_status: "FILLED",
+    // //   // exchange_client_id: "93348248",
+    // //   // exchange_timestamp: 1536359659561,
+    // //   position_status: "new"
+    // // })
   } catch (error) {
     console.log(error + "Failed at ema func");
   }

@@ -2,6 +2,8 @@
 
 const exchanges = require("./exchanges");
 const database = require("./knexfile");
+const balance = require("./checkBalance");
+const trade = require("./trade");
 const fs = require("fs");
 const date = new Date();
 
@@ -121,16 +123,16 @@ async function watchEma(scannedCoins, interval) {
   }
 }
 
-async function model1(tradePairs) {
+async function model1(list) {
   try {
     const prospectiveBuys = [];
     let closePairs;
-    console.log(tradePairs.length);
-    for (let i = 0; i < tradePairs.length; i++) {
+    console.log(list.length);
+    for (let i = 0; i < list.length; i++) {
       closePairs = await database("marketema")
         .groupBy("marketema.id")
         .orderBy("entry_time", "desc") //most recent entry has position =0
-        .having("symbol_pair", "=", tradePairs[i])
+        .having("symbol_pair", "=", list[i])
         .limit(8)
         .then(row => row)
         .catch(error => console.log(error));
@@ -218,16 +220,16 @@ async function model1(tradePairs) {
   }
 }
 
-async function model2(tradePairs) {
+async function model2(list) {
   try {
     const buys_model2 = [];
     let closePairs;
-    console.log(tradePairs.length);
-    for (let i = 0; i < tradePairs.length; i++) {
+    console.log(list.length);
+    for (let i = 0; i < list.length; i++) {
       closePairs = await database("marketema")
         .groupBy("marketema.id")
         .orderBy("entry_time", "desc") //most recent entry has position =0
-        .having("symbol_pair", "=", tradePairs[i])
+        .having("symbol_pair", "=", list[i])
         .limit(8)
         .then(row => row)
         .catch(error => console.log(error));
@@ -313,17 +315,17 @@ async function model2(tradePairs) {
   }
 }
 
-async function model3(tradePairs) {
+async function model3(list) {
   try {
     const buys_model3 = [];
     let closePairs;
-    console.log(tradePairs.length);
-    for (let i = 0; i < tradePairs.length; i++) {
-      // console.log(tradePairs[i], " i= " + i);
+    console.log(list.length);
+    for (let i = 0; i < list.length; i++) {
+      // console.log(list[i], " i= " + i);
       closePairs = await database("marketema")
         .groupBy("marketema.id")
         .orderBy("entry_time", "desc") //most recent entry has position =0
-        .having("symbol_pair", "=", tradePairs[i])
+        .having("symbol_pair", "=", list[i])
         .limit(8)
         .then(row => row)
         .catch(error => console.log(error));
@@ -357,11 +359,72 @@ async function model3(tradePairs) {
   }
 }
 
+Array.prototype.uniq = function() {
+  let res = this.concat();
+  for (let i = 0; i < res.length; i++) {
+    let compare = res[i][1];
+    let ct = res[i][2];
+
+    for (let j = i + 1; j < res.length; j++) {
+      if (compare == res[j][1]) {
+        if (ct) {
+          res.splice(j--, 1);
+        }
+      }
+    }
+  }
+  return res;
+};
+
+setInterval(async function() {
+  let buyList = [];
+  let finalBuyList = [];
+  let tradingPairs = [];
+
+  let getData = await database("possibletrades")
+    .orderBy("entry_time", "desc")
+    .limit(1)
+    .then(row => row)
+    .catch(error => console.log(error));
+
+  let run1 = await model1(getData[0].coins);
+  console.log(run1);
+  let run2 = await model2(getData[0].coins);
+  console.log(`run2 = \n`);
+  console.log(run2);
+
+  let run3 = await model3(getData[0].coins);
+  console.log(`run3 = \n`);
+  console.log(run3);
+
+  buyList = run1.concat(run2).uniq();
+  finalBuyList = buyList.concat(run3).uniq();
+  // console.log(finalBuyList);
+
+  for (let j = 0; j < finalBuyList.length; j++) {
+    tradingPairs.push(finalBuyList[j][1]);
+  }
+  console.log(tradingPairs);
+  let available_balance = await balance.account_balance(
+    standard_trade_currency
+  );
+  let processTrades = await trade.call_trade_symbol(
+    tradingPairs,
+    available_balance,
+    tradeAmt
+  );
+
+  fs.appendFile(
+    "buyLogs.txt",
+    `date = ${date},  result = ${finalBuyList} \n`,
+    error => {
+      if (error) throw error;
+    }
+  );
+}, 20000);
+
 module.exports = {
   calculateEma,
   percent,
-  watchEma,
-  model1,
-  model2,
-  model3
+  watchEma
 };
