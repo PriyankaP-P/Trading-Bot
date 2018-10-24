@@ -112,6 +112,19 @@ setInterval(async function call_all() {
   }
 }, 2000);
 
+async function waitBeforeStart() {
+  let startNow = false;
+  let checkDatabaseUpdated = await database("marketema")
+    .count("id")
+    .then(row => row)
+    .catch(error => console.log(error));
+
+  console.log(`Current database entries = ${checkDatabaseUpdated[0].count}`);
+  if (checkDatabaseUpdated[0].count >= 2368) {
+    startNow = true;
+  }
+  return startNow;
+}
 setInterval(async function() {
   let checkDatabaseUpdated = await database("marketema")
     .count("id")

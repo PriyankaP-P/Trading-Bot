@@ -4,6 +4,7 @@ const exchanges = require("./exchanges");
 const database = require("./knexfile");
 const balance = require("./checkBalance");
 const trade = require("./trade");
+const start = require("./start");
 const fs = require("fs");
 const date = new Date();
 
@@ -206,7 +207,7 @@ async function model1(list) {
     }
     fs.appendFile(
       "buyLogs.txt",
-      `date = ${date},  prospective buys= ${prospectiveBuys} \n`,
+      `date = ${date},  buy model1= ${prospectiveBuys} \n`,
       error => {
         if (error) throw error;
       }
@@ -377,52 +378,50 @@ Array.prototype.uniq = function() {
 };
 
 setInterval(async function() {
-  let standard_trade_currency = "BTC"; //should be only entered by user in start.js once ,remove from here
-  const tradeAmt = 0.005; //should be only entered by user in start.js once ,remove from here
-  let buyList = [];
-  let finalBuyList = [];
-  let tradingPairs = [];
+  try {
+    let standard_trade_currency = "BTC"; //should be only entered by user in start.js once ,remove from here
+    const tradeAmt = 0.005; //should be only entered by user in start.js once ,remove from here
+    let buyList = [];
+    let finalBuyList = [];
+    let tradingPairs = [];
 
-  let getData = await database("possibletrades")
-    .orderBy("entry_time", "desc")
-    .limit(1)
-    .then(row => row)
-    .catch(error => console.log(error));
+    let getData = await database("possibletrades")
+      .orderBy("entry_time", "desc")
+      .limit(1)
+      .then(row => row)
+      .catch(error => console.log(error));
+    if (Object.keys(getData).length > 0) {
+      let run1 = await model1(getData[0].coins);
+      let run2 = await model2(getData[0].coins);
+      let run3 = await model3(getData[0].coins);
 
-  let run1 = await model1(getData[0].coins);
-  console.log(run1);
-  let run2 = await model2(getData[0].coins);
-  console.log(`run2 = \n`);
-  console.log(run2);
+      buyList = run1.concat(run2).uniq();
+      finalBuyList = buyList.concat(run3).uniq();
+      // console.log(finalBuyList);
 
-  let run3 = await model3(getData[0].coins);
-  console.log(`run3 = \n`);
-  console.log(run3);
+      for (let j = 0; j < finalBuyList.length; j++) {
+        tradingPairs.push(finalBuyList[j][1]);
+      }
+      console.log(tradingPairs);
+      let available_balance = await balance.account_balance(
+        standard_trade_currency
+      );
+      await trade.call_trade_symbol(tradingPairs, available_balance, tradeAmt);
 
-  buyList = run1.concat(run2).uniq();
-  finalBuyList = buyList.concat(run3).uniq();
-  // console.log(finalBuyList);
-
-  for (let j = 0; j < finalBuyList.length; j++) {
-    tradingPairs.push(finalBuyList[j][1]);
-  }
-  console.log(tradingPairs);
-  let available_balance = await balance.account_balance(
-    standard_trade_currency
-  );
-  let processTrades = await trade.call_trade_symbol(
-    tradingPairs,
-    available_balance,
-    tradeAmt
-  );
-
-  fs.appendFile(
-    "buyLogs.txt",
-    `date = ${date},  result = ${finalBuyList} \n`,
-    error => {
-      if (error) throw error;
+      fs.appendFile(
+        "buyLogs.txt",
+        `date = ${date},  result = ${finalBuyList} \n`,
+        error => {
+          if (error) throw error;
+        }
+      );
     }
-  );
+  } catch (err) {
+    console.log("--------------------------");
+    console.log(err.constructor.name, err.message);
+    console.log("--------------------------");
+    console.log("Failed st testbuy.js setInterval");
+  }
 }, 20000);
 
 module.exports = {

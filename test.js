@@ -13,7 +13,8 @@ const date = new Date();
       .then(row => row)
       .catch(error => console.log(error));
 
-    console.log(list[0].coins);
+    console.log(Object.keys(list).length);
+
     // await database("transactions")
     //   .insert({
     //     trade_date: Date.now(),
