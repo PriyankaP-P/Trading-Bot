@@ -7,7 +7,7 @@ const fs = require("fs");
 const orders = require("./orders");
 
 // const testSell = require("./testSell");
-// const limitOrder = require("./limitOrder");
+const limitOrder = require("./limitOrder");
 const utility = require("./utility");
 const stoploss = require("./stoploss");
 const trailing_stop = require("./trailing-stop");
