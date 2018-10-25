@@ -6,19 +6,6 @@ const date = new Date();
 const balance = require("./checkBalance");
 const exchanges = require("./exchanges");
 
-async function get_price(symbol) {
-  try {
-    const response = await exchanges.fetchTicker(symbol);
-    let last_price = response["last"];
-    return last_price;
-  } catch (err) {
-    console.log("--------------------------");
-    console.log(err.constructor.name, err.message);
-    console.log("--------------------------");
-    console.log("Failed 3");
-  }
-}
-
 async function cut_loss(stop_loss_percent) {
   try {
     let current_buys = await database("transactions")
@@ -40,17 +27,16 @@ async function cut_loss(stop_loss_percent) {
       let buy_price = current_buys[i].price_base_currency;
       let criteria = buy_price - buy_price * percent_conv;
       let symbol_pair = current_buys[i].symbol_pair;
-      let last_price = await get_price(symbol_pair);
-      console.log(last_price);
-      let open_sell_orders_for_stoploss = await database("transactions")
-        .where({
-          transaction_type: "sell",
-          fulfilled: false,
-          order_status: "CREATED"
-        })
-        .select("selling_pair_id")
-        .then(rows => rows)
-        .catch(error => console.log(error));
+
+      const response = await exchanges.fetchTicker(symbol_pair);
+      let last_price = response["last"];
+
+      const alreadyExists = await database("transactions")
+        .count("selling_pair_id", current_buys[i].transaction_id)
+        .then(row => row)
+        .catch(e => console.log(e));
+
+      const countAlreadyExistingOccurances = parseInt(alreadyExists[0].count);
 
       coin = symbol_pair.split("/");
       amount = await balance.account_balance(coin[0]);
@@ -59,76 +45,46 @@ async function cut_loss(stop_loss_percent) {
         sellOrderAmount = current_buys[i].quantity;
       else sellOrderAmount = amount;
 
-      if (open_sell_orders_for_stoploss.length > 0) {
-        for (let j = 0; j < open_sell_orders_for_stoploss.length; j++) {
-          if (
-            last_price <= criteria &&
-            current_buys[i].transaction_id !==
-              open_sell_orders_for_stoploss[j].selling_pair_id
-          ) {
-            //<=
-            await database("transactions")
-              .insert({
-                trade_date: Date.now(),
-                symbol_pair: symbol_pair,
-                price_base_currency: last_price,
-                quantity: sellOrderAmount,
-                transaction_type: "sell",
-                fulfilled: "f",
-                order_status: "CREATED",
-                selling_pair_id: current_buys[i].transaction_id
-              })
-              .then(rows => rows)
-              .catch(error => console.log(error));
-            fs.appendFile(
-              "log.txt",
-              `${date}  stoploss created, filtered for duplicate, selling pair id = ${
-                current_buys[i].transaction_id
-              } \n`,
-              error => {
-                if (error) throw error;
-              }
-            );
+      if (last_price <= criteria && countAlreadyExistingOccurances == 0) {
+        //<=
+        await database("transactions")
+          .insert({
+            trade_date: Date.now(),
+            symbol_pair: symbol_pair,
+            price_base_currency: last_price,
+            quantity: sellOrderAmount,
+            transaction_type: "sell",
+            fulfilled: "f",
+            order_status: "CREATED",
+            selling_pair_id: current_buys[i].transaction_id
+          })
+          .then(rows => rows)
+          .catch(error => console.log(error));
+        fs.appendFile(
+          "log.txt",
+          `${date}  stoploss created,for selling pair id = ${
+            current_buys[i].transaction_id
+          } \n`,
+          error => {
+            if (error) throw error;
           }
-        }
+        );
       } else {
-        if (last_price <= criteria) {
-          //<=
-          await database("transactions")
-            .insert({
-              trade_date: Date.now(),
-              symbol_pair: symbol_pair,
-              price_base_currency: last_price,
-              quantity: sellOrderAmount,
-              transaction_type: "sell",
-              fulfilled: "f",
-              order_status: "CREATED",
-              selling_pair_id: current_buys[i].transaction_id
-            })
-            .then(rows => rows)
-            .catch(error => console.log(error));
-
-          fs.appendFile(
-            "log.txt",
-            `${date}  stoploss created,first occurance, selling pair id = ${
-              current_buys[i].transaction_id
-            } \n`,
-            error => {
-              if (error) throw error;
-            }
-          );
-        }
+        console.log(
+          `Stoploss not hit for selling pair id = ${
+            current_buys[i].transaction_id
+          }`
+        );
       }
     }
   } catch (err) {
     console.log("--------------------------");
     console.log(err.constructor.name, err.message);
     console.log("--------------------------");
-    console.log("Failed 4");
+    console.log("Failed at stoploss function");
   }
 }
 
 module.exports = {
-  get_price,
   cut_loss
 };

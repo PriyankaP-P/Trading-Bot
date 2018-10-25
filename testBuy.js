@@ -4,7 +4,6 @@ const exchanges = require("./exchanges");
 const database = require("./knexfile");
 const balance = require("./checkBalance");
 const trade = require("./trade");
-const start = require("./start");
 const fs = require("fs");
 const date = new Date();
 

@@ -5,12 +5,9 @@ const testBuy = require("./testBuy");
 const date = new Date();
 const fs = require("fs");
 const orders = require("./orders");
-
-// const testSell = require("./testSell");
 const limitOrder = require("./limitOrder");
 const utility = require("./utility");
 const stoploss = require("./stoploss");
-const trailing_stop = require("./trailing-stop");
 const earnings = require("./earnings");
 
 const interval = "1h";
@@ -20,7 +17,6 @@ let database_vol = 0;
 let user_cutoff_volume = 100;
 const base_currency = "/" + standard_trade_currency;
 const tradeAmt = 0.005;
-const trailing_percent = 2.5;
 const stop_loss_percent = 1;
 
 (async function bitomic() {
@@ -48,13 +44,7 @@ const stop_loss_percent = 1;
           if (error) throw err;
         }
       );
-      fs.writeFile(
-        "trailLogs.txt",
-        "----------Ema processing logs----------\n \n \n",
-        error => {
-          if (error) throw err;
-        }
-      );
+
       fs.writeFile(
         "log.txt",
         "----------Ema processing logs----------\n \n \n",
@@ -106,25 +96,11 @@ setInterval(async function call() {
 setInterval(async function call_all() {
   try {
     await stoploss.cut_loss(stop_loss_percent);
-    await trailing_stop.trailing_stop_func(trailing_percent);
   } catch (e) {
     console.log(e);
   }
 }, 2000);
 
-async function waitBeforeStart() {
-  let startNow = false;
-  let checkDatabaseUpdated = await database("marketema")
-    .count("id")
-    .then(row => row)
-    .catch(error => console.log(error));
-
-  console.log(`Current database entries = ${checkDatabaseUpdated[0].count}`);
-  if (checkDatabaseUpdated[0].count >= 2368) {
-    startNow = true;
-  }
-  return startNow;
-}
 setInterval(async function() {
   let checkDatabaseUpdated = await database("marketema")
     .count("id")
