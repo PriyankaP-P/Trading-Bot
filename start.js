@@ -16,7 +16,7 @@ let standard_trade_currency = "BTC";
 let database_vol = 0;
 let user_cutoff_volume = 700;
 const base_currency = "/" + standard_trade_currency;
-const tradeAmt = 0.005;
+const tradeAmt = 0.003;
 const stop_loss_percent = 1;
 
 (async function bitomic() {
