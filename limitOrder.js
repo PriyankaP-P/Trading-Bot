@@ -29,6 +29,7 @@ async function makeOrder(symbol, side, amount, price) {
 async function placeOrders() {
   try {
     let amount;
+
     let order_list = await database("transactions")
       .where({
         fulfilled: false,
@@ -51,8 +52,26 @@ async function placeOrders() {
       if (side === "sell") {
         let coin = symbol.split("/");
         amount = await balance.account_balance(coin[0]); // correct to only amount used in particular trade, subtract exchange fees
+
+        let correspondingBuyPair = await database("transactions")
+          .where("transaction_id", order_list[i].selling_pair_id)
+          .select("quantity")
+          .then(row => row)
+          .catch(e => console.log(e));
+
+        let amountBought = parseFloat(correspondingBuyPair[0].quantity);
+
+        if (amount > amountBought) {
+          amount = amountBought;
+        }
+        console.log(
+          `Amount to sell of ${order_list[i].transaction_id} =${amount}`
+        );
       } else if (side === "buy") {
         amount = order_list[i].quantity;
+        console.log(
+          `Amount to buy of ${order_list[i].transaction_id} =${amount}`
+        );
       }
 
       let sending_orders = await makeOrder(symbol, side, amount, price);

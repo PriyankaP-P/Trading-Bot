@@ -4,44 +4,35 @@ const exchanges = require("./exchanges");
 const database = require("./knexfile");
 const fs = require("fs");
 const date = new Date();
+const balance = require("./checkBalance");
+const binance = require("./personalApi");
 
 (async function calculateEma() {
   try {
     let a = await database("transactions")
-      .count("selling_pair_id", "f65ea9e8-ede8-4a09-9d48-2b6e2d93b6f0")
-      .then(row => row)
+      .where("transaction_id", "9d0e350f-34e3-45d4-8686-2bfacef3c471")
+      .update({
+        fulfilled: "t",
+        order_status: "FILLED",
+        exchange_client_id: "888871",
+        exchange_timestamp: 1540432882370,
+        position_status: "old"
+      })
+      //   .insert({
+      //     trade_date: Date.now(),
+      //     symbol_pair: "TRX/BTC",
+      //     price_base_currency: 0.00001047,
+      //     quantity: 1.91971696,
+      //     transaction_type: "buy",
+      //     fulfilled: "t",
+      //     order_status: "FILLED",
+      //     exchange_client_id: "888871",
+      //     exchange_timestamp: 1540432882370,
+      //     position_status: "new"
+      //   })
+
+      .then(row => console.log(row))
       .catch(e => console.log(e));
-
-    console.log(typeof a[0].count);
-    let b = parseInt(a[0].count);
-    console.log(typeof b);
-    // .where("transaction_id", "3aaf3274-6d67-4c39-ad44-51580d7ae348")
-    // .update({
-    //   fulfilled: "t",
-    //   order_status: "FILLED",
-    //   exchange_client_id: "888871",
-    //   exchange_timestamp: 1540432882370
-    // })
-    // .insert({
-    //   trade_date: Date.now(),
-    //   symbol_pair: "GO/BTC",
-    //   price_base_currency: 0.00001047,
-    //   quantity: 31.91971696,
-    //   transaction_type: "buy",
-    //   fulfilled: "t",
-    //   order_status: "CREATED",
-    //   exchange_client_id: "888871",
-    //   exchange_timestamp: 1540432882370,
-    //   position_status: "new"
-    // })
-
-    // let list = await database("possibletrades")
-    //   .orderBy("entry_time", "desc")
-    //   .limit(1)
-    //   .then(row => row)
-    //   .catch(error => console.log(error));
-
-    // console.log(Object.keys(list).length);
   } catch (error) {
     console.log(error + "Failed at ema func");
   }

@@ -31,12 +31,20 @@ async function cut_loss(stop_loss_percent) {
       const response = await exchanges.fetchTicker(symbol_pair);
       let last_price = response["last"];
 
-      const alreadyExists = await database("transactions")
-        .count("selling_pair_id", current_buys[i].transaction_id)
-        .then(row => row)
+      let alreadyExists = await database
+        .table("transactions")
+        .pluck("selling_pair_id")
+        .then(items => {
+          let exists = false;
+          for (let j = 0; j < items.length; j++) {
+            if (items[j] == open_trail[i].transaction_id) {
+              exists = true;
+              return exists;
+            }
+          }
+          return exists;
+        })
         .catch(e => console.log(e));
-
-      const countAlreadyExistingOccurances = parseInt(alreadyExists[0].count);
 
       coin = symbol_pair.split("/");
       amount = await balance.account_balance(coin[0]);
@@ -45,7 +53,7 @@ async function cut_loss(stop_loss_percent) {
         sellOrderAmount = current_buys[i].quantity;
       else sellOrderAmount = amount;
 
-      if (last_price <= criteria && countAlreadyExistingOccurances == 0) {
+      if (last_price <= criteria && alreadyExists == false) {
         //<=
         await database("transactions")
           .insert({
@@ -70,10 +78,14 @@ async function cut_loss(stop_loss_percent) {
           }
         );
       } else {
-        console.log(
-          `Stoploss not hit for selling pair id = ${
+        fs.appendFile(
+          "log.txt",
+          `${date}  stoploss  not reached for selling pair id = ${
             current_buys[i].transaction_id
-          }`
+          } \n`,
+          error => {
+            if (error) throw error;
+          }
         );
       }
     }
