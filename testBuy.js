@@ -63,7 +63,7 @@ async function watchEma(scannedCoins, interval) {
     for (let j = 0; j < scannedCoins.length; j++) {
       fs.appendFile(
         "emaThink.txt",
-        `${date} entry for coin ${
+        `${Date.now()} entry for coin ${
           scannedCoins[j]
         }, from think file interval= ${interval}\n`,
         error => {
@@ -207,7 +207,7 @@ async function model1(list) {
     }
     fs.appendFile(
       "buyLogs.txt",
-      `date = ${date},  buy model1= ${prospectiveBuys} \n`,
+      `date = ${Date.now()},  buy model1= ${prospectiveBuys} \n`,
       error => {
         if (error) throw error;
       }
@@ -302,7 +302,7 @@ async function model2(list) {
     }
     fs.appendFile(
       "buyLogs.txt",
-      `date = ${date}, buys model2 = ${buys_model2} \n`,
+      `date = ${Date.now()}, buys model2 = ${buys_model2} \n`,
       error => {
         if (error) throw error;
       }
@@ -346,7 +346,7 @@ async function model3(list) {
     }
     fs.appendFile(
       "buyLogs.txt",
-      `date = ${date}, buys model3 = ${buys_model3} \n`,
+      `date = ${Date.now()}, buys model3 = ${buys_model3} \n`,
       error => {
         if (error) throw error;
       }
@@ -410,7 +410,7 @@ setInterval(async function() {
 
       fs.appendFile(
         "buyLogs.txt",
-        `date = ${date},  result = ${finalBuyList} \n`,
+        `date = ${Date.now()},  result = ${finalBuyList} \n`,
         error => {
           if (error) throw error;
         }

@@ -68,7 +68,7 @@ async function scanApp() {
     console.log(`coins entered into database = ${scannedCoins}`);
     fs.appendFile(
       "emaThink.txt",
-      `${date} coins entered into databaselist (new)= ${scannedCoins} at interval= ${interval}\n`, //update time regularly
+      `${Date.now()} coins entered into databaselist (new)= ${scannedCoins} at interval= ${interval}\n`, //update time regularly
       error => {
         if (error) throw error;
       }
@@ -84,7 +84,7 @@ async function scanApp() {
 
 setInterval(async function call() {
   try {
-    fs.appendFile("emaThink.txt", `${date}  \n`, error => {
+    fs.appendFile("emaThink.txt", `${Date.now()}  \n`, error => {
       if (error) throw error;
     });
     await scanApp();

@@ -70,7 +70,7 @@ async function cut_loss(stop_loss_percent) {
           .catch(error => console.log(error));
         fs.appendFile(
           "log.txt",
-          `${date}  stoploss created,for selling pair id = ${
+          `${Date.now()}  stoploss created,for selling pair id = ${
             current_buys[i].transaction_id
           } \n`,
           error => {
@@ -80,7 +80,7 @@ async function cut_loss(stop_loss_percent) {
       } else {
         fs.appendFile(
           "log.txt",
-          `${date}  stoploss  not reached for selling pair id = ${
+          `${Date.now()}  stoploss  not reached for selling pair id = ${
             current_buys[i].transaction_id
           } \n`,
           error => {
