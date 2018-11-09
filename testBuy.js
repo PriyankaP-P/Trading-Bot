@@ -141,7 +141,7 @@ async function model1(list) {
       let startPosition = -1;
       let count = 0;
       let occurances = 0;
-      for (let j = 3; j < closePairs.length; j++) {
+      for (let j = 0; j < closePairs.length; j++) {
         if (
           closePairs[j].percent_diff_21_55 < 0 &&
           closePairs[j].percent_diff_13_55 < 0 &&
@@ -165,14 +165,14 @@ async function model1(list) {
             startPosition = -1;
           }
         }
-        if (occurances >= 4) {
+        if (occurances >= 7) {
           break;
         }
       }
 
       let buyPosition = -1;
 
-      if (occurances >= 4) {
+      if (occurances >= 7) {
         let endOfNegative = occurances;
 
         for (
@@ -237,7 +237,7 @@ async function model2(list) {
       let startPosition = -1;
       let count = 0;
       let occurances = 0;
-      for (let j = 3; j < closePairs.length; j++) {
+      for (let j = 0; j < closePairs.length; j++) {
         if (
           closePairs[j].percent_diff_21_55 < 0 &&
           closePairs[j].percent_diff_13_55 < 0 &&
@@ -261,14 +261,14 @@ async function model2(list) {
             startPosition = -1;
           }
         }
-        if (occurances >= 3) {
+        if (occurances >= 5) {
           break;
         }
       }
 
       let buyPosition = -1;
 
-      if (occurances >= 3) {
+      if (occurances >= 5) {
         let endOfNegative = occurances;
 
         for (

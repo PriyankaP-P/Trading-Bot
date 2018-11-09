@@ -10,7 +10,7 @@ const utility = require("./utility");
 const stoploss = require("./stoploss");
 const earnings = require("./earnings");
 
-const interval = "1h";
+const interval = "4h";
 let trading_strategy = "ema";
 let standard_trade_currency = "BTC";
 let database_vol = 0;
