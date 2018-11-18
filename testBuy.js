@@ -380,7 +380,7 @@ Array.prototype.uniq = function() {
 setInterval(async function() {
   try {
     let standard_trade_currency = "BTC"; //should be only entered by user in start.js once ,remove from here
-    const tradeAmt = 0.005; //should be only entered by user in start.js once ,remove from here
+    const tradeAmt = 0.003; //should be only entered by user in start.js once ,remove from here
     let buyList = [];
     let finalBuyList = [];
     let tradingPairs = [];
